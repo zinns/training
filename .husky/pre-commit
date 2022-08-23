@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+if [ ! -d "node_modules" ]
+then
+	yarn
+	npm run lint
+else
+	npm run lint
+fi

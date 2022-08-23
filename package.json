@@ -1,0 +1,19 @@
+{
+  "name": "training",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/zinns/training.git",
+  "author": "Edgar Zea <cesszea@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "prettier --check .",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "husky": "^8.0.1"
+  }
+}
