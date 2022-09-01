@@ -12,9 +12,9 @@
     <title>Document</title>
   </head>
   <body>
-    <section id="hero" class="bg-stone-300 py-14 h-3/5">
-      <div id="hero-container" class="w-10/12 bg-white m-auto">
-        <div id="hero-text" class="flex justify-between h-24 pb-5 w-10/12 ml-2">
+    <section class="max-w-screen-2xl bg-stone-300 py-14 h-3/5">
+      <div class="w-10/12 bg-white m-auto">
+        <div class="flex justify-between h-24 pb-5 w-10/12 ml-2">
           <p class="w-16 text-xs">Exhibition. April 9-14 2019</p>
           <p class="w-56 font-semibold">
             INSPIRED IN BARCELONA :MEDITERRANEAN DESIGN
@@ -41,7 +41,10 @@
               <img class="w-full h-full" src="./assets/toallas.jpeg" alt="" />
             </div>
           </div>
-          <div class="w-96 flex flex-col gap-2" id="hero-text">
+          <div
+            class="w-96 flex flex-col gap-2 md: w-64 sm: w-60"
+            id="hero-text"
+          >
             <p>Inspired in Barcelona: Mediterranean Design.</p>
             <div>
               <p>Warm</p>
@@ -64,7 +67,7 @@
         </div>
       </div>
     </section>
-    <section class="flex h-full" id="container">
+    <section class="flex h-full max-w-screen-2xl">
       <div class="w-full" id="atipus">
         <div
           class="w-full h-9 flex justify-between text-4xl font-thin my-2 px-4"
@@ -83,61 +86,81 @@
               <p>Art Direction, Editorial Design</p>
             </div>
           </div>
-          <div class="w-6/12">
-            <div class="">
-              <div
-                id="hero-studio"
-                class="flex bg-cover bg-no-repeat"
-                style="
-                  background-image: url(https://img.freepik.com/free-psd/two-hard-cover-book-mockup_1150-37608.jpg?w=360);
-                "
-              >
-                <p class="text-end w-full mt-80 mr-10 font-thin">[View Case]</p>
-              </div>
+          <div class="w-6/12 sm: w-7/12">
+            <div
+              id="hero-studio"
+              class="flex bg-cover bg-no-repeat"
+              style="
+                background-image: url(https://img.freepik.com/free-psd/two-hard-cover-book-mockup_1150-37608.jpg?w=360);
+              "
+            >
+              <p class="text-end w-full mt-80 mr-10 font-thin">[View Case]</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!---esta seccion es la de caja orange y green -->
     <section
-      id="imges-text"
+      id="imges-text-box-orange/green"
       style="
         background-repeat: no-repeat;
         object-fit: contain;
         background-image: url(https://thumbs.dreamstime.com/b/letras-de-la-mano-del-feliz-cumplea%C3%B1os-con-el-arco-117451726.jpg);
       "
-      class="w-full h-screen bg-cover flex"
+      class="w-full h-screen bg-cover flex max-w-screen-2xl sm:hidden"
     >
-      <div class="w-6/12 h-full flex items-center justify-center">
-        <div id="img-box-orange" class="w-6/12 h-5/6 bg-white">
-          <p class="w-64 m-2 mb-20">
+      <div class="w-full h-full flex items-center max-w-screen-2xl xl:">
+        <div id="img-box-orange" class="w-4/12 h-5/6 bg-white ml-12 xl: ml-5">
+          <p class="w-64 m-2 mb-8">
             WE BELIEVE THAT LONG-TERM THINKING, INNOVATION AND SPECIALISED
             COLLABORATION CAN SIGIFICANTLY IMPROVE ALL ASPECTS OF LIFE.
           </p>
-          <div class="h-536 w-80 m-2">
-            <img class="w-full h-full" src="./assets/UP.jpeg" alt="" />
+          <div class="h-96 w-full m-2 flex">
+            <img class="w-72 h-full" src="./assets/UP.jpeg" alt="" />
+            <img class="w-40 h-36 ml-10" src="./assets/plano.jpeg" alt="" />
           </div>
         </div>
-        <div id="orange-box" class="h-52 w-96 -ml-14 mb-20">
+        <div class="h-52 w-72 -ml-14 mt-10">
           <div
             class="bg-orange-400 h-60 text-2xl flex flex-col justify-around items-center"
           >
-            <p class="w-80 border-b-4 text-white">SLOW RESEARCH</p>
-            <p class="w-80 border-b-4 text-white">ESTRUCTURAS DE MADERA</p>
-            <p class="w-80 border-b-4"></p>
+            <p class="w-60 border-b-4 text-white">SLOW RESEARCH</p>
+            <p class="w-60 border-b-4 text-white">ESTRUCTURAS DE MADERA</p>
+            <p class="w-60 border-b-4"></p>
           </div>
         </div>
-      </div>
-      <div id="green-box" class="w-6/12">
-        <div class="img-box-green w-64">
-          <img src="./assets/house.jpeg" alt="" />
+        <div class="img-box-green h-full ml-10">
+          <img class="h-3/5 w-96 xl: w-72" src="./assets/house.jpeg" alt="" />
+        </div>
+        <div class="w-1/4 h-96 mt-80 bg-white -ml-52">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            magni omnis perferendis dicta facere dolorum ducimus sed earum,
+            voluptas corporis itaque fuga distinctio beatae est placeat,
+            dignissimos ipsa labore architecto?
+          </p>
+        </div>
+        <div class="w-80 h-96 bg-lime-700 -ml-64 flex flex-col items-center">
+          <p class="w-72 text-center border-b-4 text-3xl text-white">
+            SLOW RESEARCH
+          </p>
+          <p class="w-72 border-b-4 text-3xl text-center text-white">
+            NUEVOS <br />
+            MATERIALES
+          </p>
+          <p class="border-b-4 w-72 mt-60"></p>
         </div>
       </div>
     </section>
-    <section id="container-purple" class="flex">
-      <div class="w-6/12 h-96 bg-purple-300 flex flex-col justify-between">
-        <div>
-          <p class="text-5xl font-thin px-4">
+    <section id="container-purple" class="flex max-w-screen-2xl">
+      <div
+        class="max-w-screen-2xl w-6/12 h-96 bg-purple-300 flex flex-col justify-between"
+      >
+        <div class="">
+          <p
+            class="text-5xl font-thin px-4 xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl"
+          >
             The intersection of the avant-garde and tradition, between the
             artisan trade trade and the contemporary look.
           </p>
@@ -171,7 +194,9 @@
         class="w-6/12 bg-red-400 h-96 flex flex-col justify-between"
       >
         <div>
-          <p class="text-4xl font-thin px-6">
+          <p
+            class="text-4xl font-thin px-6 xl:text-3xl lg:text-2xl md:text-2xl sm:text-2xl"
+          >
             Tihs is a fresh and fruity wine which is bottled before its
             fermentation is finished. Therefore, it must be consumed within a
             short space of time.
@@ -201,14 +226,16 @@
     <section id="container-red" class="flex">
       <div class="w-6/12 flex flex-col justify-between bg-red-600 h-96">
         <div>
-          <p class="text-5xl font-thin px-4 w-9/12">
+          <p
+            class="2xl:text-5xl font-thin px-4 w-9/12 lg:text-4xl md:text-3xl sm:text-2xl"
+          >
             Publication about the history, tradition and uses of saffron.
           </p>
         </div>
         <div class="p-6">
-          <p>El Safrá.</p>
-          <p>Obrador Edèndum, 2019</p>
-          <p>Art Direction, Editorial Design</p>
+          <p class="font-thin">El Safrá.</p>
+          <p class="font-thin">Obrador Edèndum, 2019</p>
+          <p class="font-thin">Art Direction, Editorial Design</p>
         </div>
       </div>
       <div class="w-6/12 h-90">
@@ -221,19 +248,29 @@
       </div>
     </section>
     <section id="container-images">
-      <div class="flex h-72">
-        <img class="w-72" src="./assets/filter rick.png" alt="" />
-        <img class="w-72" src="./assets/filter rick.png" alt="" />
-        <img class="w-72" src="./assets/filter rick.png" alt="" />
-        <img class="w-72" src="./assets/filter rick.png" alt="" />
-        <img class="w-72" src="./assets/filter rick.png" alt="" />
-      </div>
-      <div class="flex h-72">
-        <img class="w-72" src="./assets/people.jpeg" alt="" />
-        <img class="w-72" src="./assets/people.jpeg" alt="" />
-        <img class="w-72" src="./assets/people.jpeg" alt="" />
-        <img class="w-72" src="./assets/people.jpeg" alt="" />
-        <img class="w-72" src="./assets/people.jpeg" alt="" />
+      <div
+        class="xl:overflow-y-scroll lg:overflow-y-scroll md:overflow-y-scroll sm:overflow-y-scroll"
+      >
+        <div class="flex h-72">
+          <img class="w-72" src="./assets/filter rick.png" alt="" />
+          <img class="w-72" src="./assets/filter rick.png" alt="" />
+          <img class="w-72" src="./assets/filter rick.png" alt="" />
+          <img class="w-72" src="./assets/filter rick.png" alt="" />
+          <img class="w-72" src="./assets/filter rick.png" alt="" />
+          <img class="w-72" src="./assets/filter rick.png" alt="" />
+          <img class="w-72" src="./assets/filter rick.png" alt="" />
+          <img class="w-72" src="./assets/filter rick.png" alt="" />
+        </div>
+        <div class="flex h-72">
+          <img class="w-72" src="./assets/people.jpeg" alt="" />
+          <img class="w-72" src="./assets/people.jpeg" alt="" />
+          <img class="w-72" src="./assets/people.jpeg" alt="" />
+          <img class="w-72" src="./assets/people.jpeg" alt="" />
+          <img class="w-72" src="./assets/people.jpeg" alt="" />
+          <img class="w-72" src="./assets/people.jpeg" alt="" />
+          <img class="w-72" src="./assets/people.jpeg" alt="" />
+          <img class="w-72" src="./assets/people.jpeg" alt="" />
+        </div>
       </div>
     </section>
     <section id="images-wine" class="flex">
@@ -246,46 +283,6 @@
       </div>
       <div class="w-6/12 h-96 bg-cover">
         <img class="w-full h-full" src="./assets/botella y copa.jpeg" alt="" />
-      </div>
-    </section>
-    <section id="container-atipus-studio">
-      <div class="flex justify-between font-thin text-4xl my-2 px-4">
-        <p>Atipus</p>
-        <p>Studio</p>
-      </div>
-      <div class="flex h-36">
-        <img class="w-52 h-32 mr-4" src="./assets/people.jpeg" alt="" />
-        <img class="w-52 h-32 mr-4" src="./assets/section img 8.png" alt="" />
-        <img class="w-52 h-32 mr-4" src="./assets/img studio.png" alt="" />
-        <img class="w-52 h-32 mr-4" src="./assets/img books.png" alt="" />
-        <img class="w-52 h-32 mr-4" src="./assets/img shoes.png" alt="" />
-        <img class="w-52 h-32 mr-4" src="./assets/img banca.png" alt="" />
-      </div>
-      <p class="text-end pr-8">[View All]</p>
-    </section>
-    <section id="footer">
-      <div
-        id="footer-container"
-        class="w-10/12 h-full flex justify-between pt-5"
-      >
-        <div class="pl-6">
-          <div class="text-4xl font-thin">
-            <p class="text-black">Contact</p>
-            <p class="text-zinc-800">Follow us</p>
-            <p class="text-zinc-800">Subscribe</p>
-            <p class="text-zinc-800">Lenguage</p>
-          </div>
-          <p class="text-gray-700">[Change It]</p>
-        </div>
-        <div class="h-96 flex flex-col">
-          <div class="text-4xl font-thin">
-            <p>hola@atipus.com</p>
-            <p>+34 934 851 395</p>
-          </div>
-          <div class="text-4xl font-thin w-72 pt-10">
-            <p>Pallars 85,1r 2a 08018 Barcelona Spain</p>
-          </div>
-        </div>
       </div>
     </section>
   </body>
