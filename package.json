@@ -8,7 +8,8 @@
   "scripts": {
     "prepare": "husky install",
     "lint": "prettier --check . && eslint .",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "react-project-1": "cd ./trainings/React/project-1 && npm run start"
   },
   "devDependencies": {
     "eslint": "^8.23.0",
