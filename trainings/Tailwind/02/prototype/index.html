@@ -9,12 +9,12 @@
   </head>
   <body class="max-w-screen-2xl m-auto">
     <main class="bg-gray-100 h-screen">
-      <navbar class="flex justify-between p-5 gap-2">
-        <div class="font-semibold items-center">
+      <navbar class="flex justify-between lg:p-5 gap-2 md:p-2">
+        <div class="font-semibold flex items-center">
           <p>rainfall.</p>
         </div>
         <div
-          class="flex items-center 2xl:gap-[2rem] justify-end lg: gap-[1rem]"
+          class="hidden md:flex md:items-center 2xl:gap-[2rem] md:justify-end md:gap-[1rem]"
         >
           <p>Work</p>
           <p>About</p>
@@ -27,13 +27,34 @@
             Get in touch
           </button>
         </div>
+        <button class="border-2 p-2 rounded-full border-gray-400 md:hidden">
+          Get in touch
+        </button>
+        <button class="md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
       </navbar>
-      <div class="w-4/5 h-4/5 m-auto flex justify-center flex-col">
+      <div class="h-3/5 w-4/5 flex m-auto">
         <img src="./assets/logo platafforms.png" alt="" />
       </div>
-      <button class="ml-40 border-2 p-3 border-gray-400 rounded-full">
-        How we work
-      </button>
+      <div class="w-4/5 m-auto flex justify-start">
+        <button class="border-2 p-3 border-gray-400 rounded-full">
+          How we work
+        </button>
+      </div>
     </main>
     <section></section>
     <section></section>
