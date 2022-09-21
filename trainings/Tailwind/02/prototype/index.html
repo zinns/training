@@ -8,32 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <title>Document</title>
   </head>
-  <body class="max-w-screen-2xl m-auto">
-    <main class="bg-gray-100 h-screen">
+  <body>
+    <main class="bg-gray-100 h-screen w-screen">
       <navbar class="p-2 flex justify-between lg:p-5 gap-2 md:p-2">
         <div class="font-semibold flex items-center text-2xl md:text-base">
           <p>rainfall.</p>
         </div>
-        <div
-          class="hidden md:flex md:items-center 2xl:gap-[2rem] md:justify-end md:gap-[1rem] sm:text-xs lg:text-base"
-        >
-          <p>Work</p>
-          <p>About</p>
-          <p>Design Made Human™</p>
-          <p>Accelarator</p>
-          <p>News</p>
-          <p>Ideas</p>
-          <p>Careers</p>
-          <button class="border-2 p-2 rounded-full border-gray-400">
-            Get in touch
-          </button>
+        <div class="flex gap-3">
+          <div
+            class="hidden md:flex items-center justify-end 2xl:gap-[1rem] sm:text-xs lg:text-base"
+          >
+            <p>Work</p>
+            <p>About</p>
+            <p>Design Made Human™</p>
+            <p>Accelarator</p>
+            <p>News</p>
+            <p>Ideas</p>
+            <p>Careers</p>
+          </div>
+          <div>
+            <button
+              class="text-xs border-2 p-2 rounded-full border-gray-400 md:text-base"
+            >
+              Get in touch
+            </button>
+          </div>
         </div>
-        <div></div>
-        <button
-          class="border-2 p-2 rounded-full border-gray-400 md:hidden text-xs"
-        >
-          Get in touch
-        </button>
         <button class="md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -51,20 +51,22 @@
           </svg>
         </button>
       </navbar>
-      <div class="h-3/5 m-auto flex flex-col justify-center relative mx-40">
+      <div
+        class="h-3/5 m-auto flex flex-col justify-center relative lg:mx-20 2xl:mx-40"
+      >
         <span
-          class="text-[10rem] font-thin"
+          class="font-thin absolute text-[5rem] left-10 top-20 sm:text-[6rem] sm:top-10 sm:left-10 md:text-[8rem] md:top-10 md:left-5 lg:text-[9rem] lg:top-0 2xl:text-[12rem]"
           style="font-family: 'Montserrat', sans-serif"
           >Platforms</span
         >
         <span
-          class="text-[10rem] font-bold"
+          class="font-bold absolute text-[5rem] left-10 bottom-2 sm:text-[6rem] sm:bottom-10 sm:left-10 md:text-[8rem] md:-bottom-5 md:left-5 lg:text-[9rem] lg:-bottom-5 2xl:text-[12rem] 2xl:-bottom-10"
           style="font-family: 'PT Serif', serif"
           >reimagined.</span
         >
         <img
           src="https://i.pinimg.com/236x/06/72/9b/06729bb26fc7dc040202133776456564.jpg"
-          class="absolute h-20 w-20 left-[42rem] top-20"
+          class="absolute rounded-lg h-16 w-16 left-96 top-28 sm:left-[28rem] sm:top-20 md:h-20 md:w-20 md:left-[35rem] md:top-28 lg:left-[39rem] lg:top-20 lg:h-20 lg:w-20 2xl:h-32 2xl:w-32 2xl:left-[52rem] 2xl:bottom-40"
         />
       </div>
       <div class="w-4/5 m-auto flex justify-start">
