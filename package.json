@@ -5,21 +5,30 @@
   "repository": "https://github.com/zinns/training.git",
   "author": "Edgar Zea <cesszea@icloud.com>",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "prepare": "husky install",
+    "format": "prettier --write .",
     "lint": "prettier --check . && eslint .",
     "postinstall": "husky install",
-    "react-project-1": "cd ./trainings/React/project-1 && npm run start"
+    "react": "sh react.sh"
   },
   "devDependencies": {
-    "eslint": "^8.23.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-react": "^7.31.8",
-    "prettier": "^2.7.1"
-  },
-  "dependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "husky": "^8.0.1"
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-hooks": "^0.4.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {},
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }
