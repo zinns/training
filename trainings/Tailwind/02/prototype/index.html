@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <main class="bg-gray-100 h-screen w-screen">
+    <main class="bg-gray-100 h-screen">
       <navbar class="p-2 flex justify-between lg:p-5 gap-2 md:p-2">
-        <div class="font-semibold flex items-center text-2xl md:text-base">
+        <div
+          class="font-semibold mb-10 flex items-center text-2xl md:text-base"
+        >
           <p>rainfall.</p>
         </div>
         <div class="flex gap-3">
@@ -66,7 +69,7 @@
         >
         <img
           src="https://i.pinimg.com/236x/06/72/9b/06729bb26fc7dc040202133776456564.jpg"
-          class="absolute rounded-lg h-16 w-16 left-96 top-28 sm:left-[28rem] sm:top-20 md:h-20 md:w-20 md:left-[35rem] md:top-28 lg:left-[39rem] lg:top-20 lg:h-20 lg:w-20 2xl:h-32 2xl:w-32 2xl:left-[52rem] 2xl:bottom-40"
+          class="absolute rounded-lg h-16 w-16 left-96 top-28 sm:left-[28rem] sm:top-20 md:h-20 md:w-20 md:left-[35rem] md:top-28 lg:left-[39rem] lg:top-20 lg:h-20 lg:w-20 2xl:h-36 2xl:w-36 2xl:left-[52rem] 2xl:bottom-36"
         />
       </div>
       <div class="w-4/5 m-auto flex justify-start">
@@ -78,8 +81,43 @@
     <container class="h-screen w-screen">
       <div class="w-4/6 m-auto my-20">
         <img class="h-full w-full" src="./assets/img container.png" alt="" />
-        <p class="mt-28 text-9xl font-bold">Case Studies</p>
-        <p class="font-thin">Enjoy a few of our selected projects</p>
+        <p class="mt-28 text-5xl 2xl:text-9xl font-bold">Case Studies</p>
+        <p class="font-base my-4 2xl:text-2xl">
+          Enjoy a few of our selected projects
+        </p>
+      </div>
+      <div class="w-5/6 m-auto relative">
+        <div class="flex h-96 justify-around">
+          <img
+            class="w-72 h-64 absolute left-20"
+            src="https://i.pinimg.com/564x/8e/01/cd/8e01cdc7215f57127ef0eff27b1f2760.jpg"
+            alt=""
+          />
+          <img
+            class="absolute top-20 w-96 h-80"
+            src="https://i.pinimg.com/236x/94/a2/d0/94a2d0f6c4f2a8e68940109cba6cc8a0.jpg"
+            alt=""
+          />
+          <img
+            class="w-52 h-72 absolute right-20"
+            src="https://i.pinimg.com/236x/1d/f8/5b/1df85b6f94c0ea67bcc045526fa74b46.jpg"
+            alt=""
+          />
+        </div>
+        <div class="flex justify-around">
+            <img class="absolute left-10 h-80 w-64"
+              src="https://i.pinimg.com/236x/1c/8b/c9/1c8bc94d425a0d207734fde4aa869529.jpg"
+              alt=""
+            />
+            <img class="absolute h-64 w-64 -bottom-96"
+              src="https://i.pinimg.com/564x/49/1c/63/491c632e23df1e6de92618f29c45bece.jpg"
+              alt=""
+            />
+            <img class="absolute h-64 w-64 right-20"
+              src="https://i.pinimg.com/236x/0c/6f/35/0c6f35f53d8994a8cbbcc5c419f078b3.jpg"
+              alt=""
+            />
+        </div>
       </div>
     </container>
     <section></section>
