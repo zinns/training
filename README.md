@@ -85,63 +85,6 @@ When the card is in **QA** your reviewer has to check your implementation and ap
 
 If the PR is approved the card can be moved to **Done**
 
-## Folders
-
-Inside the trainings folder there are some folders for each course section.
-When you have to start a new exercise you'll have to create the folder to contain all the exercise files. You have to follow the next convention:
-
-    - trainings
-      - HTML-CSS
-        - 01
-
-Also you'll need to create folders for each type of files of the project for example:
-
-    - trainings
-      - HTML-CSS
-        - 01
-          - assets
-            - image.png
-          - index.html
-          - styles
-            - style.css
-          - scripts
-            - index.js
-
-
-## JavaScript
-
-When you were working on JS vanilla exercises you'll find there is a tool called ESLINT that maybe shows you some errors while you're writing code.
-This linter helps the project to maintain a specific structure.
-Also it would help to reinforce our rules for outside projects.
-
-If you have some problems with this Linter and you don't find how to solve it, please contact me [Edgar Zea](https://github.com/eamzea) to help you or to fix this issue.
-
-## React
-
-When you were doing React exercises you have to run one of these scripts inside the specific exercise folder
-
-**NPM**
-
-`npm init react-app my-app`
-
-**YARN**
-
-`yarn create react-app my-app`
-
-If you want to add some template you can review this documentation:
-
-[Create React App Templates](https://create-react-app.dev/docs/custom-templates)
-
-If you want to learn more about new tools you can check this
-
-[Vite](https://vitejs.dev/)
-
-## Run React
-
-In order to run the react project you're working on there is one script in `package.json` file -> **`react`**
-So you are able to run `yarn run react` and you have to pass the number of the project you are looking for, right now there is just one project.
-
-Then, the script to execute should be **`yarn run react 1`** and automatically the server would start and you can continue with your development.
 ## Commits Convention
 
 Here is a guide for each part of the commit
