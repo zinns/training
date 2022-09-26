@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+    background-color: #5D6D7E ;
+}
+
+span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container .navbar{
+    height: 6rem;
+    width: 100%;
+    background-color: #090222;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 10rem;
+    height: 4rem;
+    margin-right: 4rem;
+}
+
+.logoyugi{
+    opacity:1;
+    width: 100%;
+    height: 100%;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 2rem;
+    width: 40rem;
+    height: 4rem;
+
+    
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+    background-color: #AED6F1 ;
+    height: 2rem;
+    border-radius: 1rem;    
+    border: none;
+}
+
+.iner{
+    display: flex;
+    justify-content: space-around;
+    height: 24rem;
+}
+
+.faraoninfo{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 22rem;
+    width: 28rem;
+}
+
+.description{
+    margin-bottom: 2rem;
+}
+
+.faraonimg{
+    margin-top: 1rem;
+    height: 22rem;
+    width: 20rem;
+}
+
+.faraon{
+    width: 100%;
+    height: 100%;
+}
+
+.personalcards{
+    display: flex;
+    justify-content: center;
+}
+
+.principalcards{
+    display: flex;
+    height: 28rem;
+}
+
+.contentmagic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 24rem;
+    width: 22rem;
+    margin-left: 2.5rem;
+    margin-top: 8px;
+}
+
+.magicdarkimg{
+    height: 16rem;
+    width: 18rem;
+}
+
+.magiccard{
+    width: 100%;
+    height: 100%;
+}
+
+.specificgame{
+    width: 60rem;
+    margin-left: 8rem;
+}
+
+.friends{
+    display: flex;
+    justify-content: center;
+    height: 24rem;
+    margin-top: 1rem;
+}
+
+.milenialart{
+    height: 22rem;
+    width: 36rem;
+}
+
+.milenialimg{
+    height: 100%;
+    width: 100%;
+}
+
+.friendstext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 22rem;
+    width: 30rem;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.descriptionyugi{
+    text-align: center;
+}
+
+.Getstart{
+    display: flex;
+    justify-content: center-;
+    width: 6rem;
+}
+.hover{
+    height: 30rem;
+    background-color: #090222;
+}
+
+.texthover{
+    display: flex;
+    align-items: center;
+    height: 9.5rem;
+    width: 60rem;
+    margin-left: 8rem;
+}
+
+.ptext {
+    color: #ffff;
+    font-size: 26px;
+}
+
+.contentwebsites{
+    display: flex;
+    height: 16rem;
+    width: 100%;
+}
+
+.websiteserie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 12rem;
+    width: 24rem;
+    background-color: #5D6D7E ;
+    margin-left: 8rem;
+    border-radius: 10px;
+}
+
+.websitegame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 12rem;
+    width: 24rem;
+    background-color: #5D6D7E ;
+    margin-left: 10rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30rem;
+    }
+    .link{
+        display:none;
+    }
+    .buttonsuport{
+        display: none;
+    }
+    ·svg{
+        height: 4rem;
+        width: 4rem;
+    }
+    .iner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .faraoninfo{
+        margin-top: 0;
+    }
+    .description{
+        text-align: center;
+        height: 5rem;
+        margin-bottom: 0;
+    }
+    .loadmore{
+        display: none;
+    }
+    .faraonimg{
+        height: 10rem;
+        width: 10rem;
+        margin: auto;
+    }
+    .personalcards{
+        text-align: center;
+    }
+    .principalcards{
+        height: 25.5rem;
+        overflow-y: auto;
+        overflow: hidden;
+    }
+    .cardsid{
+        width: 30rem;
+    }
+    .specificgame{
+        height: 8rem;
+        width: 29rem;
+        margin-left: 1rem;
+    }
+    .Getstart{
+        display: none;
+    }
+    .friendstext{
+        font-size: 15px;
+    }
+    .texthover{
+        margin-left: 1rem;
+        width: 29rem;
+    }
+    .ptext{
+        font-size: 18px;
+    }
+    .contentwebsites{
+        width: 29.5rem;
+    }
+    .websiteserie{
+        display: flex;
+        width: 14rem;
+        margin-left: 1rem;
+    }
+    .websitegame{
+        display: flex;
+        width: 14rem;
+        margin-left: 1rem;
+    }
+    .serielink{
+        text-align: center;
+        width: 15rem;
+    }
+    .gamep{
+        text-align: center;
+    }
+}
