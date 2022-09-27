@@ -3,7 +3,7 @@ body {
   background-color: #5d6d7e;
 }
 
-span {
+p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -29,6 +29,10 @@ navbar {
   height: 4rem;
 }
 
+.menu {
+  display: none;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -43,27 +47,33 @@ button {
   border: none;
 }
 
-.iner {
+.hero {
   display: flex;
   justify-content: space-around;
-  height: 24rem;
+  max-width: 1536px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .faraoninfo {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 22rem;
-  width: 28rem;
+  width: 30rem;
+  gap: 2rem;
 }
 
-.description {
-  margin-bottom: 2rem;
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.faraoninfo:nth-child(1) {
+  font-size: 1rem;
 }
 
 .faraonimg {
-  margin-top: 1rem;
   height: 22rem;
   width: 20rem;
 }
@@ -193,7 +203,21 @@ button {
   border-radius: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
+  .links {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: unset;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 520px) {
   .logo {
     display: flex;
     align-items: center;
@@ -203,9 +227,13 @@ button {
   .link {
     display: none;
   }
-  .buttonsuport {
-    display: none;
+
+  .menu {
+    width: 3rem;
+    height: 3rem;
+    display: unset;
   }
+
   ·svg {
     height: 4rem;
     width: 4rem;
