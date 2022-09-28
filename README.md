@@ -85,6 +85,29 @@ When the card is in **QA** your reviewer has to check your implementation and ap
 
 If the PR is approved the card can be moved to **Done**
 
+## Folders
+
+Inside the trainings folder there are some folders for each course section.
+When you have to start a new exercise you'll have to create the folder to contain all the exercise files. You have to follow the next convention:
+
+    - trainings
+      - HTML-CSS
+        - 01
+
+Also you'll need to create folders for each type of files of the project for example:
+
+    - trainings
+      - HTML-CSS
+        - 01
+          - assets
+            - image.png
+          - index.html
+          - styles
+            - style.css
+          - scripts
+            - index.js
+
+
 ## Commits Convention
 
 Here is a guide for each part of the commit
