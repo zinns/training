@@ -26,6 +26,7 @@ Example:
 This repo has CI and CD configured. The steps to make a good implementation are:
 - Make sure you have named your branch following the branch convention
 - Make sure your branch is updated with develop
+- Make sure all your folders and files are organized [see more](#folders)
 - Make sure you format all your files
 - Make sure there are no linter errors for JS files
 - Make sure you follow the [commit convention](#commits-convention)
@@ -63,6 +64,29 @@ Only when the [PR](#pr) is created the card should be in **QA**
 When the card is in **QA** your reviewer has to check your implementation and approve it or request changes.
 
 If the PR is approved the card can be moved to **Done**
+
+## Folders
+
+Inside the trainings folder there are some folders for each course section.
+When you have to start a new exercise you'll have to create the folder to contain all the exercise files. You have to follow the next convention:
+
+    - trainings
+      - HTML-CSS
+        - 01
+
+Also you'll need to create folders for each type of files of the project for example:
+
+    - trainings
+      - HTML-CSS
+        - 01
+          - assets
+            - image.png
+          - index.html
+          - styles
+            - style.css
+          - scripts
+            - index.js
+
 
 ## JavaScript
 

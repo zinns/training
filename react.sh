@@ -6,12 +6,21 @@ RED='\033[0;31m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-if [ $target -lt $folders ];
-then
-cd "./trainings/React/project-${target}"
-echo "${BLUE} Project will be launched in 1 second ${NC} 🚀"
 sleep 1
-yarn start
-else
-echo "${RED} There is no project with that index ${NC}"
+
+if [ $target -le $folders ];
+	then
+		echo $folders
+		if [ $target -lt 10 ];
+			then
+				cd "./trainings/React/project-0${target}"
+			else
+				cd "./trainings/React/project-${target}"
+		fi
+
+		echo "${BLUE} Project will be launched in 1 second ${NC} 🚀"
+		sleep 1
+		yarn start
+	else
+		echo "Fin"
 fi
