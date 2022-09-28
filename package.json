@@ -7,8 +7,9 @@
   "private": true,
   "scripts": {
     "prepare": "husky install",
-    "format": "prettier --write .",
-    "lint": "prettier --check . && eslint .",
+    "fix:format": "prettier --write .",
+    "lint": "eslint .",
+    "validate": "prettier --check . && eslint .",
     "postinstall": "husky install",
     "prepare": "husky install",
     "react": "sh react.sh",
