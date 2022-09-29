@@ -1,48 +1,10 @@
 body {
   margin: 0;
-  /* background-color: #5d6d7e; */
+  background-color: #5d6d7e;
 }
 
 p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-navbar {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  background-color: #090222;
-}
-
-.navcontainer {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1536px;
-  margin: auto;
-  align-items: center;
-  width: 100%;
-}
-
-.navcontainer button {
-  margin-left: 1rem;
-}
-
-.logoyugi {
-  width: 15rem;
-  height: 5rem;
-}
-
-.links {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 1rem;
-  width: 60rem;
-  height: 4rem;
-}
-
-.menu {
-  display: none;
 }
 
 a {
@@ -59,6 +21,41 @@ button {
   border: none;
 }
 
+main {
+  background-color: #090222;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  max-width: 1536px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.logoyugi {
+  width: 15rem;
+  height: 5rem;
+}
+
+.links-button {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu {
+  display: none;
+}
+
 .hero {
   display: flex;
   justify-content: space-around;
@@ -71,25 +68,33 @@ button {
 .faraoninfo {
   display: flex;
   flex-direction: column;
-  width: 30rem;
   gap: 2rem;
+  width: 40%;
+  padding: 1rem;
 }
 
 .title {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
+  gap: 0.25rem;
 }
 
-.faraoninfo:nth-child(1) {
-  font-size: 1rem;
+.titledescription {
+  font-size: 1.25rem;
+  margin: 0;
+  line-height: 1.25rem;
 }
 
 .faraonimg {
-  height: 22rem;
-  width: 20rem;
+  display: flex;
+  justify-content: center;
+  width: 30%;
 }
-
+.yamimage {
+  width: 20rem;
+  height: 20rem;
+}
 .faraon {
   width: 100%;
   height: 100%;
@@ -224,9 +229,18 @@ button {
     width: 4rem;
     height: 4rem;
   }
+  .faraoninfo {
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .title {
+    font-size: 1.25rem;
+  }
+  .titledescription {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -243,8 +257,15 @@ button {
     display: unset;
   }
 
+  .faraoninfo {
+    width: 50%;
+  }
+
   .title {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
+  }
+  .titledescription {
+    font-size: 1rem;
   }
 
   .description {
@@ -253,9 +274,8 @@ button {
     margin-bottom: 0;
   }
   .faraonimg {
-    height: 10rem;
-    width: 10rem;
-    margin: auto;
+    height: 15rem;
+    width: 15rem;
   }
   .personalcards {
     text-align: center;
