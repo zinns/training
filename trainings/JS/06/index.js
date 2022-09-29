@@ -1,8 +1,8 @@
-//Create an empty object
+// Create an empty object
 
 // let obj = {}
 
-//Create an object that stores the next type of values: String, Number, Boolean, Array, Object
+// Create an object that stores the next type of values: String, Number, Boolean, Array, Object
 // Print in console the object's number value
 
 // let obj = {
