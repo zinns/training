@@ -196,13 +196,18 @@ main {
 .friends {
   display: flex;
   justify-content: center;
-  height: 24rem;
-  margin-top: 1rem;
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+.friendscontainer {
+  display: flex;
+  width: 80%;
+  padding: 1rem;
 }
 
 .milenialart {
-  height: 22rem;
-  width: 36rem;
+  height: 20rem;
 }
 
 .milenialimg {
@@ -216,7 +221,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 22rem;
-  width: 30rem;
+  width: 45rem;
   font-size: 18px;
   font-weight: bolder;
 }
@@ -329,6 +334,14 @@ main {
   .specificgame p {
     font-size: 1rem;
   }
+
+  .friendscontainer {
+    flex-direction: column;
+  }
+
+  .friendstext {
+    width: 35rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -378,18 +391,21 @@ main {
     overflow-y: scroll;
   }
 
-  .cardsid {
-    width: 30rem;
-  }
   .specificgame p {
     font-size: 1rem;
   }
   .Getstart {
     display: none;
   }
-  .friendstext {
-    font-size: 15px;
+
+  .friendscontainer {
+    flex-direction: column;
   }
+
+  .friendstext {
+    width: 25rem;
+  }
+
   .texthover {
     margin-left: 1rem;
     width: 29rem;
