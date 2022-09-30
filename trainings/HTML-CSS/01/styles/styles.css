@@ -182,8 +182,15 @@ main {
 }
 
 .specificgame {
-  width: 60rem;
-  margin-left: 8rem;
+  display: flex;
+  justify-content: center;
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+.specificgame p {
+  font-weight: 600;
+  width: 80%;
 }
 
 .friends {
@@ -289,6 +296,10 @@ main {
   .cards {
     overflow-y: hidden;
   }
+
+  .specificgame p {
+    font-size: 2.75rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -313,6 +324,10 @@ main {
 
   .cards {
     overflow-y: scroll;
+  }
+
+  .specificgame p {
+    font-size: 1rem;
   }
 }
 
@@ -366,10 +381,8 @@ main {
   .cardsid {
     width: 30rem;
   }
-  .specificgame {
-    height: 8rem;
-    width: 29rem;
-    margin-left: 1rem;
+  .specificgame p {
+    font-size: 1rem;
   }
   .Getstart {
     display: none;
