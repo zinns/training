@@ -58,18 +58,18 @@ main {
 
 .hero {
   display: flex;
-  justify-content: space-between;
+  gap: 5rem;
+  justify-content: center;
   max-width: 1536px;
   margin: 0 auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 .faraoninfo {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 40%;
+  width: 45%;
   padding: 1rem;
 }
 
@@ -92,8 +92,7 @@ main {
   width: 30%;
 }
 .yamimage {
-  width: 25rem;
-  height: 20rem;
+  height: 17rem;
 }
 .faraon {
   width: 100%;
@@ -103,13 +102,14 @@ main {
 .principalcards {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 1536px;
   margin: 0 auto;
 }
 
 .personalcards {
   display: flex;
-  width: 100%;
+  width: 75%;
   height: 5rem;
 }
 
@@ -120,17 +120,21 @@ main {
 
 .cards {
   display: flex;
+  justify-content: space-between;
+  width: 75%;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 22rem;
+  width: 15rem;
   padding: 2rem;
   border: 2px #090222 solid;
   border-radius: 1rem;
-  height: 35rem;
+  height: 28rem;
   gap: 1rem;
   background-color: #aa7f4b;
 }
@@ -144,8 +148,8 @@ main {
 }
 
 .magicdarkimg {
-  height: 18rem;
-  width: 20rem;
+  height: 12rem;
+  width: 13rem;
   border: 1px #090222 solid;
   background-color: #008b93;
 }
@@ -166,7 +170,7 @@ main {
 }
 
 .infocard {
-  width: 20rem;
+  width: 15rem;
   height: 10rem;
   border-bottom: 2px #090222 solid;
 }
@@ -281,12 +285,34 @@ main {
   }
 }
 
+@media (min-width: 768px) {
+  .cards {
+    overflow-y: hidden;
+  }
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: 1.25rem;
   }
   .titledescription {
     font-size: 1rem;
+  }
+
+  .hero {
+    gap: 2rem;
+  }
+
+  .faraonimg {
+    width: 40%;
+  }
+
+  .personalcards p {
+    font-size: 1.5rem;
+  }
+
+  .cards {
+    overflow-y: scroll;
   }
 }
 
@@ -304,15 +330,19 @@ main {
     display: unset;
   }
 
+  .hero {
+    gap: 1rem;
+  }
+
   .faraoninfo {
     width: 50%;
   }
 
   .title {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .titledescription {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
   .description {
@@ -324,14 +354,15 @@ main {
     height: 15rem;
     width: 15rem;
   }
-  .personalcards {
-    text-align: center;
+
+  .personalcards p {
+    font-size: 1rem;
   }
-  .principalcards {
-    height: 25.5rem;
-    overflow-y: auto;
-    overflow: hidden;
+
+  .cards {
+    overflow-y: scroll;
   }
+
   .cardsid {
     width: 30rem;
   }
