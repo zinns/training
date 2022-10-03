@@ -19,6 +19,7 @@ button {
   padding: 1rem;
   border-radius: 1rem;
   border: none;
+  cursor: pointer;
 }
 
 main {
@@ -294,7 +295,7 @@ footer {
 
 @media (min-width: 768px) {
   .cards {
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .specificgame p {
@@ -390,6 +391,26 @@ footer {
     overflow-y: scroll;
   }
 
+  .card {
+    width: 9rem;
+  }
+
+  .magicdarkimg {
+    width: 10rem;
+  }
+
+  .typecard {
+    font-size: 15px;
+  }
+
+  .specificcard {
+    font-size: 14px;
+  }
+
+  .infocard {
+    width: 10rem;
+  }
+
   .specificgame p {
     font-size: 1rem;
   }
@@ -402,6 +423,6 @@ footer {
   }
 
   .friendstext {
-    width: 25rem;
+    width: 20rem;
   }
 }
