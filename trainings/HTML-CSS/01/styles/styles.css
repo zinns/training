@@ -421,6 +421,10 @@ footer {
   .friendstext {
     width: 20rem;
   }
+
+  .website {
+    width: 5rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -446,8 +450,8 @@ footer {
   }
 
   .logoyugi {
-    width: 4rem;
-    height: 2rem;
+    width: 7rem;
+    height: 3rem;
   }
   .friendstext {
     width: 15rem;
