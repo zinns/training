@@ -123,6 +123,56 @@ footer {
   font-weight: 700;
 }
 
+.specificgame {
+  display: flex;
+  justify-content: center;
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+.specificgame p {
+  font-weight: 600;
+  width: 80%;
+}
+
+.friends {
+  display: flex;
+  justify-content: center;
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+.friendscontainer {
+  display: flex;
+  width: 80%;
+  padding: 1rem;
+}
+
+.milenialart {
+  height: 20rem;
+}
+
+.milenialimg {
+  height: 100%;
+  width: 100%;
+}
+
+.friendstext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45rem;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+
+.Getstart {
+  display: flex;
+  justify-content: center-;
+  width: 6rem;
+}
 .cards {
   display: flex;
   justify-content: space-between;
@@ -185,57 +235,6 @@ footer {
   justify-content: flex-end;
   height: 2rem;
 }
-
-.specificgame {
-  display: flex;
-  justify-content: center;
-  max-width: 1536px;
-  margin: 0 auto;
-}
-
-.specificgame p {
-  font-weight: 600;
-  width: 80%;
-}
-
-.friends {
-  display: flex;
-  justify-content: center;
-  max-width: 1536px;
-  margin: 0 auto;
-}
-
-.friendscontainer {
-  display: flex;
-  width: 80%;
-  padding: 1rem;
-}
-
-.milenialart {
-  height: 20rem;
-}
-
-.milenialimg {
-  height: 100%;
-  width: 100%;
-}
-
-.friendstext {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 45rem;
-  font-size: 1.25rem;
-  font-weight: bolder;
-  margin: 0 auto;
-}
-
-.Getstart {
-  display: flex;
-  justify-content: center-;
-  width: 6rem;
-}
 .footer {
   max-width: 1536px;
   margin: 0 auto;
@@ -266,9 +265,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   gap: 1rem;
   width: 18rem;
-  height: 10rem;
+  height: 8rem;
   background-color: #5d6d7e;
   border-radius: 1rem;
 }
@@ -292,13 +292,6 @@ footer {
     gap: 1rem;
   }
 }
-
-@media (min-width: 300px) {
-  .cards {
-    overflow-y: hidden;
-  }
-}
-
 @media (min-width: 768px) {
   .specificgame p {
     font-size: 2.75rem;
@@ -348,7 +341,8 @@ footer {
 
 @media (max-width: 520px) {
   .logoyugi {
-    width: 10rem;
+    width: 15rem;
+    height: 5rem;
   }
   .link {
     display: none;
@@ -426,5 +420,55 @@ footer {
 
   .friendstext {
     width: 20rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    height: 20rem;
+  }
+
+  .magicdarkimg {
+    height: 8rem;
+  }
+
+  .infocard {
+    height: 6rem;
+  }
+
+  .typecard {
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .specificcard {
+    font-size: 10px;
+  }
+
+  .logoyugi {
+    width: 4rem;
+    height: 2rem;
+  }
+  .friendstext {
+    width: 15rem;
+  }
+  .website a {
+    width: 3rem;
+  }
+
+  .website {
+    width: 4.5rem;
+    height: 7rem;
+    padding: 0.25rem;
+  }
+
+  .website p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 300px) {
+  .cards {
+    overflow-y: hidden;
   }
 }
