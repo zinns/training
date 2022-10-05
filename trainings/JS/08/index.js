@@ -13,7 +13,7 @@
 // const object = {
 //   age: 26,
 //   family: {},
-//   favoriteMovies: [], -> mismo problema no me deja tener arreglos vacíos
+//   favoriteMovies: [], -> mismo probla no me deja tener arreglos vacíos
 //   isMarried: true,
 //   name: 'Andres',
 // };
