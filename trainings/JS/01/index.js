@@ -6,18 +6,18 @@
 //en la cual se agregaron clases, promesas, array function, operadores.
 
 //what and why is the ES version most accepted ?
-//Answer -> ES6 y es la más aceptada
+//Answer -> ES6
 
 //¿qué es el hoisting?
-//Respuesta -> el hoisting es cuando llamas antes e su declaracion a un funcion o a una variable y despues ser reasignada
+//Respuesta -> el hoisting es cuando llamas antes e su declaracion a un funcion o a una variable
 
-//Respuesta -> ¿cuáles son los valores primitivos?
+//¿cuáles son los valores primitivos?
 //Respuesta ->  Number, Undefined, Null, Boolean, String.
 
 //¿cuáles son las diferencias entre let, const y var?
 //Respuesta ->  LET: es un variale en la cual puede cambiar su valor
 //Respuesta -> CONST: es una variable la cual su valor no puede cambiar.
-//Respuesta ->  VAR: es una variable que puede cmbiar su valor, la diferencia entre let y var es que var su nivel de scope siempre será global, estemos en el nivel que estemos siempre podremos acceder a esa variable.
+//Respuesta ->  VAR: es una variable que puede cmbiar su valor, la diferencia entre let y var es que var su nivel de scope siempre será global.
 
 //¿qué es el ámbito de aplicación?
 //Respuesta ->en esta pregunta aun tengo duda...
@@ -26,16 +26,49 @@
 //Respuesta -> global y de bloque.
 
 //¿cuál es la diferencia entre "===" y "=="?
-//Respuesta ->  "===" el valor tiene que ser estrictamente igual "==" el valor puede ser igual
+//Respuesta ->  "===" el valor tiene que ser estrictamente igual ejemplo:
+console.log(1 === 1);
+console.log(true === true);
+console.log('hola' === 'hola');
+// "==" en esta condición el valor es igual un ejemplo 0 u "0" aun que sea un cero e estring al volverlo un valor común el final de resultado es true
+console.log(1 == '1');
+console.log(0 == false);
 
 //¿cuál es la diferencia entre "!==" y "!="?
-//Respuesta -> "!=="" si es estrictamente diferente "!=" es diferente.
+//Respuesta -> "!=="" si es estrictamente diferente ejemplo:
+//  si realizamos una comparacion de 1 !== '1' -> resultdo: true (ya que en realidad son diferentes y que uno es un numero y el otro es un string) ejemplo:
+console.log(1 !== '1');
+console.log('Hola' !== 'hola');
+console.log(true !== false);
 
+// "!=" no es igual ejemplo:
+//si realizamos una comparacion de 1 != '1' -> resultado: false (regresa falso, ya que al volver el estring a un valor comun es 1)
+console.log(1 != '1');
+console.log('hola' != 'hola');
+console.log(0 != false);
 //¿cuál es la diferencia entre "===" y "!=="?
-//Respuesta ->  "===" tiene que estrictamente igual "!==" es diferente o igual.
+//Respuesta ->  "===" tiene que estrictamente
+//el valor tiene que ser estrictamiente igual al que hacemos la comparación, ya sea numero string o boleano ejemplo:
+console.log(1 === 1);
+console.log('hola' === 'hola');
+console.log(true === true);
+
+// igual "!==" es diferente o igual.
+// tiene que ser estrictamente diferente al valor con el que comparamos ejemplo:
+console.log(1 !== '1');
+console.log('Hola' !== 'hola');
+console.log(true !== false);
 
 //¿cuál es la diferencia entre "==" y "!="?
-//Respuesta ->  "==" es igual pero no de manera estricta "!==" si es diferen o igual.
+//Respuesta ->  "==" es igual pero no de manera estricta. Por lo que al comparar un valor numerico con un estring de número devolver true al convertirlo en un valor común ejemplo:
+console.log(1 == '1');
+console.log('hola' == 'hola');
+console.log(0 == false);
+
+// "!=" si es diferen pero no de manera estricta.
+console.log(1 != '1');
+console.log('hola' != 'hola');
+console.log(0 != false);
 
 //Create one variable with let called name and set your name
 
@@ -58,8 +91,8 @@ let age;
 console.log(age);
 
 //Create one variable with const called ageConst without value
-const ageConst = 0;
-console.log(ageConst);
+// const ageConst;
+// console.log(ageConst);
 
 //Create one variable with var called ageVar without value
 
@@ -68,11 +101,7 @@ console.log(ageVar);
 
 //Assign to each age variable your age
 
-console.log((age = 26));
-
-//console.log((ageConst = 26));
-
-console.log((ageVar = 26));
+age = 26;
 
 //Print in console the evaluation of something with "===" that returns true
 
