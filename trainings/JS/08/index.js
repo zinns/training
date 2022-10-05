@@ -85,40 +85,53 @@ delete car.color;
 //   console.log(i);
 // }
 
-// for (let i = 100; i >=0; i--){
-//   console.log(i);
+// for (let i = 0; i <=100; i++){
+//   if(i % 5 === 0){
+//   console.log('You are easy')
+// } else if (i % 7 === 0) {
+//   console.log('You are kind of hard')
+// } else if (i % 7 === 0 && i % 5 ===0){
+//   console.log('You are imposible')
+// }
 // }
 
 // for (let i = 100; i >=0; i+=2){
 //   console.log(i);
 // }
 
-// let result = [];
-// let e = 0;
+// let e = 100;
 
 // do {
-//   result += e;
+//   console.log(`contando con do while ${e}`);
 //   e++;
 // } while (e <= 100);
 
-// console.log(result);
+// do {
+//   console.log(`contando con do while ${e}`)
+//   e+=2;
+// } while (e >= 100)
 
 // let a = 0;
 
-// while (0 <= 100) {
+// while (a <= 100) {
+//   console.log(`contando con while ${a}`);
 //   a++;
 // }
-// console.log(a);
 
+// while (a <= 100){
+//   console.log(`contando con while ${a}`)
+//   a+=2
+// }
 // Create an empty array
 // Add to the empty array 5 random numbers from 0 to 100 using some loop
 // Find the biggest random number and print it
 
 // const arr = []
 
-// arr.Math.round(Math.random() * 100);
-
-// console.log(arr);
+// for (let i = 0; arr.length; i++){
+//   arr[i].push(Math.round(Math.random) * 100);
+//   console.log(arr[i]);
+// }
 
 // Create an array with 6 string values
 // Print each array value using For of
