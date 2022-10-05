@@ -233,7 +233,13 @@ footer {
 .atk-def {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   height: 2rem;
+  gap: 1rem;
+}
+
+.atk-def p {
+  margin: 0;
 }
 .footer {
   max-width: 1536px;
@@ -341,7 +347,7 @@ footer {
 
 @media (max-width: 520px) {
   .logoyugi {
-    width: 15rem;
+    width: 10rem;
     height: 5rem;
   }
   .link {
@@ -388,23 +394,31 @@ footer {
   }
 
   .card {
-    width: 9rem;
+    width: 11rem;
+    height: 24rem;
+    padding: 1rem;
+  }
+
+  .description-card {
+    height: 9rem;
   }
 
   .magicdarkimg {
     width: 10rem;
+    height: 10rem;
   }
 
   .typecard {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .specificcard {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .infocard {
     width: 10rem;
+    height: 7rem;
   }
 
   .specificgame p {
@@ -428,8 +442,13 @@ footer {
 }
 
 @media (max-width: 400px) {
+  button {
+    padding: 0.75rem;
+  }
   .card {
-    height: 20rem;
+    height: 21rem;
+    padding: 1rem;
+    width: 11rem;
   }
 
   .magicdarkimg {
@@ -450,7 +469,7 @@ footer {
   }
 
   .logoyugi {
-    width: 7rem;
+    width: 5rem;
     height: 3rem;
   }
   .friendstext {
@@ -468,6 +487,10 @@ footer {
 
   .website p {
     font-size: 0.75rem;
+  }
+
+  .atk-def {
+    gap: 0.25rem;
   }
 }
 
