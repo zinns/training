@@ -223,62 +223,75 @@ Assessments should be done every 15 days depending on the state of the student.
 
 The student base topics to be evaluated are:
 
-    - Pending Statuses -> Number
-    - Pending JS exercises -> Number
+    - Pending Statuses
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] You're rocking 🚀
+    - Pending JS exercises
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] You're rocking 🚀
     - QA iterations
       - Project 1 -> Number
-        - Bugs found -> Number
+        - [ ] Need to work in 🆙
+        - [ ] Acceptable 👍
+        - [ ] You're rocking 🚀
+          - Bugs found -> Number
+            - [ ] Need to work in 🆙
+            - [ ] Acceptable 👍
+            - [ ] You're rocking 🚀
       - Project 2 -> Number
         - Bugs found -> Number
     - Reading Comprehension
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] You're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] You're rocking 🚀
     - Proactivity (solve problems before they have ocurred)
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] You're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] You're rocking 🚀
     - Progress
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] You're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] You're rocking 🚀
     - Attention
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] You're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] You're rocking 🚀
     - Knowledge
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] You're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] You're rocking 🚀
     Final Evaluation
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] You're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] You're rocking 🚀
+    Final Comments:
 
 The course base topics to be evaluated are:
 
     - Content of the classes
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] They're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] They're rocking 🚀
     - Doubts solved
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] They're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] They're rocking 🚀
     - Clear Instructions
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] They're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] They're rocking 🚀
     - Class level
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] They're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] They're rocking 🚀
     - Do exercises are good enough?
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] They're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] They're rocking 🚀
     - Do class topics are clear?
-      [ ] Need to work in 🆙
-      [ ] Acceptable 👍
-      [ ] They're rocking 🚀
+      - [ ] Need to work in 🆙
+      - [ ] Acceptable 👍
+      - [ ] They're rocking 🚀
     Comments:
