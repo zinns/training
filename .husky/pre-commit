@@ -2,7 +2,7 @@
 if [ ! -d "node_modules" ]
 then
 	yarn
-	npm run lint
+	npm run validate
 else
-	npm run lint
+	npm run validate
 fi
