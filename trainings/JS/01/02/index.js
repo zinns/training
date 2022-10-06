@@ -16,10 +16,10 @@
 //Which are the Comparison operators?
 //Los operadores de comparación son "==" "===" "!=" "!=="
 //Describe its function
-//el operador "==" si es igual al valor que comparamos
-// el operador "===" si es estrictamente igual en valor y tipo
-// el operador "!=" si no es igual
-// el operador "!==" si no es igual en valor y tipo
+//el operador "==" valida el tipo de  valor
+// el operador "===" si es estrictamente igual, valida tipo de dato y valor
+// el operador "!=" si no es igual, el tipo de valor
+// el operador "!==" si no estrictamente igual, el tipo de dato y valor
 
 //Which are the Logic operators?
 //los operadores logicos son "&&" , "||"
@@ -52,32 +52,32 @@ console.log(2 % 8);
 console.log(8 % 2);
 
 //Print in console if 2 is modular of 5
-// if (2 % 5) {
+// if (2 % 5 === 0) {
 //   console.log('si es modular');
 // } else {
 //   console.log('no es modular');
 // }
 
 // Print in console if 10 is modular of 5
-// if (10 % 5) {
+// if (10 % 5 === 0) {
 //   console.log('si es modular');
 // } else {
 //   console.log('no es modular');
 // }
 // Print in console if 5 is modular of 10
-// if (5 % 10) {
+// if (5 % 10 === 0) {
 //   console.log('si es modular');
 // } else {
 //   console.log('no es modular');
 // }
 // Print in console if 20 is modular of 5
-// if (20 % 5) {
+// if (20 % 5 === 0) {
 //   console.log('si es modular');
 // } else {
 //   console.log('no es modular');
 // }
 // Print in console if 5 is modular of 20
-// if (5 % 20) {
+// if (5 % 20 === 0) {
 //   console.log('si es modular');
 // } else {
 //   console.log('no es modular');
