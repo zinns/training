@@ -1,15 +1,18 @@
 // What are "Truthy" and "Falsy" values?
-//truthy son valores los cuales se comportan como un boleano obteniendo un valor existente, Falsy es cuando el valor no existe como ejemplo un 0 o un string vacío y también se comporta como un boleano.
+// truthy son valores los cuales se comportan como un boleano obteniendo un valor existente, Falsy es cuando el valor no existe como ejemplo un 0 o un string vacío y también se comporta como un boleano.
 // Write one truthy and falsy example
 // un ejemplo de un Truthy es el siguiente:
-let nombre = 'Andres';
+const nombre = 'Andres';
+
 if (nombre) {
   console.log('Truthy');
 } else {
   console.log('Falsy');
 }
+
 // un ejemplo de un Falsy
-let nombre1 = '';
+const nombre1 = '';
+
 if (nombre1) {
   console.log('Truthy');
 } else {
@@ -120,8 +123,9 @@ if (ScreenSizes <= 480) {
   console.log('pantalla para dispositivos grandes/tv');
 }
 
-//Resolve this task using "switch"
-let ScreenSizes = 1201;
+// Resolve this task using "switch"
+
+const ScreenSizes = 1201;
 
 switch (true) {
   case ScreenSizes <= 480:
@@ -145,7 +149,7 @@ switch (true) {
 // Use "if/else" conditional to evaluate if the first variable is equal to the length of 'Edgar' and assign the result to the second variable inside the conditional
 // The final value of the second variable should be a boolean
 
-let numbers = 10;
+const numbers = 10;
 
 let empty;
 
@@ -162,31 +166,28 @@ if (numbers === 'Edgar'.length) {
 // Use ternary conditional to solve this.
 // The final value of the second variable should be a boolean
 
-let learning = 'Andres is learning JavaScript';
+// const learning = 'Andres is learning JavaScriptconst';
 
-let isLearning = learning === 'Andres is playing soccer'.length ? true : false;
+// const isLearning = learning === 'Andres is playing soccer'.length ? true : false;
 
-console.log(isLearning);
+// console.log(isLearning);
 
 // Create a variable that stores the next string "JavaScript"
 // Create another variable called "whatIsLearning", if the first variable is equal to "JavaScript" the second variable should store "Andres is learning JavaScript" and if is not the second variable should store "Andres is learning other thing".
 // Use ternary conditional to solve this.
 // The final value of the second variable should be a string
+// const string = 'JavaScript';
 
-let string = 'JavaScript';
+const whatIsLearning =
+  // string === 'JavaScript' ? 'Andres is learning JavaScript' : 'Andres is learning other thing';
 
-let whatIsLearning =
-  string === 'JavaScript'
-    ? 'Andres is learning JavaScript'
-    : 'Andres is learning other thing';
-
-console.log(whatIsLearning);
+  console.log(whatIsLearning);
 
 // Print the length of 'Andres is learning Front End Development'
 
 console.log('Andres is learning Front End Development'.length);
 
-//Print the result of cutting 'The Lord of the Rings' by 'f'
+// Print the result of cutting 'The Lord of the Rings' by 'f'
 
 console.log('The Lord Of the Rings'.split('f'));
 
@@ -194,30 +195,31 @@ console.log('The Lord Of the Rings'.split('f'));
 
 console.log('The Lord of the Rings'.slice(5, 9));
 
-//Print the result of mixing 'Andres' and 'Soto'
+// Print the result of mixing 'Andres' and 'Soto'
 
-let name = 'Andres Soto';
+const name = 'Andres Soto';
+
 console.log(name.concat('Soto'));
 
-//Print the result of mixing 'Andres' and 'Soto' using '-'
+// Print the result of mixing 'Andres' and 'Soto' using '-'
 
-let name1 = 'Andres';
+// const name1 = 'Andres';
 
-console.log(name1.concat('-') + 'Soto');
+// console.log(name1.concat('-') + 'Soto');
 
 // Print if 'Rings' is inside 'The Lord of the Rings'
 
 console.log('Lord of the Rings'.includes('Rings'));
 
-//Print the result of changing 'Rings' for 'Donuts' from 'The Lord of the Rings'
+// Print the result of changing 'Rings' for 'Donuts' from 'The Lord of the Rings'
 
 console.log('The Lord of the Rings'.replace('Rings', 'Donuts'));
 
-//Modify 'The Lord of the Rings' to upper case and print it
+// Modify 'The Lord of the Rings' to upper case and print it
 
 console.log('The Lord of the Rings'.toUpperCase());
 
-//Modify 'The Lord of the Rings' to lower case and print it
+// Modify 'The Lord of the Rings' to lower case and print it
 
 console.log('The Lord of the Rings'.toLowerCase());
 
@@ -225,28 +227,30 @@ console.log('The Lord of the Rings'.toLowerCase());
 
 console.log('The Lord of the Rings'.replaceAll('the', 'this'));
 
-//Find the last letter of 'The Lord of the Rings' and print it
+// Find the last letter of 'The Lord of the Rings' and print it
 
 console.log('The lord of the Rings'.indexOf('s'));
 
-//Explain what is Template Literals
+// Explain what is Template Literals
 // se utilizán para unir variables con strings
 
-//Write an example of Template Literals
+// Write an example of Template Literals
 
-let nam = 'Andres';
-let lastName = 'Soto';
+const nam = 'Andres';
+
+const lastName = 'Soto';
+
 console.log('Hola soy', `${nam} ${lastName}`, 'y tengo 22 años');
 
-//Find the index of 'g' in 'The Lord of the Rings'
+// Find the index of 'g' in 'The Lord of the Rings'
 
 console.log('The Lord of the Rings'.indexOf('g'));
 
-//Remove all the start and end spaces in ' The Lord of the Rings '
+// Remove all the start and end spaces in ' The Lord of the Rings '
 
 console.log(' The Lord of the Rings '.trim());
 
-//Print the letter positioned in index 4 of 'The Lord of the Rings'
+// Print the letter positioned in index 4 of 'The Lord of the Rings'
 // let string = 'The Lord of the Rings';
 
 // for (i = 0; i < string.length; i++) {
