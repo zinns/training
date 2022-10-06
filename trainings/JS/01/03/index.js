@@ -168,5 +168,5 @@
 //   ? console.log('eres millonario')
 //   : numero < 2000 && numero >= 1000 ? console.log('casi eres millonario') ? numero < 1000 && numero > 500 : console.log("tienes que trabajar");
 
-//numero < 1000 && numero > 500 console.log("tienes que trabajar")
+// numero < 1000 && numero > 500 console.log("tienes que trabajar")
 // numero < 500 console.log("eres un vagabundo")
