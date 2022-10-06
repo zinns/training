@@ -28,7 +28,7 @@
 //operador "||" en algun caso tiene que ser verdadero, siempre que encuentra un verdadero este seguira realizando su operación hasta el termino
 
 //Write an example about "**" operator
-//console.log(3**3) imprimira 27
+console.log(3 ** 3);
 
 //Print in console the result about "2**5"
 console.log(2 ** 5);
