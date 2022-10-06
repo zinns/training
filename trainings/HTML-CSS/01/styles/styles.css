@@ -189,7 +189,7 @@ footer {
   padding: 2rem;
   border: 2px #090222 solid;
   border-radius: 1rem;
-  height: 28rem;
+  height: 27rem;
   gap: 1rem;
   background-color: #aa7f4b;
 }
@@ -203,7 +203,7 @@ footer {
 }
 
 .magicdarkimg {
-  height: 12rem;
+  height: 10rem;
   width: 13rem;
   border: 1px #090222 solid;
   background-color: #008b93;
@@ -296,6 +296,9 @@ footer {
   }
   .faraoninfo {
     gap: 1rem;
+  }
+  .buttonsuport {
+    display: none;
   }
 }
 @media (min-width: 768px) {
@@ -452,11 +455,11 @@ footer {
   }
 
   .magicdarkimg {
-    height: 8rem;
+    height: 7rem;
   }
 
   .infocard {
-    height: 6rem;
+    height: 7rem;
   }
 
   .typecard {
@@ -469,7 +472,7 @@ footer {
   }
 
   .logoyugi {
-    width: 5rem;
+    width: 10rem;
     height: 3rem;
   }
   .friendstext {
