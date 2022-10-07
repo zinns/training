@@ -176,12 +176,13 @@ if (numbers === 'Edgar'.length) {
 // Create another variable called "whatIsLearning", if the first variable is equal to "JavaScript" the second variable should store "Andres is learning JavaScript" and if is not the second variable should store "Andres is learning other thing".
 // Use ternary conditional to solve this.
 // The final value of the second variable should be a string
+
 // const string = 'JavaScript';
 
-const whatIsLearning =
-  // string === 'JavaScript' ? 'Andres is learning JavaScript' : 'Andres is learning other thing';
+// const whatIsLearning =
+// string === 'JavaScript' ? 'Andres is learning JavaScript' : 'Andres is learning other thing';
 
-  console.log(whatIsLearning);
+// console.log(whatIsLearning);
 
 // Print the length of 'Andres is learning Front End Development'
 
@@ -240,7 +241,7 @@ const nam = 'Andres';
 
 const lastName = 'Soto';
 
-console.log('Hola soy', `${nam} ${lastName}`, 'y tengo 22 años');
+console.log('Hola soy', `${nam} ${lastName}`, 'y tengo 26 años');
 
 // Find the index of 'g' in 'The Lord of the Rings'
 
@@ -251,8 +252,5 @@ console.log('The Lord of the Rings'.indexOf('g'));
 console.log(' The Lord of the Rings '.trim());
 
 // Print the letter positioned in index 4 of 'The Lord of the Rings'
-// let string = 'The Lord of the Rings';
 
-// for (i = 0; i < string.length; i++) {
-//   console.log(string[4]);
-// }
+console.log('The Lord of the Rings'[4]);
