@@ -19,7 +19,7 @@
 // Respuesta ->  VAR: es una variable que puede cmbiar su valor, la diferencia entre let y var es que var su nivel de scope siempre será global.
 
 // //¿qué es el ámbito de aplicación?
-// //Respuesta ->en esta pregunta aun tengo duda...
+// //Respuesta -> el scope es el nivel en el que podrá ser accesible a la variable que deseamos.
 
 // //¿cuáles son los tipos de scope?
 // //Respuesta -> global y de bloque.
