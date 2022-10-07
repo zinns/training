@@ -1,4 +1,4 @@
-// //Create a new branch from develop with the base structure
+// Create a new branch from develop with the base structure
 
 // edgar.zea/javascript/exercise-2
 // Inside the JS folder create a folder 02 with an index.js file, do the following:
@@ -112,9 +112,9 @@ console.log(5 >= 5);
 // Print in console the evaluation of something using ">=" that returns false
 console.log(4 >= 5);
 // Print in console the evaluation of something using "<" that returns true
-console.log(2 < 1);
-// Print in console the evaluation of something using "<" that returns false
 console.log(1 < 2);
+// Print in console the evaluation of something using "<" that returns false
+console.log(2 < 1);
 // Print in console the evaluation of something using "<=" that returns true
 console.log(1 <= 1);
 // Print in console the evaluation of something using "<=" that returns false
