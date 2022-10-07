@@ -8,8 +8,11 @@
 // // Write one truthy and falsy example
 // //truthy: console.log(1 === 1) falsy: console.log(0)
 // // Write and example using truthy and falsy values with the "if/else" conditional
+
 // if (1 === 1) {
 //   console.log('truthy');
+// } else {
+//   console.log('falsy');
 // }
 
 // if (0) {
@@ -19,73 +22,74 @@
 // }
 // // For the next exercises use "if/else" condition, if the evaluation is true print true and if it false print false:
 // // Print in console if 5 is multiple of 10
-// if (5 % 10) {
+
+// if (5 % 10 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
 // }
 // // Print in console if 10 is multiple of 5
-// if (10 % 5) {
+// if (10 % 5 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
 // }
 // // Print in console if 5 is multiple of 5
-// if (5 % 5) {
+// if (5 % 5 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
 // }
 // // Print in console if 1 is multiple of 5
-// if (1 % 5) {
+// if (1 % 5 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
 // }
 // // Print in console if 5 is multiple of 1
-// if (5 % 1) {
+// if (5 % 1 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
 // }
 // // Print in console if 2 is multiple of 8
-// if (2 % 8) {
+// if (2 % 8 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
 // }
 // // Print in console if 8 is multiple of 2
-// if (8 % 2) {
+// if (8 % 2 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
 // }
 // // Print in console if 2 is multiple of 5
-// if (2 % 5) {
+// if (2 % 5 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
 // }
 // // Print in console if 10 is multiple of 5
-// if (10 % 5) {
+// if (10 % 5 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
 // }
 // // Print in console if 5 is multiple of 10
-// if (5 % 10) {
+// if (5 % 10 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
 // }
 // // Print in console if 20 is multiple of 5
-// if (20 % 5) {
+// if (20 % 5 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
 // }
 // // Print in console if 5 is multiple of 20
-// if (5 % 20) {
+// if (5 % 20 === 0) {
 //   console.log('si es multiplo');
 // } else {
 //   console.log('no es multiplo');
@@ -111,62 +115,74 @@
 // //   console.log('pantalla para dipositivos muy grandes');
 // // }
 // // Repeat the screen exercise using "switch"
-// // let ScreenSizes = 480;
-// // switch (ScreenSizes >= 320 && ScreenSizes <= 480) {
-// //     case 480:
-// //     console.log('Pantalla para disposivitos mobiles');
-// //     break;
-// // }
-// // Create a variable that stores numbers
-// // Create another variable that stores nothing;
-// // let num = 80;
+const ScreenSizes = 600;
+
+switch (ScreenSizes) {
+  case 480:
+    console.log('Pantalla para disposivitos mobiles');
+    break;
+  case 768:
+    console.log('dispositivo para tablet');
+    break;
+  case 1024:
+    console.log('dispositivo de escritorio');
+    break;
+  case 2000:
+    console.log('dispositivo muy grandes');
+    break;
+  default:
+    console.log('algo salio mal');
+}
+// Create a variable that stores numbers
+
+// const num = 80;
+
+// Create another variable that stores nothing;
+
+// const emptyVariable = ''
 
 // // Use "if/else" conditional to evaluate if the first variable is equal to the result of 100 / 45 and assign the result to the second variable inside the conditional
 // // The final value of the second variable should be a boolean
-// // let result;
-// // if (num === 100 / 45) {
-// //   num = result;
-// //   console.log(result);
-// // } else {
-// //   console.log('no es igual');
-// // }
+
+// let operation = 100 / 45;
+
+// let result;
+
+// if (operation === 100 / 45) {
+//   const result = true;
+
+//   console.log(result);
+// } else {
+//   console.log('no es igual');
+// }
 
 // // Create a variable that stores the next string "Andrés is learning JavaScript"
 // // Create another variable called "isLearning" that should store the result of the comparison of the first variable with "Andrés is playing soccer".
 // // Use ternary conditional to solve this.
 // // The final value of the second variable should be a boolean
 
-// let JavaScript = 'Andres is learning JavaScript';
+// const JavaScript = 'Andres is learning JavaScript';
 
-// let Soccer = 'Andres is playing soccer';
-
-// JavaScript === Soccer ? console.log('si es igual') : console.log('no es igual');
+// const Soccer = JavaScript === 'Andrés is playing soccer' ? console.log(true) : console.log(false);
 
 // // Create a variable that stores the next string "JavaScript"
 // // Create another variable called "whatIsLearning", if the first variable is equal to "JavaScript" the second variable should store "Andres is learning JavaScript" and if is not the second variable should store "Andres is learning other thing".
 // // Use ternary conditional to solve this.
+// The final value of the second variable should be a string
+
 // let lenguage = 'JavaScript';
 
-// let whatIsLearning;
+// const whatIsLearning = lenaguage === 'JavaScript' ? console.log('Andres is learning JavaScript') : console.log('Andres is learning ther thing')
 
-// lenguage === 'JavaScript'
-//   ? console.log((whatIsLearning = 'Andres is learning JavaScript'))
-//   : console.log((whatIsLearning = 'Andres is learning other thing'));
-
-// The final value of the second variable should be a string
 // Create a variable that stores numbers.
 // Use ternary conditional to determine the following cases:
 // If the value is greater or equal than 2000 it should print "You are a millionaire"
 // If the value is smaller than 2000 and greater or equal than 1000 it should print "You almost are a millionaire"
 // If the value is smaller than 1000 and greater than 500 it should print "You have to work"
 // If the value is smaller than 500 it should print "You are a homeless"
-// When the task has been completed you have to make a PR to develop
 
 // let numero = 1000;
 
-// numero >= 2000
-//   ? console.log('eres millonario')
-//   : numero < 2000 && numero >= 1000 ? console.log('casi eres millonario') ? numero < 1000 && numero > 500 : console.log("tienes que trabajar");
+// numero >= 2000 ? console.log('eres millonario') : (numero < 2000) && (numero >= 1000) ? console.log('casi eres millonario'): (numero < 1000) &&  (numero >= 500) ? console.log('eres un indigente')
 
-// numero < 1000 && numero > 500 console.log("tienes que trabajar")
-// numero < 500 console.log("eres un vagabundo")
+// When the task has been completed you have to make a PR to develop
