@@ -102,32 +102,34 @@
 // // 1201px and more—Extra large screens, TV
 // // Create a condition using "if/else" that prints the value of each screen based on the value of the variable declared before.
 // // Example: If the screen variable value is 2000 it should print "Extra large screens, TV", but if I change the value to 400 it should print another thing.
-// // let ScreenSizes = 2000;
-// // if (ScreenSizes >= 320 && ScreenSizes <= 480) {
-// //   console.log('Pantalla para disposivitos mobiles');
-// // } else if (ScreenSizes >= 481 && ScreenSizes <= 768) {
-// //   console.log('pantalla para dispositivos de tablet');
-// // } else if (ScreenSizes >= 769 && ScreenSizes <= 1024) {
-// //   console.log('pantalla para dispositivos de laptop');
-// // } else if (ScreenSizes >= 1025 && ScreenSizes <= 1200) {
-// //   console.log('pantalla para dispositivos de escirotrio');
-// // } else if (ScreenSizes > 1201) {
-// //   console.log('pantalla para dipositivos muy grandes');
-// // }
+const screenSizes = 2000;
+
+if (screenSizes >= 480) {
+  console.log('Pantalla para disposivitos mobiles');
+} else if (screenSizes <= 768) {
+  console.log('pantalla para dispositivos de tablet');
+} else if (screenSizes <= 1024) {
+  console.log('pantalla para dispositivos de laptop');
+} else if (screenSizes <= 1200) {
+  console.log('pantalla para dispositivos de escirotrio');
+} else {
+  console.log('pantalla para dipositivos muy grandes');
+}
+
 // // Repeat the screen exercise using "switch"
 const ScreenSizes = 600;
 
-switch (ScreenSizes) {
-  case 480:
+switch (true) {
+  case ScreenSizes <= 480:
     console.log('Pantalla para disposivitos mobiles');
     break;
-  case 768:
+  case ScreenSizes <= 768:
     console.log('dispositivo para tablet');
     break;
-  case 1024:
+  case ScreenSizes <= 1024:
     console.log('dispositivo de escritorio');
     break;
-  case 2000:
+  case ScreenSizes <= 2000:
     console.log('dispositivo muy grandes');
     break;
   default:
@@ -163,7 +165,7 @@ switch (ScreenSizes) {
 
 // const JavaScript = 'Andres is learning JavaScript';
 
-// const Soccer = JavaScript === 'Andrés is playing soccer' ? console.log(true) : console.log(false);
+// const Soccer = JavaScript === 'Andrés is playing soccer' ? true : false;
 
 // // Create a variable that stores the next string "JavaScript"
 // // Create another variable called "whatIsLearning", if the first variable is equal to "JavaScript" the second variable should store "Andres is learning JavaScript" and if is not the second variable should store "Andres is learning other thing".
