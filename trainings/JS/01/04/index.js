@@ -109,23 +109,21 @@ if (nombre1) {
 // 1025px—1200px: Desktops, large screens
 // 1201px and more—Extra large screens, TV
 
-// let ScreenSizes = 1201;
+const ScreenSizes = 800;
 
-if (ScreenSizes <= 480) {
-  console.log('pantalla para dispositivos mobiles');
-} else if (ScreenSizes <= 768) {
-  console.log('pantalla para disopsitivos de tableta');
-} else if (ScreenSizes <= 1024) {
-  console.log('pantalla para dispositivos laptop');
-} else if (ScreenSizes <= 1200) {
-  console.log('pantalla para dispositivos de escritorio');
-} else {
-  console.log('pantalla para dispositivos grandes/tv');
-}
+// if (ScreenSizes <= 480) {
+//   console.log('pantalla para dispositivos mobiles');
+// } else if (ScreenSizes <= 768) {
+//   console.log('pantalla para disopsitivos de tableta');
+// } else if (ScreenSizes <= 1024) {
+//   console.log('pantalla para dispositivos laptop');
+// } else if (ScreenSizes <= 1200) {
+//   console.log('pantalla para dispositivos de escritorio');
+// } else {
+//   console.log('pantalla para dispositivos grandes/tv');
+// }
 
 // Resolve this task using "switch"
-
-const ScreenSizes = 1201;
 
 switch (true) {
   case ScreenSizes <= 480:
@@ -166,7 +164,7 @@ if (numbers === 'Edgar'.length) {
 // Use ternary conditional to solve this.
 // The final value of the second variable should be a boolean
 
-// const learning = 'Andres is learning JavaScriptconst';
+// const learning = 'Andres is learning JavaScript';
 
 // const isLearning = learning === 'Andres is playing soccer'.length ? true : false;
 
@@ -180,7 +178,7 @@ if (numbers === 'Edgar'.length) {
 // const string = 'JavaScript';
 
 // const whatIsLearning =
-// string === 'JavaScript' ? 'Andres is learning JavaScript' : 'Andres is learning other thing';
+//   string === 'JavaScript' ? 'Andres is learning JavaScript' : 'Andres is learning other thing';
 
 // console.log(whatIsLearning);
 
