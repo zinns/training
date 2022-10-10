@@ -188,10 +188,10 @@ console.log(whatIsLearning);
 // const number = 1000;
 
 // number >= 2000
-//   ? console.log('eres millonario')
+//   ? console.log('You are a millionaire')
 //   : number < 2000 && number >= 1000
-//   ? console.log('casi eres millonario')
+//   ? console.log('You almost are a millionaire')
 //   : number < 1000 && number >= 500
-//   ? console.log('tienes que trabajar')
-//   : number < 500 ? console.log('eres un indigente')
-//   : console.log('algo salio mal');
+//   ? console.log('You have work')
+//   : number < 500 ? console.log('You are a homeless')
+//   : console.log('Error in your code');
