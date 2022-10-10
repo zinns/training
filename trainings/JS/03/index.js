@@ -9,7 +9,7 @@
 // //truthy: console.log(1 === 1) falsy: console.log(0)
 // // Write and example using truthy and falsy values with the "if/else" conditional
 
-// if (1 === 1) {
+// if (1) {
 //   console.log('truthy');
 // } else {
 //   console.log('falsy');
@@ -137,44 +137,46 @@ switch (true) {
 }
 // Create a variable that stores numbers
 
-// const num = 80;
+const num = 80;
 
 // Create another variable that stores nothing;
+// Use "if/else" conditional to evaluate if the first variable is equal to the result of 100 / 45 and assign the result to the second variable inside the conditional
+// The final value of the second variable should be a boolean
 
-// const emptyVariable = ''
+if (num === 100 / 45) {
+  const emptyVariable = true;
 
-// // Use "if/else" conditional to evaluate if the first variable is equal to the result of 100 / 45 and assign the result to the second variable inside the conditional
-// // The final value of the second variable should be a boolean
+  console.log(emptyVariable);
+} else {
+  const emptyVariable = false;
 
-// let operation = 100 / 45;
+  console.log(emptyVariable);
+}
 
-// let result;
-
-// if (operation === 100 / 45) {
-//   const result = true;
-
-//   console.log(result);
-// } else {
-//   console.log('no es igual');
-// }
-
-// // Create a variable that stores the next string "Andrés is learning JavaScript"
-// // Create another variable called "isLearning" that should store the result of the comparison of the first variable with "Andrés is playing soccer".
-// // Use ternary conditional to solve this.
-// // The final value of the second variable should be a boolean
+// Create a variable that stores the next string "Andrés is learning JavaScript"
+// Create another variable called "isLearning" that should store the result of the comparison of the first variable with "Andrés is playing soccer".
+// Use ternary conditional to solve this.
+// The final value of the second variable should be a boolean
 
 // const JavaScript = 'Andres is learning JavaScript';
 
-// const Soccer = JavaScript === 'Andrés is playing soccer' ? true : false;
+// const isLearning = JavaScript === 'Andrés is playing soccer' ? true : false;
 
-// // Create a variable that stores the next string "JavaScript"
-// // Create another variable called "whatIsLearning", if the first variable is equal to "JavaScript" the second variable should store "Andres is learning JavaScript" and if is not the second variable should store "Andres is learning other thing".
-// // Use ternary conditional to solve this.
+// console.log(isLearning);
+
+// Create a variable that stores the next string "JavaScript"
+// Create another variable called "whatIsLearning", if the first variable is equal to "JavaScript" the second variable should store "Andres is learning JavaScript" and if is not the second variable should store "Andres is learning other thing".
+// Use ternary conditional to solve this.
 // The final value of the second variable should be a string
 
-// let lenguage = 'JavaScript';
+const lenguage = 'JavaScript';
 
-// const whatIsLearning = lenaguage === 'JavaScript' ? console.log('Andres is learning JavaScript') : console.log('Andres is learning ther thing')
+const whatIsLearning =
+  lenguage === 'JavaScript'
+    ? console.log('Andres is learning JavaScript')
+    : console.log('Andres is learning other thing');
+
+console.log(whatIsLearning);
 
 // Create a variable that stores numbers.
 // Use ternary conditional to determine the following cases:
@@ -183,8 +185,13 @@ switch (true) {
 // If the value is smaller than 1000 and greater than 500 it should print "You have to work"
 // If the value is smaller than 500 it should print "You are a homeless"
 
-// let numero = 1000;
+// const number = 1000;
 
-// numero >= 2000 ? console.log('eres millonario') : (numero < 2000) && (numero >= 1000) ? console.log('casi eres millonario'): (numero < 1000) &&  (numero >= 500) ? console.log('eres un indigente')
-
-// When the task has been completed you have to make a PR to develop
+// number >= 2000
+//   ? console.log('eres millonario')
+//   : number < 2000 && number >= 1000
+//   ? console.log('casi eres millonario')
+//   : number < 1000 && number >= 500
+//   ? console.log('tienes que trabajar')
+//   : number < 500 ? console.log('eres un indigente')
+//   : console.log('algo salio mal');
