@@ -5,14 +5,15 @@
 // Create an object that stores the next type of values: String, Number, Boolean, Array, Object
 // Print in console the object's number value
 
-// let obj = {
-//     name: 'Andres',
-//     age: 26,
-//     isMale: true,
-//     arr1: [],
-//     object: {}
-// }
-// console.log(obj.age)
+const obj = {
+  age: 26,
+  arr1: [],
+  isMale: true,
+  name: 'Andres',
+  object: {},
+};
+
+console.log(obj.age);
 
 // Create an object called dog
 // Add the key name with its value
@@ -25,20 +26,22 @@
 // Print the keys with its values (You should use some method)
 // Print the next string 'This is Goddard and he is 2 years old' (You should use the object information for the name and the age)
 
-// let obj = {
-//     name: 'Mavis',
-//     age: 2,
-//     bark: 'woof woof',
-//     color: 'white'
-// }
-// console.log(Object.keys(obj))
-// console.log(Object.values(obj))
-// console.log(Object.entries(obj))
+const object = {
+  age: 2,
+  bark: 'woof woof',
+  color: 'white',
+  name: 'Mavis',
+};
 
-// console.log(`This is ${obj.name} and he is ${obj.age} age`)
+delete object.color;
 
-// let obj1 = delete obj.color
-// console.log(obj)
+console.log(Object.keys(object));
+
+console.log(Object.values(object));
+
+console.log(Object.entries(object));
+
+console.log(`This is ${object.name} and he is ${object.age} age`);
 
 // Crear un objeto con la siguiente estructura
 
@@ -159,103 +162,108 @@
 
 // Extract just isMarried and hasChildren you should use destructuring
 
-// let obj = {
-//   name: 'Andres',
+// const user = {
 //   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
 //   children: ['Shamid', 'Dante'],
+//   hasChildren: 'yes',
+//   isMarried: true,
+//   name: 'Andres',
 // };
 
-// let {isMarried, hasChildren} = obj
-
-// console.log(isMarried,hasChildren)
+// let {isMarried, hasChildren} = user
 
 // Extract the values of children in new variables using destructuring
 // (There would be two variables called Shamid and Dante )
 
-// let obj = {
-//   name: 'Andres',
-//   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
-//   children: ['Shamid', 'Dante'],
-// };
+const obj0 = {
+  age: 26,
+  children: ['Shamid', 'Dante'],
+  hasChildren: 'yes',
+  isMarried: true,
+  name: 'Andres',
+};
 
-// let {children}
+// eslint-disable-next-line semi, object-curly-newline
+const {
+  children: [Shamid, Dante],
+  // eslint-disable-next-line object-curly-newline
+} = obj0;
 
-// console.log(childen)
+console.log(Shamid, Dante);
 
 // Modify the name value and change it to upper case
 
-// let obj = {
-//   name: 'Andres',
-//   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
-//   children: ['Shamid', 'Dante'],
-// };
+const obj1 = {
+  age: 26,
+  children: ['Shamid', 'Dante'],
+  hasChildren: 'yes',
+  isMarried: true,
+  name: 'Andres',
+};
 
-// let obj1 = obj.name.toUpperCase()
+obj1.name = obj1.name.toUpperCase();
 
-// console.log(obj1)
+console.log(obj1);
 
 // Add a key called luckyNumber and assign a random value between 0 and 100 that should be rounded
 
-// let obj = {
-//   name: 'Andres',
-//   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
-//   children: ['Shamid', 'Dante'],
-// };
+const obj2 = {
+  age: 26,
+  children: ['Shamid', 'Dante'],
+  hasChildren: 'yes',
+  isMarried: true,
+  name: 'Andres',
+};
 
-// obj.luckyNumber = Math.random(Math.round(100))
+obj2.luckyNumber = Math.floor(Math.random() * 100);
 
-// console.log(obj.luckyNumber)
+console.log(obj2.luckyNumber);
 
 // Add a key called favoriteMovie with its value
 
-// let obj = {
-//   name: 'Andres',
-//   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
-//   children: ['Shamid', 'Dante'],
-// };
+const obj3 = {
+  age: 26,
+  children: ['Shamid', 'Dante'],
+  hasChildren: 'yes',
+  isMarried: true,
+  name: 'Andres',
+};
 
-// let obj1 = obj.favoriteMovie = 'Lord of the Rings'
+obj3.favoriteMovie = 'Lord of the Rings';
 
-// console.log(obj1.reverse())
+// Reverse the string of favoriteMovie
+
+obj3.favoriteMovie = obj3.favoriteMovie.split(' ').reverse();
+
+console.log(obj3);
 
 // Sort the values of children key
+const obj4 = {
+  age: 26,
+  children: ['Shamid', 'Dante'],
+  hasChildren: 'yes',
+  isMarried: true,
+  name: 'Andres',
+};
 
-// let obj = {
-//   name: 'Andres',
-//   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
-//   children: ['Shamid', 'Dante'],
-// };
+obj4.children = obj4.children.sort();
 
-// let obj1 = obj.children
-
-// console.log(obj1.sort())
+console.log(obj4);
 
 // Validate -> if luckyNumber is multiple of 8 print 'Your lucky number is awesome', if it is not print 'Sorry but your lucky number is awful'
 
-// let obj = {
-//   name: 'Andres',
-//   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
-//   children: ['Shamid', 'Dante'],
-// };
+const obj5 = {
+  age: 26,
+  children: ['Shamid', 'Dante'],
+  hasChildren: 'yes',
+  isMarried: true,
+  name: 'Andres',
+};
 
-// obj.luckyNumber = Math.random(Math.round(100))
+obj5.luckyNumber = Math.floor(Math.random() * 100);
 
-// if(obj.luckyNumber % 8){
-//     console.log('Your lucky number is awesome')
-// }else{
-//     console.log('Sorry but your lucky number is awful')
-// }
+if (obj5.luckyNumber % 8 === 0) {
+  console.log('Your lucky number is awesome');
+} else {
+  console.log('Sorry but your lucky number is awful');
+}
