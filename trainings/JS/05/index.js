@@ -7,9 +7,9 @@
 
 // // Find the last letter of 'Harry Potter and the half-blood prince' and print it
 
-// let str1 = 'Harry Potter and the half-blood prince';
+const str1 = 'Harry Potter and the half-blood prince';
 
-// console.log(str1[lenght - 1]);
+console.log(str1.length);
 
 // //Create a variable that stores an empty array
 
@@ -27,7 +27,6 @@
 //   'Alejandra',
 //   'Harumi',
 //   'Alejandro',
-
 //   'Veronica',
 // ];
 
@@ -39,7 +38,7 @@
 
 // //Create an array with the next structure
 
-// let users = [
+// const users = [
 //   ['Edgar', 28, 'man'],
 //   ['Bob', 'Elmo', 'Mia'],
 //   ['Alejandra', 22, 'Woman'],
@@ -49,10 +48,6 @@
 //   ['Harumi', 26, 'Woman'],
 //   ['Dante'],
 // ];
-
-// console.log(users[5][0]);
-// console.log(users[3][0]);
-// console.log(users[2][1]);
 
 // // Create a variable with the next string 'Harry'
 // // Create a variable with the next string 'Potter'
@@ -67,188 +62,121 @@
 // //Create a variable with the next string 'Harry Potter and the prisoner of Azkaban'
 // // Reverse the string to this -> "nabakzA fo renosirp eht dna rettoP yrraH"
 
-// let name1 = 'Harry Poteer and the prisioner of Azkaban';
+const name1 = 'Harry Poteer and the prisioner of Azkaban';
 
-// console.log(name1.split());
+const Harry = name1.split('').reverse();
+
+console.log(Harry.join(''));
 
 // //Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and sort it
 
-// let peoples = [
-//   'Edgar',
-//   'Andres',
-//   'Alejandra',
-//   'Harumi',
-//   'Alejandro',
-//   'Veronica',
-// ];
+const peoples = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro', 'Veronica'];
 
-// console.log(peoples.sort());
+console.log(peoples.sort());
 
 // //Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and add at the end 'Shamid'
 
-// let peoples1 = [
-//   'Edgar',
-//   'Andres',
-//   'Alejandra',
-//   'Harumi',
-//   'Alejandro',
-//   'Veronica',
-// ];
+const peoples1 = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro', 'Veronica'];
 
-// let add = peoples1.push('Shamid');
+// const add = peoples1.push('Shamid');
 
-// console.log(peoples1);
+console.log(peoples1);
 
 // //Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and add at the beginning 'Dante'
 
-// let peoples2 = [
-//   'Edgar',
-//   'Andres',
-//   'Alejandra',
-//   'Harumi',
-//   'Alejandro',
-//   'Veronica',
-// ];
+const peoples2 = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro', 'Veronica'];
 
-// let add1 = peoples2.unshift('Dante');
+// const add1 = peoples2.unshift('Dante');
 
-// console.log(peoples2);
+console.log(peoples2);
 
 // // Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and remove the last item
 
-// let peoples3 = [
-//   'Edgar',
-//   'Andres',
-//   'Alejandra',
-//   'Harumi',
-//   'Alejandro',
-//   'Veronica',
-// ];
+const peoples3 = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro', 'Veronica'];
 
 // let delet = peoples3.pop();
 
-// console.log(peoples3);
+console.log(peoples3);
 
 // //Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and remove the first item
 
-// let peoples4 = [
-//   'Edgar',
-//   'Andres',
-//   'Alejandra',
-//   'Harumi',
-//   'Alejandro',
-//   'Veronica',
-// ];
+const peoples4 = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro', 'Veronica'];
 
 // let delet1 = peoples4.shift();
 
-// console.log(peoples4);
+console.log(peoples4);
 
 // // Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and print only 'Alejandra, Harumi'
 
-// let peoples5 = [
-//   'Edgar',
-//   'Andres',
-//   'Alejandra',
-//   'Harumi',
-//   'Alejandro',
-//   'Veronica',
-// ];
+const peoples5 = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro', 'Veronica'];
 
-// console.log(peoples5[2], peoples5[3]);
+console.log(peoples5[2], peoples5[3]);
 
 // // Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and replace Alejandro for 'Shamid'
 
-// let peoples6 = [
-//   'Edgar',
-//   'Andres',
-//   'Alejandra',
-//   'Harumi',
-//   'Alejandro',
-//   'Veronica',
-// ];
+const peoples6 = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro', 'Veronica'];
 
 // let replace = peoples6.splice(4, 1, 'Shamid');
 
-// console.log(peoples6);
+console.log(peoples6);
 
 // //Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and replace 'Alejandro, Veronica' for 'Dante'
 
-// let peoples7 = [
-//   'Edgar',
-//   'Andres',
-//   'Alejandra',
-//   'Harumi',
-//   'Alejandro',
-//   'Veronica',
-// ];
+const peoples7 = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro', 'Veronica'];
 
 // let replace1 = peoples7.splice(4, 2, 'Dante');
 
-// console.log(peoples7);
+console.log(peoples7);
 
 // // //Create an array with 'Harry'
 // // Create an array with 'Ron'
 // // Create an array with 'Hermione'
 // // Mix the last three variables
 
-// let n1 = ['Harry'];
-// let n2 = ['Ron'];
-// let n3 = ['Hermione'];
+const n1 = ['Harry'];
+const n2 = ['Ron'];
+const n3 = ['Hermione'];
 
-// console.log(n1.concat(n2, n3));
+console.log(n1.concat(n2, n3));
 
 // // Create an array with these values Edgar, Andres, Alejandra, Harumi and validate if 'Gyda' is in the array
 
-// let arr1 = ['Edgar', 'Andres', 'Alejandra', 'Harumi'];
+const arr1 = ['Edgar', 'Andres', 'Alejandra', 'Harumi'];
 
-// console.log(arr1.includes('Gyda'));
+console.log(arr1.includes('Gyda'));
 
 // //Create an array with these values Edgar, Andres, Alejandra, Harumi and validate if the array is empty or not
 
-// let arr2 = ['Edgar', 'Andres', 'Alejandra', 'Harumi'];
+const arr2 = ['Edgar', 'Andres', 'Alejandra', 'Harumi'];
 
-// if (arr2) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+if (arr2.length > 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 // //Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro and print the first item, the middle item and the last item (prints should be in one line)
 
-// let arr3 = ['Edgar', 'Andres', 'Alejandra', 'Harumi'];
+const arr3 = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro'];
 
-// console.log(arr3[0][2][3]);
+console.log(arr3[0], arr3[2], arr3[3]);
 
 // // Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and add 'Shamid, Dante' between 'Harumi, Alejandro'
 // // Expected output -> Edgar, Andres, Alejandra, Harumi, Shamid, Dante, Alejandro, Veronica
 
-// let peoples8 = [
-//   'Edgar',
-//   'Andres',
-//   'Alejandra',
-//   'Harumi',
-//   'Alejandro',
-//   'Veronica',
-// ];
+const peoples8 = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro', 'Veronica'];
 
-// let add2 = peoples8.console.log(peoples8);
+peoples8.splice(4, 0, 'Shamid', 'Dante');
+
+console.log(peoples8);
 
 // Create a variable called score and assign one number between 0 and 10, use 2 decimals
 // Evaluate the score against 6
 // If the score is greater or equal than six print 'Success'
 // If the score is lower than six print 'Fail'
 // You have to use some method to round score
-// Repeat the evaluation using 4 as magic number and use some method to round up the score
-// Repeat the evaluation using 2 as magic number and use some method to round down the score
-// Print a random number between 0 and 10 without using decimals
-// Print a random number between 5 and 10 without using decimals
-// Create an array with the next values: 10, 25, 55, 32, 78, 94, 24
-// Create a random number that does not exceed the length of the array
-// Print the array value selected based on the random number
-// Repeat the last exercise using strings as array values
 
-// let score = 8.9;
+// const score = Math.floor(8.99);
 
 // if (score >= 6) {
 //   console.log('Éxito');
@@ -256,10 +184,51 @@
 //   console.log('Fallo');
 // }
 
-// console.log(Math.floor(score));
-// console.log(Math.ceil(score));
+// Repeat the evaluation using 4 as magic number and use some method to round up the score
 
-// console.log(Math.random() * 10);
-// console.log(Math.random(5) * 10);
+// const score = Math.floor(4);
 
-// let numArray = [10, 25, 55, 32, 78, 94, 24];
+// if (score >= 6) {
+//   console.log('Éxito');
+// } else {
+//   console.log('Fallo');
+// }
+
+// Repeat the evaluation using 2 as magic number and use some method to round down the score
+
+// const score = Math.floor(2);
+
+// if (score >= 6) {
+//   console.log('Éxito');
+// } else {
+//   console.log('Fallo');
+// }
+
+// Print a random number between 0 and 10 without using decimals
+
+console.log(Math.floor(Math.random() * 10));
+
+// Print a random number between 5 and 10 without using decimals
+
+console.log(Math.ceil(Math.random() * (15 - 10)) + 5);
+
+// Create an array with the next values: 10, 25, 55, 32, 78, 94, 24
+
+const arr = [10, 25, 55, 32, 78, 94, 24];
+
+// Create a random number that does not exceed the length of the array
+// Print the array value selected based on the random number
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(Math.floor(Math.random() * arr[i]));
+}
+
+// Repeat the last exercise using strings as array values
+
+const arrStrings = ['Andres', 'Edgar', 'Ale', 'Harumi', 'Shamid', 'Dante', 'McQueen'];
+
+for (let e = 0; e < arrStrings.length; e++) {
+  console.log(Math.random() * arrStrings[e]);
+}
+
+// console.log(Math.floor(Math.random() * arrStrings[e]));
