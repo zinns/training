@@ -104,14 +104,14 @@
 // // Example: If the screen variable value is 2000 it should print "Extra large screens, TV", but if I change the value to 400 it should print another thing.
 const screenSizes = 2000;
 
-if (screenSizes >= 480) {
-  console.log('Pantalla para disposivitos mobiles');
-} else if (screenSizes <= 768) {
-  console.log('pantalla para dispositivos de tablet');
+if (screenSizes <= 1200) {
+  console.log('pantalla para dispositivos de escirotrio');
 } else if (screenSizes <= 1024) {
   console.log('pantalla para dispositivos de laptop');
-} else if (screenSizes <= 1200) {
-  console.log('pantalla para dispositivos de escirotrio');
+} else if (screenSizes <= 768) {
+  console.log('pantalla para dispositivos de tablet');
+} else if (screenSizes < 320) {
+  console.log('Pantalla para disposivitos mobiles');
 } else {
   console.log('pantalla para dipositivos muy grandes');
 }
@@ -143,15 +143,15 @@ const num = 80;
 // Use "if/else" conditional to evaluate if the first variable is equal to the result of 100 / 45 and assign the result to the second variable inside the conditional
 // The final value of the second variable should be a boolean
 
+let emptyVariable = '';
+
 if (num === 100 / 45) {
-  const emptyVariable = true;
-
-  console.log(emptyVariable);
+  emptyVariable = true;
 } else {
-  const emptyVariable = false;
-
-  console.log(emptyVariable);
+  emptyVariable = false;
 }
+
+console.log(emptyVariable);
 
 // Create a variable that stores the next string "Andrés is learning JavaScript"
 // Create another variable called "isLearning" that should store the result of the comparison of the first variable with "Andrés is playing soccer".
@@ -172,9 +172,8 @@ if (num === 100 / 45) {
 const lenguage = 'JavaScript';
 
 const whatIsLearning =
-  lenguage === 'JavaScript'
-    ? console.log('Andres is learning JavaScript')
-    : console.log('Andres is learning other thing');
+  // eslint-disable-next-line multiline-ternary
+  lenguage === 'JavaScript' ? 'Andres is learning JavaScript' : 'Andres is learning other thing';
 
 console.log(whatIsLearning);
 
@@ -185,13 +184,14 @@ console.log(whatIsLearning);
 // If the value is smaller than 1000 and greater than 500 it should print "You have to work"
 // If the value is smaller than 500 it should print "You are a homeless"
 
-// const number = 1000;
+const number = 6;
 
-// number >= 2000
-//   ? console.log('You are a millionaire')
-//   : number < 2000 && number >= 1000
-//   ? console.log('You almost are a millionaire')
-//   : number < 1000 && number >= 500
-//   ? console.log('You have work')
-//   : number < 500 ? console.log('You are a homeless')
-//   : console.log('Error in your code');
+number >= 2000
+  ? console.log('You are a millionaire')
+  : number < 2000 && number > 1000
+  ? console.log('You almost are a millionaire')
+  : number < 1000 && number > 500
+  ? console.log('You have work')
+  : number < 500
+  ? console.log('You are a homeless')
+  : console.log('Please insert one number');
