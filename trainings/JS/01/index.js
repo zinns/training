@@ -104,11 +104,11 @@
 
 // Print in console the evaluation of something with "===" that returns true
 
-console.log(1 === 1);
+// console.log(1 === 1);
 
 // Print in console the evaluation of something with "===" that returns false
 
-console.log(1 === '1');
+// console.log(1 === '1');
 
 // Print in console the evaluation of something with "==" that returns true
 
@@ -116,15 +116,14 @@ console.log(1 === '1');
 
 // Print in console the evaluation of something with "==" that returns false
 
-console.log(1 == 2);
+// console.log(1 == 2);
 
 // Print in console the evaluation of something with "!==" that returns true
 
-console.log(1 !== '1');
+// console.log(1 !== '1');
 
 // Print in console the evaluation of something with "!=" that returns false
 
-console.log(1 != 1);
+// console.log(1 != 1);
 
 // When the task has been completed you have to make a PR to develop
-
