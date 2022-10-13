@@ -9,7 +9,7 @@
 
 const str1 = 'Harry Potter and the half-blood prince';
 
-console.log(str1.length);
+console.log(str1[str1.length - 1]);
 
 // //Create a variable that stores an empty array
 
@@ -34,8 +34,9 @@ console.log(str1.length);
 
 // //Create an array from the next string 'Fast and Furious', the array should contain only words.
 
-// let picture = ['Fast an the Furious'];
+const picture = ['Fast and Furious'];
 
+console.log(picture.join(''));
 // //Create an array with the next structure
 
 // const users = [
@@ -64,9 +65,9 @@ console.log(str1.length);
 
 const name1 = 'Harry Poteer and the prisioner of Azkaban';
 
-const Harry = name1.split('').reverse();
+const reverse = name1.split('').reverse().join('');
 
-console.log(Harry.join(''));
+console.log(reverse);
 
 // //Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and sort it
 
@@ -159,7 +160,17 @@ if (arr2.length > 0) {
 
 const arr3 = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro'];
 
-console.log(arr3[0], arr3[2], arr3[3]);
+for (let i = 0; i < arr3.length; i++) {
+  if (arr3[i] === 'Edgar') {
+    console.log(arr3[i]);
+  }
+  if (arr3[i] === 'Harumi') {
+    console.log(arr3[i]);
+  }
+  if (arr3[i] === 'Alejandro') {
+    console.log(arr3[i]);
+  }
+}
 
 // // Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and add 'Shamid, Dante' between 'Harumi, Alejandro'
 // // Expected output -> Edgar, Andres, Alejandra, Harumi, Shamid, Dante, Alejandro, Veronica
@@ -176,33 +187,35 @@ console.log(peoples8);
 // If the score is lower than six print 'Fail'
 // You have to use some method to round score
 
-// const score = Math.floor(8.99);
+let score = Math.random() * 10;
 
-// if (score >= 6) {
-//   console.log('Éxito');
-// } else {
-//   console.log('Fallo');
-// }
+score = Math.floor(score);
+
+if (score >= 6) {
+  console.log('Éxito');
+} else {
+  console.log('Fallo');
+}
 
 // Repeat the evaluation using 4 as magic number and use some method to round up the score
 
-// const score = Math.floor(4);
+const score1 = Math.floor(Math.random() * 10);
 
-// if (score >= 6) {
-//   console.log('Éxito');
-// } else {
-//   console.log('Fallo');
-// }
+if (score1 >= 4) {
+  console.log('Éxito');
+} else {
+  console.log('Fallo');
+}
 
 // Repeat the evaluation using 2 as magic number and use some method to round down the score
 
-// const score = Math.floor(2);
+const score2 = Math.floor(Math.random() * 10);
 
-// if (score >= 6) {
-//   console.log('Éxito');
-// } else {
-//   console.log('Fallo');
-// }
+if (score2 >= 6) {
+  console.log('Éxito');
+} else {
+  console.log('Fallo');
+}
 
 // Print a random number between 0 and 10 without using decimals
 
@@ -210,7 +223,7 @@ console.log(Math.floor(Math.random() * 10));
 
 // Print a random number between 5 and 10 without using decimals
 
-console.log(Math.ceil(Math.random() * (15 - 10)) + 5);
+console.log(Math.ceil(Math.random() * (10 - 5)) + 5);
 
 // Create an array with the next values: 10, 25, 55, 32, 78, 94, 24
 
@@ -219,16 +232,12 @@ const arr = [10, 25, 55, 32, 78, 94, 24];
 // Create a random number that does not exceed the length of the array
 // Print the array value selected based on the random number
 
-for (let i = 0; i < arr.length; i++) {
-  console.log(Math.floor(Math.random() * arr[i]));
-}
+console.log(arr[Math.floor(Math.random() * arr.length)]);
 
 // Repeat the last exercise using strings as array values
 
 const arrStrings = ['Andres', 'Edgar', 'Ale', 'Harumi', 'Shamid', 'Dante', 'McQueen'];
 
-for (let e = 0; e < arrStrings.length; e++) {
-  console.log(Math.random() * arrStrings[e]);
-}
+console.log(arrStrings[Math.floor(Math.random() * arrStrings.length)]);
 
 // console.log(Math.floor(Math.random() * arrStrings[e]));
