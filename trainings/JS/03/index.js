@@ -104,14 +104,14 @@
 // // Example: If the screen variable value is 2000 it should print "Extra large screens, TV", but if I change the value to 400 it should print another thing.
 const screenSizes = 2000;
 
-if (screenSizes <= 1200) {
-  console.log('pantalla para dispositivos de escirotrio');
-} else if (screenSizes <= 1024) {
-  console.log('pantalla para dispositivos de laptop');
+if (screenSizes <= 480) {
+  console.log('Pantalla para disposivitos mobiles');
 } else if (screenSizes <= 768) {
   console.log('pantalla para dispositivos de tablet');
-} else if (screenSizes < 320) {
-  console.log('Pantalla para disposivitos mobiles');
+} else if (screenSizes <= 1024) {
+  console.log('pantalla para dispositivos de laptop');
+} else if (screenSizes <= 1200) {
+  console.log('pantalla para dispositivos de escirotrio');
 } else {
   console.log('pantalla para dipositivos muy grandes');
 }
@@ -184,14 +184,12 @@ console.log(whatIsLearning);
 // If the value is smaller than 1000 and greater than 500 it should print "You have to work"
 // If the value is smaller than 500 it should print "You are a homeless"
 
-const number = 6;
+const number = 499;
 
 number >= 2000
   ? console.log('You are a millionaire')
-  : number < 2000 && number > 1000
+  : number < 2000 && number >= 1000
   ? console.log('You almost are a millionaire')
-  : number < 1000 && number > 500
+  : number < 1000 && number >= 500
   ? console.log('You have work')
-  : number < 500
-  ? console.log('You are a homeless')
-  : console.log('Please insert one number');
+  : console.log('You are a homeless');
