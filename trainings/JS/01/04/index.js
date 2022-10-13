@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 // What are "Truthy" and "Falsy" values?
 // truthy son valores los cuales se comportan como un boleano obteniendo un valor existente, Falsy es cuando el valor no existe como ejemplo un 0 o un string vacío y también se comporta como un boleano.
 // Write one truthy and falsy example
@@ -19,89 +20,110 @@ if (nombre1) {
   console.log('Falsy');
 }
 // Write and example using truthy and falsy values with the "if/else" conditional
-// if (1) {
-//   console.log('Truthy');
-// } else {
-//   console.log('Falsy');
-// }
+
+if (1) {
+  console.log('Truthy');
+} else {
+  console.log('Falsy');
+}
 
 // // For the next exercises use "if/else" condition, if the evaluation is true print true and if it false print false:
 // // Print in console if 5 is multiple of 10
 
-// if (5 % 10 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+if (5 % 10 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 // // Print in console if 10 is multiple of 5
 
-// if (10 % 5 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+if (10 % 5 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 // // Print in console if 5 is multiple of 5
 
-// if (5 % 5 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+if (5 % 5 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 // // Print in console if 1 is multiple of 5
-// if (1 % 5 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+
+if (1 % 5 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 // // Print in console if 5 is multiple of 1
-// if (5 % 1 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+
+if (5 % 1 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 // // Print in console if 2 is multiple of 8
-// if (2 % 8 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+
+if (2 % 8 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 // // Print in console if 8 is multiple of 2
-// if (8 % 2 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+
+if (8 % 2 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 // // Print in console if 2 is multiple of 5
-// if (2 % 5 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+
+if (2 % 5 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 // // Print in console if 10 is multiple of 5
-// if (10 % 5 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+
+if (10 % 5 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 // // Print in console if 5 is multiple of 10
-// if (5 % 10 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+
+if (5 % 10 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 // // Print in console if 20 is multiple of 5
-// if (20 % 5 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+
+if (20 % 5 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 // // Print in console if 5 is multiple of 20
-// if (5 % 20 === 0) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+
+if (5 % 20 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
 // Create a variable that stores the value of one of these screen sizes
 // 320px—480px: Mobile devices
 // 481px—768px: iPads, Tablets
@@ -111,17 +133,17 @@ if (nombre1) {
 
 const ScreenSizes = 800;
 
-// if (ScreenSizes <= 480) {
-//   console.log('pantalla para dispositivos mobiles');
-// } else if (ScreenSizes <= 768) {
-//   console.log('pantalla para disopsitivos de tableta');
-// } else if (ScreenSizes <= 1024) {
-//   console.log('pantalla para dispositivos laptop');
-// } else if (ScreenSizes <= 1200) {
-//   console.log('pantalla para dispositivos de escritorio');
-// } else {
-//   console.log('pantalla para dispositivos grandes/tv');
-// }
+if (ScreenSizes <= 480) {
+  console.log('pantalla para dispositivos mobiles');
+} else if (ScreenSizes <= 768) {
+  console.log('pantalla para disopsitivos de tableta');
+} else if (ScreenSizes <= 1024) {
+  console.log('pantalla para dispositivos laptop');
+} else if (ScreenSizes <= 1200) {
+  console.log('pantalla para dispositivos de escritorio');
+} else {
+  console.log('pantalla para dispositivos grandes/tv');
+}
 
 // Resolve this task using "switch"
 
@@ -164,11 +186,12 @@ if (numbers === 'Edgar'.length) {
 // Use ternary conditional to solve this.
 // The final value of the second variable should be a boolean
 
-// const learning = 'Andres is learning JavaScript';
+const learning = 'Andres is learning JavaScript';
 
-// const isLearning = learning === 'Andres is playing soccer'.length ? true : false;
+// eslint-disable-next-line multiline-ternary
+const isLearning = learning === 'Andres is playing soccer'.length ? true : false;
 
-// console.log(isLearning);
+console.log(isLearning);
 
 // Create a variable that stores the next string "JavaScript"
 // Create another variable called "whatIsLearning", if the first variable is equal to "JavaScript" the second variable should store "Andres is learning JavaScript" and if is not the second variable should store "Andres is learning other thing".
@@ -196,15 +219,15 @@ console.log('The Lord of the Rings'.slice(5, 9));
 
 // Print the result of mixing 'Andres' and 'Soto'
 
-const name = 'Andres Soto';
+const name = 'Andres';
 
 console.log(name.concat('Soto'));
 
 // Print the result of mixing 'Andres' and 'Soto' using '-'
 
-// const name1 = 'Andres';
+const firstName = 'Andres';
 
-// console.log(name1.concat('-') + 'Soto');
+console.log(firstName.concat('-Soto'));
 
 // Print if 'Rings' is inside 'The Lord of the Rings'
 
@@ -224,11 +247,15 @@ console.log('The Lord of the Rings'.toLowerCase());
 
 // Modify all 'the' to 'this' from 'The Lord of the Rings' and print it (All 'the' should be changed no matter if it is in Upper or Lower case)
 
-console.log('The Lord of the Rings'.replaceAll('the', 'this'));
+let movie = 'The Lord of the Rings';
+
+movie = movie.toLowerCase();
+
+console.log(movie.replaceAll('the', 'this'));
 
 // Find the last letter of 'The Lord of the Rings' and print it
 
-console.log('The lord of the Rings'.indexOf('s'));
+console.log('The lord of the Rings'[20]);
 
 // Explain what is Template Literals
 // se utilizán para unir variables con strings
