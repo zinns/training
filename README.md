@@ -118,11 +118,9 @@ If you have some problems with this Linter and you don't find how to solve it, p
 
 ## React
 
-<<<<<<< HEAD
-When you were doing React exercises you have to run one of these scripts
-=======
+
 When you were doing React exercises you have to run one of these scripts inside the specific exercise folder
->>>>>>> 95a1a93b7d78cfe399c8b30fc66eb2c14a81273e
+
 
 **NPM**
 
