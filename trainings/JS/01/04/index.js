@@ -225,9 +225,9 @@ console.log(name.concat('Soto'));
 
 // Print the result of mixing 'Andres' and 'Soto' using '-'
 
-const firstName = 'Andres';
+const nameUser = ['Andres', 'Soto'];
 
-console.log(firstName.concat('-Soto'));
+console.log(nameUser.join('-'));
 
 // Print if 'Rings' is inside 'The Lord of the Rings'
 
@@ -255,7 +255,9 @@ console.log(movie.replaceAll('the', 'this'));
 
 // Find the last letter of 'The Lord of the Rings' and print it
 
-console.log('The lord of the Rings'[20]);
+const str = 'The Lord of the Rings';
+
+console.log(str[str.length - 1]);
 
 // Explain what is Template Literals
 // se utilizán para unir variables con strings
