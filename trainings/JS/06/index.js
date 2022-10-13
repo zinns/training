@@ -16,32 +16,42 @@ const obj = {
 console.log(obj.age);
 
 // Create an object called dog
+const dog = {};
 // Add the key name with its value
+
+dog.name = 'Mavis';
+
 // Add the key age with its value
+
+dog.age = 2;
+
 // Add the key bark with the value 'woof woof'
+
+dog.bark = 'woof woof';
+
 // Add the key color with its value
+
+dog.color = 'white';
+
 // Delete the color property
+
+delete dog.color;
+
 // Print the keys (You should use some method)
+
+console.log(Object.keys(dog));
+
 // Print the values (You should use some method)
+
+console.log(Object.values(dog));
+
 // Print the keys with its values (You should use some method)
+
+console.log(Object.entries(dog));
+
 // Print the next string 'This is Goddard and he is 2 years old' (You should use the object information for the name and the age)
 
-const object = {
-  age: 2,
-  bark: 'woof woof',
-  color: 'white',
-  name: 'Mavis',
-};
-
-delete object.color;
-
-console.log(Object.keys(object));
-
-console.log(Object.values(object));
-
-console.log(Object.entries(object));
-
-console.log(`This is ${object.name} and he is ${object.age} age`);
+console.log(`This is ${dog.name} and she is ${dog.age} years old`);
 
 // Crear un objeto con la siguiente estructura
 
@@ -61,14 +71,6 @@ console.log(`This is ${object.name} and he is ${object.age} age`);
 
 // Validate -> if the object is empty print 'There is no user' if not, print 'I'm Andres and I'm 26 years old' using the object values
 
-// let obj = {
-//   name: 'Andres',
-//   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
-//   children: ['Shamid', 'Dante'],
-// };
-
 //  if (obj >= 0){
 //     console.log('No hay usuario')
 //  } else {
@@ -77,14 +79,6 @@ console.log(`This is ${object.name} and he is ${object.age} age`);
 
 // Validate if the children value has Shamid inside
 
-// let obj = {
-//   name: 'Andres',
-//   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
-//   children: ['Shamid', 'Dante'],
-// };
-
 // if (obj.children.includes('Shamid')){
 //     console.log(true)
 // } else {
@@ -92,15 +86,8 @@ console.log(`This is ${object.name} and he is ${object.age} age`);
 // }
 
 // Validate -> if isMarried print 'Andres is already taken' if not, print 'Andres is available'
-// let obj = {
-//   name: 'Andres',
-//   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
-//   children: ['Shamid', 'Dante'],
-// };
 
-// if (obj.isMarried === true){
+// if (obj.isMarried){
 //     console.log('Andres is already taken')
 // } else{
 //     console.log('Andres is available')
@@ -108,35 +95,19 @@ console.log(`This is ${object.name} and he is ${object.age} age`);
 
 // Add the key pets with a value of an empty array
 
-// let obj = {
-//   name: 'Andres',
-//   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
-//   children: ['Shamid', 'Dante'],
-// };
-
 // obj.pets = []
 
 // console.log(obj)
 
 // Add to pets key the value of 'Dog' and 'Bunny'
 
-// let obj = {
-//   name: 'Andres',
-//   age: 26,
-//   isMarried: true,
-//   hasChildren: 'yes',
-//   children: ['Shamid', 'Dante'],
-// };
-
 // obj.pets = []
 
 // obj.pets.push('Dog','Bunny')
 
-// console.log(obj)
-
 // Print in console the amount of pets
+
+// console.log(obj.pets.length);
 
 // let obj = {
 //   name: 'Andres',
@@ -150,9 +121,7 @@ console.log(`This is ${object.name} and he is ${object.age} age`);
 
 // // Create a copy of the last object
 
-// let obj1 = {obj}
-
-// // console.log(obj1)
+// const object = Object.assign({},obj)
 
 // // Change the name of the second object without modifying the original object
 
