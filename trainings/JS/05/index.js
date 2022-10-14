@@ -1,9 +1,11 @@
 // // Modify all 'you' to 'I' from 'You step into the Road, and if you don’t keep your feet, there is no knowing where you might be swept off to' and print it (All 'you' should be changed no matter if it is in Upper or Lower case)
 
-// let str =
-//   'You step into the Road, and if you don’t keep your feet, there is no knowing where you might be swept off to';
+let str =
+  'You step into the Road, and if you don’t keep your feet, there is no knowing where you might be swept off to';
 
-// console.log(str.toLowerCase().replace('you', 'I'));
+str = str.toLowerCase().replaceAll('you', 'I');
+
+console.log(str);
 
 // // Find the last letter of 'Harry Potter and the half-blood prince' and print it
 
@@ -34,9 +36,9 @@ console.log(str1[str1.length - 1]);
 
 // //Create an array from the next string 'Fast and Furious', the array should contain only words.
 
-const picture = ['Fast and Furious'];
+const array = 'Fast and Furious';
 
-console.log(picture.join(''));
+console.log(array);
 // //Create an array with the next structure
 
 // const users = [
@@ -160,17 +162,7 @@ if (arr2.length > 0) {
 
 const arr3 = ['Edgar', 'Andres', 'Alejandra', 'Harumi', 'Alejandro'];
 
-for (let i = 0; i < arr3.length; i++) {
-  if (arr3[i] === 'Edgar') {
-    console.log(arr3[i]);
-  }
-  if (arr3[i] === 'Harumi') {
-    console.log(arr3[i]);
-  }
-  if (arr3[i] === 'Alejandro') {
-    console.log(arr3[i]);
-  }
-}
+console.log(arr3[0], arr3[Math.floor(arr3.length / 2)], arr[arr.length - 1]);
 
 // // Create an array with these values Edgar, Andres, Alejandra, Harumi, Alejandro, Veronica and add 'Shamid, Dante' between 'Harumi, Alejandro'
 // // Expected output -> Edgar, Andres, Alejandra, Harumi, Shamid, Dante, Alejandro, Veronica
