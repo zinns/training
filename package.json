@@ -1,14 +1,13 @@
 {
   "name": "training",
   "version": "0.0.1",
-  "main": "index.js",
   "repository": "https://github.com/zinns/training.git",
   "author": "Edgar Zea <cesszea@icloud.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
     "prepare": "husky install",
-    "fix:format": "prettier --write .",
+    "format": "prettier --write .",
     "lint": "eslint .",
     "validate": "prettier --check . && eslint .",
     "postinstall": "husky install",
