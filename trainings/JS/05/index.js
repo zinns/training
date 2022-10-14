@@ -36,7 +36,7 @@ console.log(str1[str1.length - 1]);
 
 // //Create an array from the next string 'Fast and Furious', the array should contain only words.
 
-const array = 'Fast and Furious';
+const array = 'Fast and Furious'.split(' ');
 
 console.log(array);
 // //Create an array with the next structure
@@ -179,11 +179,9 @@ console.log(peoples8);
 // If the score is lower than six print 'Fail'
 // You have to use some method to round score
 
-let score = Math.random() * 10;
+const score = Math.random() * 10;
 
-score = Math.floor(score);
-
-if (score >= 6) {
+if (Math.round(score) >= 6) {
   console.log('Éxito');
 } else {
   console.log('Fallo');
@@ -191,9 +189,9 @@ if (score >= 6) {
 
 // Repeat the evaluation using 4 as magic number and use some method to round up the score
 
-const score1 = Math.floor(Math.random() * 10);
+const score1 = Math.random() * 10;
 
-if (score1 >= 4) {
+if (Math.round(score1) >= 4) {
   console.log('Éxito');
 } else {
   console.log('Fallo');
@@ -201,9 +199,9 @@ if (score1 >= 4) {
 
 // Repeat the evaluation using 2 as magic number and use some method to round down the score
 
-const score2 = Math.floor(Math.random() * 10);
+const score2 = Math.random() * 10;
 
-if (score2 >= 6) {
+if (Math.round(score2) >= 6) {
   console.log('Éxito');
 } else {
   console.log('Fallo');
