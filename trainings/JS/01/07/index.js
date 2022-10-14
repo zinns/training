@@ -39,13 +39,13 @@ for (let i = 0; i <= 100; i++) {
 // Print from 100 to 0 -> Including 0 and 100
 
 for (let e = 100; e >= 0; e--) {
-  console.log([e]);
+  console.log(e);
 }
 
 // Print from 0 to 100 but going from 0 to 2 and so on -> 0 2 4 6 8
 
 for (let d = 0; d <= 100; d += 2) {
-  console.log([d]);
+  console.log(d);
 }
 
 // Print from 0 to 100
@@ -54,11 +54,11 @@ for (let d = 0; d <= 100; d += 2) {
 // if the number is multiple of 7 and 5 print 'You are impossible'
 
 for (let i = 0; i <= 100; i++) {
-  if ([i] % 7 === 0 && [i] % 5 === 0) {
+  if (i % 7 === 0 && i % 5 === 0) {
     console.log('You are impossible');
-  } else if ([i] % 7 === 0) {
+  } else if (i % 7 === 0) {
     console.log('You are kind of hard');
-  } else if ([i] % 5 === 0) {
+  } else if (i % 5 === 0) {
     console.log('You are easy');
   }
 }
@@ -114,7 +114,7 @@ const user = {
 
 // Validate -> if the object is empty print 'There is no user' if not, print 'I'm Andres and I'm 26 years old' using the object values
 
-if (user) {
+if (Object.keys(user).length === 0) {
   console.log('There is not user');
 } else {
   console.log(`I'm ${user.name} and I'm ${user.age} years old`);
@@ -130,13 +130,15 @@ if (user.isMarried) {
 
 // Add the key pets to all the user objects with a value of an empty array
 
-user.pets = [];
-user.friends.pets = [];
+for (let i = 0; i < user.friends.length; i++) {
+  user.friends[i].pets = [];
+}
 
 // Add to pets some string values
 
-user.pets = ['dog', 'bunny'];
-user.friends.pets = ['dog'];
+for (let i = 0; i < user.friends.length; i++) {
+  user.friends[i].pets.push('dog');
+}
 
 // Print in console the amount of pets
 // Create a copy of the global object
@@ -162,8 +164,9 @@ console.log(user.pets.length);
 
 // Extract the name of each favoriteFood object value
 
-console.log(user.favoriteFood.values());
+// const { favoriteFood: [{name: Comida1}, {name: Comida2}] } = user;
 
+// const [{favoriteFood: [friend1food1, friend1food2]}] = user.friends
 // Modify the name value and change it to upper case
 
 user.name = user.name.toUpperCase();
