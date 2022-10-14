@@ -70,7 +70,7 @@ const obj = {
 
 // Validate -> if the object is empty print 'There is no user' if not, print 'I'm Andres and I'm 26 years old' using the object values
 
-if (obj >= 0) {
+if (Object.keys(obj).length === 0) {
   console.log('No hay usuario');
 } else {
   console.log(`I'm ${obj.name} and I'm ${obj.age} yars old`);
@@ -97,8 +97,6 @@ if (obj.isMarried) {
 obj.pets = [];
 
 // Add to pets key the value of 'Dog' and 'Bunny'
-
-obj.pets = [];
 
 obj.pets.push('Dog', 'Bunny');
 
@@ -191,7 +189,7 @@ obj3.favoriteMovie = 'Lord of the Rings';
 
 // Reverse the string of favoriteMovie
 
-obj3.favoriteMovie = obj3.favoriteMovie.split(' ').reverse().join('');
+obj3.favoriteMovie = obj3.favoriteMovie.split('').reverse().join('');
 
 console.log(obj3);
 
