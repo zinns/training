@@ -118,7 +118,7 @@ If you have some problems with this Linter and you don't find how to solve it, p
 
 ## React
 
-When you were doing React exercises you have to run one of these scripts
+When you were doing React exercises you have to run one of these scripts inside the specific exercise folder
 
 **NPM**
 
