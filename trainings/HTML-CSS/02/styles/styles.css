@@ -88,21 +88,24 @@ p {
 .video-ring {
   max-width: 1536px;
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
   border-radius: 2rem;
   position: absolute;
-  transform: translate(50%, -50%);
+  transform: translate(40%, -50%);
 }
 
 .elenco-story {
+  max-width: 1536px;
+  margin: 0 auto;
   background-color: #51200e;
   padding-top: 15rem;
+  padding-bottom: 5rem;
 }
 .linkshover {
   display: flex;
   justify-content: center;
-  justify-content: space-around;
   align-items: center;
+  gap: 2rem;
   height: 4rem;
 }
 
@@ -118,7 +121,13 @@ p {
 }
 
 .textpersonages p {
-  font-size: 1rem;
+  font-size: 1.75rem;
+  color: #f1eade;
+}
+
+.textelenco ul {
+  width: 15rem;
+  color: #f1eade;
 }
 
 .textelenco p {
@@ -128,6 +137,8 @@ p {
 .personages {
   display: flex;
   justify-content: center;
+  gap: 4rem;
+  padding: 1rem;
 }
 .textelenco {
   display: flex;
@@ -140,16 +151,17 @@ p {
   border-color: #f1eade;
   text-align: center;
 }
-.pelenco {
-  color: #f1eade;
-  font-family: cursive;
-  font-size: 14px;
-}
+
 .imgperson {
-  border-radius: 10px;
-  width: 32rem;
-  height: 27rem;
+  width: 30%;
 }
+
+.imgperson img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
 .section4 {
   background-color: #f1eade;
   display: flex;
