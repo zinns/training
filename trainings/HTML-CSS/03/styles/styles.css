@@ -1,0 +1,498 @@
+body {
+  margin: 0;
+}
+.section1 {
+  display: flex;
+  height: 2rem;
+  background-color: #eae5dc;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 85rem;
+  justify-content: space-between;
+  margin: 0 1rem 0 1rem;
+}
+.iconcar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
+.section2 {
+  background-color: #ebe4de;
+  height: 30rem;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24rem;
+  margin-left: 1rem;
+}
+.titlecompany {
+  display: flex;
+  justify-content: center;
+  height: 20rem;
+  margin-left: 1rem;
+  width: 40rem;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: serif;
+  height: 18rem;
+}
+.imghome {
+  width: 100%;
+}
+.section3 {
+  height: 35rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/ejercicios/ejercicio-3/assets/IMG2.jpeg);
+}
+.section4 {
+  background-color: #e7e2de;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.boxempty {
+  height: 15rem;
+  width: 40rem;
+}
+.boxcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  height: 15rem;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+.logo1 {
+  height: 5rem;
+  width: 9rem;
+  margin-left: 2rem;
+  background-size: cover;
+  background-image: url(/ejercicios/ejercicio-3/assets/logo1.png);
+}
+.logo2 {
+  height: 5rem;
+  width: 9rem;
+  margin-left: 1rem;
+  background-size: cover;
+  background-image: url(/ejercicios/ejercicio-3/assets/logo2.png);
+}
+.logo3 {
+  height: 5rem;
+  width: 9rem;
+  margin-left: 1rem;
+  background-size: cover;
+  background-image: url(/ejercicios/ejercicio-3/assets/logo3.png);
+}
+.logo4 {
+  height: 5rem;
+  width: 9rem;
+  margin-left: 1rem;
+  background-size: cover;
+  background-image: url(/ejercicios/ejercicio-3/assets/logo4.png);
+}
+.logo5 {
+  height: 5rem;
+  width: 9rem;
+  margin-left: 1rem;
+  background-size: cover;
+  background-image: url(/ejercicios/ejercicio-3/assets/logo5.png);
+}
+.logo6 {
+  height: 5rem;
+  width: 9rem;
+  margin-left: 1rem;
+  background-size: cover;
+  background-image: url(/ejercicios/ejercicio-3/assets/logo6.png);
+}
+.logo7 {
+  height: 5rem;
+  width: 9rem;
+  margin-left: 1rem;
+  background-size: cover;
+  background-image: url(/ejercicios/ejercicio-3/assets/logo7.png);
+}
+.logo1 {
+  height: 5rem;
+  width: 9rem;
+  margin-left: 1rem;
+  background-size: cover;
+  background-image: url(/ejercicios/ejercicio-3/assets/logo1.png);
+}
+.button {
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  background-color: #d9d7d2;
+  border-radius: 20rem;
+  text-align: center;
+}
+.buttoncontactboxcontainer {
+  border: none;
+  background-color: #e7e2de;
+  width: 8rem;
+  height: 3rem;
+  border-bottom: solid 3px #d8dbd2;
+}
+.arrow {
+  margin-left: 1rem;
+}
+.wetext {
+  width: 20rem;
+  font-size: 20px;
+}
+.section5 {
+  display: flex;
+  background-color: #eff1e8;
+}
+.imgaccesorihouse {
+  height: 41rem;
+  width: 41rem;
+}
+.houselocation {
+  width: 100%;
+  height: 100%;
+}
+.textpersonality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+}
+.containerpersonality {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 16rem;
+}
+.textdecoration {
+  width: 14rem;
+}
+.buttoncontactcontainerpersonality {
+  border: none;
+  background-color: #eff1e8;
+  width: 8rem;
+  height: 3rem;
+  border-bottom: solid 3px #d8dbd2;
+}
+.arrow {
+  margin-left: 1rem;
+}
+.section6 {
+  background-color: #c3c6bb;
+  display: flex;
+}
+.textsala {
+  width: 60rem;
+}
+.buttoncontactsala {
+  border: none;
+  background-color: #c3c6bb;
+  width: 8rem;
+  height: 3rem;
+  border-bottom: solid 3px #b8bbaf;
+}
+.arrow {
+  margin-left: 1rem;
+}
+.section7 {
+  display: flex;
+  background-color: #a1a4a1;
+}
+.buttoncontactcocina {
+  border: none;
+  background-color: #a1a4a1;
+  width: 8rem;
+  height: 3rem;
+  border-bottom: solid 3px #929994;
+}
+.arrow {
+  margin-left: 1rem;
+}
+.section8 {
+  background-color: #f0efeb;
+  display: flex;
+}
+.textescritorio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 45rem;
+  height: 25rem;
+}
+.imgescritorio {
+  width: 38rem;
+  height: 25rem;
+}
+.escritorio {
+  width: 100%;
+  height: 100%;
+}
+.section9 {
+  background-color: #fffffd;
+  height: 18rem;
+}
+.containernew {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.paragraphnew {
+  font-size: 32px;
+  font-family: serif;
+  font-weight: 100;
+}
+.paragraphdiscoint {
+  font-size: 12px;
+  color: #b2babb;
+}
+.emailnew {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.inputemail {
+  height: 2rem;
+  width: 14rem;
+  border: none;
+}
+.buttonsub {
+  height: 2.4rem;
+  border: none;
+}
+.titlecompanyfooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+.textcompanyfooter {
+  font-size: 32px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+.iconsfooter {
+  display: flex;
+  width: 6rem;
+  height: 1rem;
+}
+.iconsfooter > svg {
+  margin-left: 8px;
+}
+.linksfooter {
+  display: flex;
+  justify-content: space-around;
+  width: 20rem;
+}
+.link {
+  text-decoration: none;
+  color: #abb2b9;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 0 1rem 0 1rem;
+  }
+  .img {
+    height: 30rem;
+    flex-direction: column;
+  }
+  .titlecompany {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27rem;
+    height: 8rem;
+  }
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    height: 6rem;
+    margin-bottom: 30rem;
+  }
+  .logo1 {
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .logo2 {
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .logo3 {
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .logo4 {
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .logo5 {
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .logo6 {
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .logo7 {
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .section5 {
+    height: 18rem;
+  }
+  .imgaccesorihouse {
+    width: 18rem;
+    height: 18rem;
+  }
+  .textescritorio {
+    width: 22rem;
+  }
+  .imgescritorio {
+    width: 25rem;
+  }
+  .escritorio {
+    width: 100%;
+    height: 100%;
+  }
+  .footer {
+    justify-content: space-around;
+  }
+  .webfor {
+    width: 7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    margin: 1rem 1rem 0 1rem;
+  }
+  .section2 {
+    display: flex;
+    height: 28rem;
+  }
+  .section3 {
+    background-size: contain;
+    height: 17rem;
+  }
+  .img {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 30rem;
+  }
+  .imgtable {
+    height: 19rem;
+  }
+  .titlecompany {
+    width: 19rem;
+    height: 4rem;
+  }
+  .title {
+    font-size: 2rem;
+    height: 8rem;
+    margin-bottom: 25rem;
+    width: 25rem;
+    margin-left: 1rem;
+  }
+  .boxempty {
+    display: none;
+  }
+  .boxcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgaccesorihouse {
+    height: 18rem;
+    width: 22rem;
+  }
+  .houselocation {
+    width: 100%;
+    height: 100%;
+  }
+  .textpersonality {
+    width: 25rem;
+  }
+  .containerpersonality {
+    align-items: center;
+  }
+  .textescritorio {
+    width: 14rem;
+    height: 18rem;
+  }
+  .descriptionescritorio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .textdecoration {
+    text-align: center;
+  }
+  .imgescritorio {
+    width: 16.3rem;
+    height: 18rem;
+  }
+  .escritorio {
+    width: 100%;
+    height: 100%;
+  }
+  .containernew {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .paragraphnew {
+    font-size: 20px;
+  }
+  .emailnew {
+    margin-top: 1rem;
+  }
+  .titlecompanyfooter {
+    justify-content: center;
+  }
+  .footer {
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .textwebsite {
+    font-size: 16px;
+  }
+  .iconsfooter {
+    margin-bottom: 1rem;
+  }
+  .linksfooter {
+    margin-bottom: 2rem;
+  }
+}

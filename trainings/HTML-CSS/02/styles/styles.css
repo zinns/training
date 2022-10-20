@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+}
+
+main {
+  background-color: #f1eade;
+}
+
+p {
+  color: #51200e;
+  font-family: cursive;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+.navbar {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1536px;
+  margin: 0 auto;
+}
+.logoimg {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.link {
+  color: #51200e;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.started {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.started button {
+  padding: 1rem;
+  border-radius: 1rem;
+  border-color: #51200e;
+}
+
+.icon-menu svg {
+  display: none;
+}
+
+.container-text {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contentimg {
+  height: 15rem;
+  border-radius: 1rem;
+}
+
+.contentimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.ring-story {
+  width: 40%;
+}
+
+.section3 {
+  background-color: #51200e;
+  height: 40rem;
+}
+.linkshover {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+.linkhover {
+  color: #f1eade;
+}
+.textpersonages {
+  display: flex;
+  justify-content: center;
+}
+.P {
+  font-size: 36px;
+  font-family: cursive;
+  font-weight: bold;
+  color: #f1eade;
+}
+.personages {
+  display: flex;
+  justify-content: center;
+}
+.textelenco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32rem;
+  border-radius: 10px;
+  border: solid;
+  border-color: #f1eade;
+  text-align: center;
+}
+.pelenco {
+  color: #f1eade;
+  font-family: cursive;
+  font-size: 14px;
+}
+.imgperson {
+  border-radius: 10px;
+  width: 32rem;
+  height: 27rem;
+}
+.section4 {
+  background-color: #f1eade;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.trilogyp {
+  color: #51200e;
+  font-family: cursive;
+  font-size: 22px;
+  font-weight: 900;
+}
+.movies {
+  display: flex;
+  height: 21rem;
+  width: 50rem;
+  justify-content: space-around;
+}
+.movie {
+  height: 20rem;
+  border-radius: 10px;
+}
+.footer {
+  background-color: #51200e;
+  height: 20rem;
+  border-top: 20px;
+}
+.textfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.textfooter2 {
+  display: flex;
+  justify-content: space-around;
+  height: 6rem;
+  border-bottom: solid;
+  border-color: #f1eade;
+}
+.linkicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 10rem;
+}
+
+@media (max-width: 1000px) {
+  .container-text {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ring-story {
+    width: 80%;
+  }
+}
+
+@media (max-width: 663px) {
+  .links {
+    gap: 1rem;
+  }
+
+  .started {
+    gap: 1rem;
+  }
+
+  .imgrinmaps {
+  }
+  .section3 {
+    min-height: 40rem;
+  }
+  .linkshover {
+    height: 2rem;
+    border-bottom: solid;
+    border-color: #f1eade;
+  }
+  .textpersonages {
+    height: 4rem;
+  }
+  .P {
+    font-size: 18px;
+  }
+  .textelenco {
+    display: none;
+  }
+  .section4 {
+    height: 30rem;
+  }
+  .movies {
+    justify-content: center;
+  }
+  .movie {
+    width: 12rem;
+    margin: 1rem;
+  }
+  .svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border: solid;
+    border-radius: 10px;
+    border-color: #f1eade;
+  }
+}
+
+@media (max-width: 520px) {
+  .link {
+    display: none;
+  }
+  .started {
+    display: none;
+  }
+  .icon-menu svg {
+    display: unset;
+    width: 4rem;
+    height: 3rem;
+    color: #51200e;
+  }
+  .P {
+    font-size: 28px;
+  }
+  .personages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textelenco {
+    margin-bottom: 1rem;
+    width: 29.5rem;
+  }
+  .imgperson {
+    width: 29.5rem;
+  }
+  .trilogyp {
+    font-size: 18px;
+  }
+  .section4 {
+    overflow-y: scroll;
+    overflow: hidden;
+  }
+}
