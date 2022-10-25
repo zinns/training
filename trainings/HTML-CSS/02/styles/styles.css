@@ -1,3 +1,7 @@
+* {
+  border: solid red 1px;
+}
+
 body {
   margin: 0;
 }
@@ -9,13 +13,14 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   max-width: 1536px;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .logo {
-  margin-left: 4rem;
+  padding: 2rem;
+  width: 10%;
 }
 
 .logoimg {
@@ -23,14 +28,15 @@ body {
   height: 5.5rem;
 }
 .links {
-  width: 60%;
+  width: 90%;
   display: flex;
-  justify-content: space-between;
 }
 
 .a-link {
+  width: 45%;
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 2rem;
 }
 
@@ -39,15 +45,15 @@ body {
 }
 
 .started {
+  width: 45%;
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 30rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .started button {
-  padding: 0.75rem;
+  padding: 0.5rem;
   border: none;
   background-color: #51200e;
   color: #f1eade;
@@ -63,15 +69,8 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
   margin-top: 4rem;
   padding-bottom: 20rem;
-}
-
-.contentimg {
-  height: 15rem;
-  border-radius: 1rem;
 }
 
 .contentimg img {
@@ -173,9 +172,51 @@ body {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 500px) {
-  .section1 {
-    height: 30rem;
+
+.trilogy-movies {
+  max-width: 1536px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titlemovies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.resumen a {
+  color: #51200e;
+  text-decoration: none;
+}
+
+.poster-movies {
+  padding: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.movies {
+  width: 20%;
+}
+
+.movie {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .container-text {
+    flex-direction: column;
+    gap: 1rem;
   }
   .navbar {
     display: flex;
@@ -223,7 +264,7 @@ body {
     display: none;
   }
   .textpersonages {
-    padding-top: 10rem;
+    padding-top: 14rem;
   }
 
   .personages {
@@ -237,6 +278,9 @@ body {
   .name-elenco {
     width: 70%;
   }
+}
+
+@media (max-width: 768px) {
 }
 
 @media (max-width: 663px) {
@@ -260,16 +304,6 @@ body {
   }
   .textelenco {
     display: none;
-  }
-  .section4 {
-    height: 30rem;
-  }
-  .movies {
-    justify-content: center;
-  }
-  .movie {
-    width: 12rem;
-    margin: 1rem;
   }
   .svg {
     display: flex;
@@ -309,6 +343,22 @@ body {
   .textelenco {
     margin-bottom: 1rem;
     width: 29.5rem;
+  }
+  .titlemovies p {
+    font-size: 0.75rem;
+    line-height: 1.75;
+    text-align: center;
+  }
+
+  .poster-movies {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .movies {
+    width: 10rem;
   }
 }
 
