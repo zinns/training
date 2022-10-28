@@ -30,7 +30,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
 }
 
 .logoimg {
@@ -95,7 +94,7 @@ p {
 }
 
 .elenco-story {
-  background-color: #51200e;
+  background: linear-gradient(#f1eade, #9a2d01d3);
   padding-bottom: 5rem;
   position: relative;
 }
@@ -229,7 +228,7 @@ p {
 }
 
 .new-serie {
-  background-color: #51200e;
+  background: linear-gradient(#2e0d01, #f1845e);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
@@ -278,7 +277,7 @@ p {
 
 .footer {
   margin-top: -2rem;
-  background-color: #bc613f;
+  background: linear-gradient(#f1845e, #2e0d01);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
@@ -416,6 +415,10 @@ p {
 }
 
 @media (max-width: 520px) {
+  .textpersonages p {
+    font-size: 1rem;
+  }
+
   .content-serie {
     flex-direction: column;
   }
