@@ -302,6 +302,10 @@ body {
   align-items: center;
 }
 
+.svg a {
+  color: #f1eade;
+}
+
 @media (max-width: 1000px) {
   .container-text {
     flex-direction: column;
