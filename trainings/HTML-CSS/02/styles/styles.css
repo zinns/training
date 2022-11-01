@@ -54,6 +54,7 @@ body {
 }
 
 .started button {
+  cursor: pointer;
   padding: 0.5rem;
   border: none;
   background-color: #51200e;
@@ -497,7 +498,7 @@ body {
   }
 
   .movies {
-    width: 15rem;
+    width: 20rem;
   }
 }
 
