@@ -208,6 +208,7 @@ p {
 .resumen a {
   color: #51200e;
   text-decoration: none;
+  font-size: 1.75rem;
 }
 
 .poster-movies {
@@ -267,9 +268,6 @@ p {
   width: 50%;
 }
 
-.img-series {
-}
-
 .img-series img {
   width: 100%;
   height: 100%;
@@ -315,6 +313,7 @@ p {
 
 .svg a {
   color: #f1eade;
+  font-size: 4rem;
 }
 
 @media (max-width: 1000px) {
@@ -405,8 +404,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 4rem;
-    width: 4rem;
+    height: 5rem;
+    width: 5rem;
     border: solid;
     border-radius: 10px;
     border-color: #f1eade;
@@ -459,7 +458,7 @@ p {
     width: 29.5rem;
   }
   .titlemovies p {
-    font-size: 0.75rem;
+    font-size: 1.75rem;
     line-height: 1.75;
     text-align: center;
   }
@@ -472,7 +471,7 @@ p {
   }
 
   .movies {
-    width: 20rem;
+    width: 18rem;
   }
 }
 
