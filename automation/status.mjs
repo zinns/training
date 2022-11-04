@@ -6,6 +6,10 @@ import { differenceInBusinessDays } from 'date-fns';
 import axios from 'axios';
 
 const getMissingStatuses = async () => {
+  const fullDate = new Date();
+  const year = fullDate.getFullYear();
+  const month = fullDate.getMonth() + 1;
+
   try {
     const octokit = new Octokit({
       auth: `${process.env.GH_TOKEN}`,
@@ -16,6 +20,7 @@ const getMissingStatuses = async () => {
       issue_number: '40' /* eslint-disable-line camelcase */,
       owner: 'zinns',
       repo: 'training',
+      since: new Date(`${year}-${month}-1`),
     });
 
     const today = new Date();
