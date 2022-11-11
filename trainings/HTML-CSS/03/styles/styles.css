@@ -108,7 +108,12 @@ body {
 }
 
 .img-video {
+  max-width: 1536px;
+  margin: 0 auto;
   background-color: #e7e2de;
+}
+
+.video-container {
   width: 100%;
   height: 100%;
 }
@@ -129,6 +134,9 @@ body {
   width: 100%;
   max-width: 1536px;
   margin: 0 auto;
+}
+
+.box-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,9 +192,6 @@ body {
 }
 
 .logos {
-  max-width: 1536px;
-  margin: 0 auto;
-  width: 100%;
   height: 5rem;
   display: flex;
   align-items: center;
@@ -194,13 +199,13 @@ body {
 }
 
 .logo {
-  width: 5rem;
-  height: 4rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .logo img {
-  width: 100%;
-  height: 100%;
+  width: 10rem;
+  height: 6rem;
 }
 
 .wetext {
@@ -220,7 +225,7 @@ body {
 }
 
 .accessories {
-  width: 30%;
+  width: 40%;
   height: 30rem;
 }
 
@@ -230,7 +235,7 @@ body {
 }
 
 .text-personality {
-  width: 100%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -351,6 +356,8 @@ body {
   width: 3rem;
   height: 3.4rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .buttonsub:hover {
@@ -415,22 +422,21 @@ body {
 }
 
 @media (max-width: 800px) {
+  .img img {
+    opacity: 0.7;
+  }
+
   .titlefirst p {
     font-size: 3.75rem;
   }
 
   .titlelast {
     width: 32rem;
-    transform: translateX(3%);
+    transform: translateX(2%);
   }
 
   .titlelast p {
     font-size: 3.75rem;
-  }
-
-  .logo {
-    width: 3rem;
-    height: 2rem;
   }
 
   .accessories {
@@ -439,7 +445,7 @@ body {
   }
 
   .containerpersonality {
-    width: 40%;
+    width: 70%;
   }
 
   .banner-container {
@@ -469,19 +475,29 @@ body {
   }
 }
 
+@media (max-width: 720px) {
+  .logos {
+    overflow-x: scroll;
+  }
+}
+
 @media (max-width: 520px) {
   .hero-container {
     width: 90%;
-    padding: 1rem;
+    height: 20rem;
+  }
+
+  .img {
+    width: 12rem;
   }
 
   .img img {
-    width: 50%;
+    opacity: 0.7;
   }
 
   .titlefirst {
     transform: translateX(-16%);
-    top: 40%;
+    top: 30%;
   }
 
   .titlefirst p {
@@ -490,7 +506,7 @@ body {
 
   .titlelast {
     width: 16rem;
-    bottom: 42%;
+    bottom: 40%;
     transform: translateX(2%);
   }
 
@@ -502,12 +518,12 @@ body {
     font-size: 2rem;
   }
 
-  .container-contact {
+  .box-container {
     flex-direction: column;
   }
 
   .boxempty {
-    width: 100%;
+    display: none;
   }
 
   .boxcontainer {
@@ -518,10 +534,6 @@ body {
   .wetext {
     width: 100%;
     font-size: 0.75rem;
-  }
-
-  .logo {
-    height: 2rem;
   }
 
   .expertice-container {
@@ -571,11 +583,5 @@ body {
 
   .link {
     font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 325px) {
-  .containerpersonality {
-    width: 100%;
   }
 }
