@@ -67,9 +67,8 @@ module.exports = {
     'no-empty-function': 'error',
     'no-mixed-operators': 'error',
     'no-var': 'error',
-    'object-curly-newline': ['error', { minProperties: 2 }],
     'object-curly-spacing': ['error', 'always', { arraysInObjects: true, objectsInObjects: true }],
-    'object-property-newline': ['error', { allowAllPropertiesOnSameLine: false }],
+    'object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
     'padded-blocks': ['error', 'never'],
     'padding-line-between-statements': [
       'error',
