@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  class="scroll-smooth"
+  lang="en"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -26,8 +29,8 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="max-w-screen-2xl m-auto">
-      <nav class="w-full flex justify-between items-center sticky top-0 lg:p-5">
+    <section class="max-w-screen-2xl m-auto sticky top-0 bg-gray-50 rounded-lg z-10">
+      <nav class="w-full flex justify-between items-center py-5 px-2 lg:p-5">
         <div>
           <a href="">
             <img
@@ -36,9 +39,9 @@
             />
           </a>
         </div>
-        <div class="flex gap-9">
+        <div class="hidden lg:flex lg:gap-9">
           <a
-            href=""
+            href="#industry"
             class="flex items-center gap-2"
           >
             Products
@@ -57,7 +60,7 @@
             </svg>
           </a>
           <a
-            href=""
+            href="#message"
             class="flex items-center gap-2"
           >
             Uses cases
@@ -76,7 +79,7 @@
             </svg>
           </a>
           <a
-            href=""
+            href="#buy"
             class="flex items-center gap-2"
           >
             Resources
@@ -94,29 +97,62 @@
               />
             </svg>
           </a>
-          <a href="">About us</a>
+          <a href="#partners">About us</a>
         </div>
-        <div class="flex gap-5 items-center">
-          <a href="">Log in</a>
-          <button class="border-2 border-black rounded-full p-2">Request a demo</button>
+        <div class="md:flex md:gap-5 md:items-center">
+          <div
+            class="hidden md:flex items-center gap-5 text-gray-500 hover:text-black duration-700"
+          >
+            <a href="#footer">Log in</a>
+            <a
+              href="#banner"
+              class="border-2 border-black rounded-full p-2 hover:bg-teal-900 hover:text-yellow-200 hover:border-teal-900 duration-700"
+              >Request a demo</a
+            >
+          </div>
+          <div class="flex items-center justify-center lg:hidden">
+            <a
+              class="border-2 rounded-full border-gray-700 p-2 w-15 h-15"
+              href=""
+            >
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 15 15"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </nav>
     </section>
-    <section class="max-w-screen-2xl m-auto">
-      <div class="bg-teal-900 w-full flex h-[40rem] rounded-lg items-center justify-center">
-        <div class="w-2/5 flex flex-col gap-5">
-          <p class="text-3xl">Next generation</p>
+    <section class="max-w-screen-2xl m-auto p-2 xl:p-0">
+      <div
+        class="bg-teal-900 w-full h-[50rem] md:h-[40rem] flex-col gap-10 flex lg:flex-row rounded-lg items-center justify-center"
+      >
+        <div
+          class="md:w-2/5 items-center justify-center flex flex-col gap-5 lg:justify-start lg:items-start lg:pl-5"
+        >
+          <p class="text-3xl text-white">Next generation</p>
           <p class="bg-yellow-200 rounded-full p-2 w-40 text-xl text-center">text marketing</p>
-          <p class="w-3/4">
+          <p class="lg:w-3/4 text-white text-center lg:text-start">
             welcom to the next generation of mobile engagement. Send personalized, interactive
             campaigns directly to your customers pockets, enable conversion in one tap.
           </p>
-          <div>
-            <button class="bg-white rounded-full p-3">Request a demo</button>
+          <div class="hidden md:flex">
+            <button
+              class="bg-white rounded-full p-3 hover:bg-teal-900 hover:text-yellow-200 border-yellow-200 duration-700"
+            >
+              Request a demo
+            </button>
           </div>
         </div>
-        <div>
-          <div class="relative">
+        <div class="flex justify-center items-center">
+          <div class="relative w-9/12 md:w-6/12 lg:w-auto">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62d5fd8a3158a97279a4620f_intouch-phone-base.png"
               alt=""
@@ -130,77 +166,98 @@
         </div>
       </div>
     </section>
-    <section class="max-w-screen-2xl m-auto">
-      <div class="w-full flex flex-col justify-center pt-20">
-        <div class="w-11/12 flex flex-col items-center gap-4">
+    <section
+      class="max-w-screen-2xl m-auto p-2 xl:p-0"
+      id="industry"
+    >
+      <div class="w-full flex flex-col justify-center items-center mt-20">
+        <div class="w-11/12 flex flex-col items-center justify-center gap-4">
           <p class="text-xl">Used by industry leaders</p>
-          <div class="w-full flex justify-around">
-            <div class="w-1/12 h-10">
-              <a href=""
-                ><img
-                  class="w-full h-full"
-                  src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de15775b94181917ab71f6_TAFE_Queensland_Logo.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="w-1/12 h-10">
-              <a href=""
-                ><img
-                  class="w-full h-full"
-                  src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62df80ea17e3471d4a793a60_liteneasy-vector.svg"
-                  alt=""
-              /></a>
-            </div>
-            <div class="w-1/12 h-10">
-              <a href=""
-                ><img
-                  class="w-full h-full"
-                  src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de144063185e31e86af84c_client-logo_petcircle.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="w-1/12 h-10">
-              <a href=""
-                ><img
-                  class="w-full h-full"
-                  src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cf6f99b191824a4b1f5f46_client-logo_showpo.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="w-1/12 h-10">
-              <a href=""
-                ><img
-                  class="w-full h-full"
-                  src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de15406aace7522bda90d4_client-logo_coco.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="w-1/12 h-10">
-              <a href=""
-                ><img
-                  class="w-full h-full"
-                  src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cf7327bf4cb185c254f129_heartkids-logo.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="w-1/12 h-10">
-              <a href=""
-                ><img
-                  class="w-full h-full"
-                  src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62e2261f5b3d5b76047a8d37_Winning-Appliances-Logo-RGB-WEB-p-500.jpg"
-                  alt=""
-              /></a>
+          <div
+            class="w-full flex overflow-x-hidden overflow-x-scroll h-20 items-center justify-around lg:overflow-x-hidden"
+          >
+            <div class="flex gap-2 px-5 justify-start md:w-full md:justify-around">
+              <div class="w-12 h-10 ml-5">
+                <a
+                  class="grayscale opacity-25 hover:grayscale-0 hover:opacity-100 duration-500"
+                  href=""
+                  ><img
+                    class="w-full h-full"
+                    src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de15775b94181917ab71f6_TAFE_Queensland_Logo.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="w-20 h-10">
+                <a
+                  class="grayscale opacity-25 hover:grayscale-0 hover:opacity-100 duration-500"
+                  href=""
+                  ><img
+                    class="w-full h-full"
+                    src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62df80ea17e3471d4a793a60_liteneasy-vector.svg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="w-20 h-10">
+                <a
+                  class="grayscale opacity-25 hover:grayscale-0 hover:opacity-100 duration-500"
+                  href=""
+                  ><img
+                    class="w-full h-full"
+                    src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de144063185e31e86af84c_client-logo_petcircle.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="w-20 h-10">
+                <a
+                  class="grayscale opacity-25 hover:grayscale-0 hover:opacity-100 duration-500"
+                  href=""
+                  ><img
+                    class="w-full h-full"
+                    src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cf6f99b191824a4b1f5f46_client-logo_showpo.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="w-32 h-10">
+                <a
+                  class="grayscale opacity-25 hover:grayscale-0 hover:opacity-100 duration-500"
+                  href=""
+                  ><img
+                    class="w-full h-full"
+                    src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de15406aace7522bda90d4_client-logo_coco.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="w-16 h-10">
+                <a
+                  class="grayscale opacity-25 hover:grayscale-0 hover:opacity-100 duration-500"
+                  href=""
+                  ><img
+                    class="w-full h-full"
+                    src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cf7327bf4cb185c254f129_heartkids-logo.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="w-20 h-10">
+                <a
+                  class="grayscale opacity-25 hover:grayscale-0 hover:opacity-100 duration-500"
+                  href=""
+                  ><img
+                    class="w-full h-full"
+                    src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62e2261f5b3d5b76047a8d37_Winning-Appliances-Logo-RGB-WEB-p-500.jpg"
+                    alt=""
+                /></a>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="w-full bg-zinc-200 rounded-lg mt-14 flex flex-col justify-center items-center h-[50rem]"
+          class="w-full bg-zinc-200 rounded-lg mt-14 h-[110rem] flex flex-col justify-center items-center lg:h-[50rem]"
         >
-          <p class="text-3xl w-2/6 text-center mt-14">
+          <p class="text-3xl lg:w-2/6 text-center mt-14">
             The leading platform for managing your mobile customer journeys
           </p>
-          <div class="w-11/12 flex justify-around mt-20">
-            <div class="flex flex-col w-96 h-[28rem] bg-white rounded-lg gap-5 px-5">
+          <div class="w-11/12 flex justify-around mt-20 flex-col gap-5 lg:flex-row">
+            <div class="flex flex-col bg-white rounded-lg gap-5 px-5 lg:h-[28rem] lg:w-72 xl:w-96">
               <div class="flex justify-center">
                 <img
                   src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de2798a727206a50ff2d25_easy-to-use.svg"
@@ -209,13 +266,13 @@
               </div>
               <div class="flex flex-col justify-center items-center gap-3">
                 <p class="text-xl font-semibold">Easy to use</p>
-                <p class="text-center w-96 p-2">
+                <p class="text-center xl:w-96 p-2">
                   A complete set of tools to enable marketing teams to curate, personalize,
                   contextualize, send, integrate and track campaigns - no coding required.
                 </p>
               </div>
             </div>
-            <div class="flex flex-col w-96 h-[28rem] bg-white rounded-lg gap-5 px-5">
+            <div class="flex flex-col bg-white rounded-lg gap-5 px-5 lg:h-[28rem] lg:w-72 xl:w-96">
               <div class="flex justify-center">
                 <img
                   src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de278d029d0261bf585598_Revenue-driving.svg"
@@ -224,13 +281,13 @@
               </div>
               <div class="flex flex-col justify-center items-center gap-3">
                 <p class="text-xl font-semibold">Revenue driving</p>
-                <p class="text-center w-96 p-2">
+                <p class="text-center xl:w-96 p-2">
                   With an open rate of 98% and a click through rate of 60%, you can be confident
                   your campaigns aren't going to waste.
                 </p>
               </div>
             </div>
-            <div class="flex flex-col w-96 h-[28rem] bg-white rounded-lg gap-5 px-5">
+            <div class="flex flex-col bg-white rounded-lg gap-5 px-5 lg:h-[28rem] lg:w-72 xl:w-96">
               <div class="flex justify-center">
                 <img
                   src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de27834cf81303f5f7f217_integrated-with-stack.svg"
@@ -239,7 +296,7 @@
               </div>
               <div class="flex flex-col justify-center items-center gap-3">
                 <p class="text-xl font-semibold">Integrated with your stack</p>
-                <p class="text-center w-96 p-2">
+                <p class="text-center xl:w-96 p-2">
                   A complete set of API's and webhooks to enable integration with existing marketing
                   stacks - as well as deep integration with a limited number of marketing platforms.
                 </p>
@@ -249,10 +306,13 @@
         </div>
       </div>
     </section>
-    <section class="max-w-screen-2xl m-auto">
-      <div class="pt-10 flex gap-4">
-        <div class="w-1/2 flex flex-col gap-5">
-          <div class="flex items-center gap-4">
+    <section
+      class="max-w-screen-2xl m-auto p-2 xl:p-0"
+      id="message"
+    >
+      <div class="pt-10 flex gap-4 flex-col lg:flex-row">
+        <div class="flex flex-col gap-5 lg:w-1/2">
+          <div class="flex gap-4 flex-col items-start lg:items-center lg:flex-row">
             <p>Personalized Text Messaging</p>
             <a
               class="bg-teal-900 text-white rounded-full p-2"
@@ -260,37 +320,41 @@
               >Patented</a
             >
           </div>
-          <p class="text-5xl py-5">Breakthrough MMS personalisation</p>
+          <p class="text-3xl font-semibold lg:text-5xl py-5">Breakthrough MMS personalisation</p>
           <div class="border-b-2 pb-5 w-11/12">
             <p>
               Add up to 22 unique data tags inside your MMS content, allowing your customers to
               receive deeply personalized, visual messages at scale.
             </p>
           </div>
-          <div class="flex items-center gap-3 py-3">
+          <div class="flex items-center gap-2">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
             />
             <p>Utilize your existing customer intelligence database</p>
           </div>
-          <div class="flex items-center gap-3 pb-3">
+          <div class="flex items-center gap-2">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
             />
             <p>Have full control over visuals, positioning and alignment</p>
           </div>
-          <div class="flex items-center gap-3 pb-10">
+          <div class="flex items-center gap-2 pb-5">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
             />
             <p>Streamline creative flow with our Canva plugin</p>
           </div>
-          <button class="p-3 border-2 rounded-full w-28">Learn more</button>
+          <button
+            class="p-3 border-2 rounded-full w-28 hover:bg-teal-900 hover:text-yellow-200 hover:border-teal-900 duration-700"
+          >
+            Learn more
+          </button>
         </div>
-        <div class="w-1/2">
+        <div class="lg:w-1/2">
           <div>
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62d60570c4c0535fa8bfd928_txt-messaging-feature.png"
@@ -300,9 +364,12 @@
         </div>
       </div>
     </section>
-    <section class="max-w-screen-2xl m-auto">
-      <div class="pt-10 flex gap-4">
-        <div class="w-1/2">
+    <section
+      class="max-w-screen-2xl m-auto p-2 xl:p-0"
+      id="wallet"
+    >
+      <div class="pt-10 flex gap-4 flex-col-reverse lg:flex-row">
+        <div class="lg:w-1/2">
           <div>
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de1e0897f460058102849b_add2wallet-feature.png"
@@ -310,49 +377,58 @@
             />
           </div>
         </div>
-        <div class="w-1/2 flex flex-col gap-5">
+        <div class="lg:w-1/2 flex flex-col gap-5">
           <div class="flex items-center gap-4">
             <p>add2Wallet</p>
           </div>
-          <p class="text-5xl py-5">Unlock the power of the mobile wallet</p>
+          <p class="text-3xl font-semibold lg:text-5xl py-5">
+            Unlock the power of the mobile wallet
+          </p>
           <div class="border-b-2 pb-5 w-11/12">
             <p>
               Add2Wallet enables your clients to add offers and loyalty cards received into either
               their Apple Wallet or Android Passes App.
             </p>
           </div>
-          <div class="flex items-center gap-3 py-3">
+          <div class="flex items-center gap-2">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
             />
             <p>Manage unlimited push and update messages to the wallet</p>
           </div>
-          <div class="flex items-center gap-3 pb-3">
+          <div class="flex items-center gap-2">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
             />
             <p>Set automated push messages prompted by geo location and calendar reminders</p>
           </div>
-          <div class="flex items-center gap-3 pb-10">
+          <div class="flex items-center gap-2 pb-5">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
             />
             <p>Provide an active contact directory of 10 key information sets</p>
           </div>
-          <button class="p-3 border-2 rounded-full w-28">Learn more</button>
+          <button
+            class="p-3 border-2 rounded-full w-28 hover:bg-teal-900 hover:text-yellow-200 hover:border-teal-900 duration-700"
+          >
+            Learn more
+          </button>
         </div>
       </div>
     </section>
-    <section class="max-w-screen-2xl m-auto">
-      <div class="pt-10 flex">
-        <div class="w-1/2 flex flex-col gap-5">
+    <section
+      class="max-w-screen-2xl m-auto p-2 xl:p-0"
+      id="buy"
+    >
+      <div class="pt-10 flex flex-col gap-4 lg:flex-row">
+        <div class="lg:w-1/2 flex flex-col gap-5">
           <div class="flex items-center gap-4">
             <p>Tap2Buy</p>
           </div>
-          <p class="text-4xl py-5">Enable One Tap Commerce</p>
+          <p class="text-3xl font-semibold lg:text-5xl py-5">Enable One Tap Commerce</p>
           <div class="border-b-2 pb-5 w-11/12">
             <p>
               Enable customers to go from offer to purchase as seamlessly as possible. Let customers
@@ -360,30 +436,34 @@
               complete their transaction faster the next time.
             </p>
           </div>
-          <div class="flex items-center gap-2 py-2">
+          <div class="flex items-center gap-2">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
             />
             <p>Utilize your existing customer intelligence database</p>
           </div>
-          <div class="flex items-center gap-2 pb-2">
+          <div class="flex items-center gap-2">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
             />
             <p>Cart pre-population directly from tap</p>
           </div>
-          <div class="flex items-center gap-3 pb-10">
+          <div class="flex items-center gap-3 pb-5">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
             />
             <p>Removes login, passwords, username requirements</p>
           </div>
-          <button class="p-3 border-2 rounded-full w-28">Learn more</button>
+          <button
+            class="p-3 border-2 rounded-full w-28 hover:bg-teal-900 hover:text-yellow-200 hover:border-teal-900 duration-700"
+          >
+            Learn more
+          </button>
         </div>
-        <div class="w-1/2">
+        <div class="lg:w-1/2">
           <div>
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de1e259763997025463b58_tap2buy-feature.png"
@@ -393,9 +473,12 @@
         </div>
       </div>
     </section>
-    <section class="max-w-screen-2xl m-auto">
-      <div class="pt-10 flex gap-4">
-        <div class="w-1/2">
+    <section
+      class="max-w-screen-2xl m-auto p-2 xl:p-0"
+      id="guru"
+    >
+      <div class="pt-10 flex gap-4 flex-col-reverse lg:flex-row">
+        <div class="lg:w-1/2">
           <div>
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62e724692cf397776a605282_giftcard-feature.png"
@@ -403,11 +486,13 @@
             />
           </div>
         </div>
-        <div class="w-1/2 flex flex-col gap-5">
+        <div class="lg:w-1/2 flex flex-col gap-5">
           <div class="flex items-center gap-4">
             <p>GiftGuru</p>
           </div>
-          <p class="text-4xl py-5">Customize and send digital gift cards</p>
+          <p class="text-3xl font-semibold lg:text-5xl py-5">
+            Customize and send digital gift cards
+          </p>
           <div class="border-b-2 pb-5 w-11/12">
             <p>
               Share custom gift cards to customers to use at their favourite retailers.Gift cards
@@ -415,14 +500,14 @@
               Design your store's gift cards to match your band, product or customer base.
             </p>
           </div>
-          <div class="flex items-center gap-3 py-3">
+          <div class="flex items-center gap-2">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
             />
             <p>100% of intouch gift cards are viewed by receivers</p>
           </div>
-          <div class="flex items-center gap-3 pb-3">
+          <div class="flex items-center gap-2">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
@@ -432,7 +517,7 @@
               links to click on
             </p>
           </div>
-          <div class="flex items-center gap-3 pb-10">
+          <div class="flex items-center gap-2 pb-5">
             <img
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cb78e7544a7a01ea71daa1_Check.svg"
               alt=""
@@ -442,22 +527,29 @@
               & calendar reminders
             </p>
           </div>
-          <button class="p-3 border-2 rounded-full w-28">Learn more</button>
+          <button
+            class="p-3 border-2 rounded-full w-28 hover:bg-teal-900 hover:text-yellow-200 hover:border-teal-900 duration-700"
+          >
+            Learn more
+          </button>
         </div>
       </div>
     </section>
-    <section class="max-w-screen-2xl m-auto">
+    <section
+      class="max-w-screen-2xl m-auto p-2 xl:p-0"
+      id="partners"
+    >
       <div class="w-full flex flex-col items-center mt-20">
-        <div class="w-1/2 flex flex-col items-center gap-4">
-          <p class="text-4xl">Our integration partners</p>
+        <div class="lg:w-1/2 flex flex-col items-center gap-4">
+          <p class="text-center text-4xl lg:text-start">Our integration partners</p>
           <p class="text-center w-11/12">
             Easily integrate with industry leading CDP & CRM tech stacks, manage data and security
             without development and skills investments. Incorporate best of breed 3rd party tools to
             deliver core functions of the mobile handset.
           </p>
         </div>
-        <div class="w-full grid grid-cols-5 grid-rows-2 gap-5 pt-20">
-          <div class="border-2 rounded-lg h-40 flex items-center justify-center">
+        <div class="w-full grid grid-cols-2 grid-rows-5 lg:grid-cols-5 lg:grid-rows-2 gap-5 pt-20">
+          <div class="border-2 rounded-lg h-32 lg:h-40 flex items-center justify-center">
             <div class="h-2/4">
               <img
                 class="w-full h-full"
@@ -466,7 +558,7 @@
               />
             </div>
           </div>
-          <div class="border-2 rounded-lg h-40 flex items-center justify-center">
+          <div class="border-2 rounded-lg h-32 lg:h-40 flex items-center justify-center">
             <div class="h-2/4 w-1/2">
               <img
                 class="w-full h-full"
@@ -475,7 +567,7 @@
               />
             </div>
           </div>
-          <div class="border-2 rounded-lg h-40 flex items-center justify-center">
+          <div class="border-2 rounded-lg h-32 lg:h-40 flex items-center justify-center">
             <div class="h-2/4 w-1/2">
               <img
                 class="w-full h-full"
@@ -484,7 +576,7 @@
               />
             </div>
           </div>
-          <div class="border-2 rounded-lg h-40 flex items-center justify-center">
+          <div class="border-2 rounded-lg h-32 lg:h-40 flex items-center justify-center">
             <div class="h-2/4 w-1/2">
               <img
                 class="w-full h-full"
@@ -493,7 +585,7 @@
               />
             </div>
           </div>
-          <div class="border-2 rounded-lg h-40 flex items-center justify-center">
+          <div class="border-2 rounded-lg h-32 lg:h-40 flex items-center justify-center">
             <div class="h-2/4 w-1/2">
               <img
                 class="w-full h-full"
@@ -502,7 +594,7 @@
               />
             </div>
           </div>
-          <div class="border-2 rounded-lg h-40 flex items-center justify-center">
+          <div class="border-2 rounded-lg h-32 lg:h-40 flex items-center justify-center">
             <div class="h-2/4 w-1/3">
               <img
                 class="h-full w-full"
@@ -511,7 +603,7 @@
               />
             </div>
           </div>
-          <div class="border-2 rounded-lg h-40 flex items-center justify-center">
+          <div class="border-2 rounded-lg h-32 lg:h-40 flex items-center justify-center">
             <div class="h-2/4">
               <img
                 class="w-full h-full"
@@ -520,7 +612,7 @@
               />
             </div>
           </div>
-          <div class="border-2 rounded-lg h-40 flex items-center justify-center">
+          <div class="border-2 rounded-lg h-32 lg:h-40 flex items-center justify-center">
             <div class="h-2/4">
               <img
                 class="h-full w-full"
@@ -529,7 +621,7 @@
               />
             </div>
           </div>
-          <div class="border-2 rounded-lg h-40 flex items-center justify-center">
+          <div class="border-2 rounded-lg h-32 lg:h-40 flex items-center justify-center">
             <div class="h-2/4 w-1/2">
               <img
                 class="h-full w-full"
@@ -538,7 +630,7 @@
               />
             </div>
           </div>
-          <div class="border-2 rounded-lg h-40 flex items-center justify-center">
+          <div class="border-2 rounded-lg h-32 lg:h-40 flex items-center justify-center">
             <div class="h-2/4 w-2/5">
               <img
                 class="h-full w-full"
@@ -550,11 +642,16 @@
         </div>
       </div>
     </section>
-    <section class="max-w-screen-2xl m-auto pt-20">
-      <div class="w-full h-[60rem] bg-zinc-100 rounded-lg flex items-center justify-center">
-        <div class="w-7/12 flex flex-col items-center justify-center relative">
+    <section
+      class="max-w-screen-2xl m-auto pt-20 p-2 xl:p-0"
+      id="banner"
+    >
+      <div class="w-full h-[60rem] bg-zinc-100 rounded-lg flex items-center justify-center mt-10">
+        <div
+          class="w-11/12 lg:w-7/12 flex flex-col items-center justify-center relative pb-10 lg:pb-32"
+        >
           <div>
-            <p class="text-3xl text-center w-full">
+            <p class="text-lx lg:text-3xl text-center w-full">
               "We have been so fortunate to have access to the expert team at MobileDigital and the
               amazing intouch SaaS platform. This channel was new to our marketing mix and with the
               guidance and generosity from the team, it has proved to be an effective way to not
@@ -563,9 +660,11 @@
               easier and helped HeartKids deliver effective MMS campaigns. We are excited to see how
               using intouch can further grow our reach and engagemente with our community."
             </p>
-            <div class="flex justify-center text-xl pt-5 gap-2">
-              <p class="font-semibold">Diana Crisp</p>
-              <p class="text-gray-600">Digital Strategy & Marketing Manager, HeartKids</p>
+            <div class="flex justify-center lg:text-xl pt-5 gap-2">
+              <p class="font-semibold text-center">
+                Diana Crisp
+                <span class="text-gray-600">Digital Strategy & Marketing Manager, HeartKids</span>
+              </p>
             </div>
           </div>
           <div class="flex gap-2 pt-10">
@@ -590,21 +689,26 @@
               class="bg-zinc-400 rounded-full p-1 hover:bg-black duration-700"
             ></button>
           </div>
-          <img
-            class="absolute -bottom-28 -left-52"
-            src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de2a2a3b3a736c612a850a_testimonial-quote-left.svg"
-            alt=""
-          />
+          <div class="absolute -bottom-2 -left-52 hidden xl:flex">
+            <img
+              class="object-contain"
+              src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de2a2a3b3a736c612a850a_testimonial-quote-left.svg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </section>
-    <section class="max-w-screen-2xl m-auto">
+    <section
+      class="max-w-screen-2xl m-auto"
+      id="banner"
+    >
       <div class="relative flex justify-center">
         <div
           class="bg-teal-900 rounded-lg h-96 w-11/12 absolute -top-52 flex items-center justify-center flex-col"
         >
-          <div class="w-1/2 flex flex-col gap-3">
-            <div class="flex text-6xl text-center">
+          <div class="lg:w-1/2 flex flex-col gap-3">
+            <div class="flex text-3xl lg:text-6xl text-center">
               <p class="text-white">
                 See the power of <span class="text-yellow-200">intouch</span> in action. Book a demo
                 now!
@@ -617,13 +721,20 @@
               </p>
             </div>
           </div>
-          <button class="bg-yellow-200 p-2 rounded-full mt-10">Request a demo</button>
+          <button
+            class="bg-yellow-200 p-2 rounded-full mt-10 text-teal-900 hover:bg-yellow-100 duration-700"
+          >
+            Request a demo
+          </button>
         </div>
       </div>
     </section>
-    <section class="max-w-screen-2xl m-auto">
-      <div class="h-[40rem] flex flex-col justify-center gap-5 pt-52">
-        <div class="flex justify-between">
+    <footer
+      class="max-w-screen-2xl m-auto p-2 xl:p-0"
+      id="footer"
+    >
+      <div class="h-[40rem] flex flex-col justify-center items-center gap-5 pt-96 lg:pt-[30rem]">
+        <div class="flex flex-col justify-between border-b-2 md:flex-row w-11/12">
           <div class="w-[10rem] h-[5rem]">
             <img
               class="w-full h-full"
@@ -631,62 +742,123 @@
               alt=""
             />
           </div>
-          <div class="flex gap-20">
-            <div class="text-right">
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:gap-20">
+            <div class="lg:text-right">
               <div class="pb-5 font-semibold">
                 <a href="">Products</a>
               </div>
-              <div class="flex flex-col text-right gap-3 text-gray-600">
-                <a href="">Text Message</a>
-                <a href="">Add2Wallet</a>
-                <a href="">Tap2Buy</a>
-                <a href="">GiftGuru</a>
+              <div class="flex flex-col lg:text-right gap-3 text-gray-500">
+                <a
+                  class="hover:text-black duration-700"
+                  href="#message"
+                  >Text Message</a
+                >
+                <a
+                  class="hover:text-black duration-700"
+                  href="#wallet"
+                  >Add2Wallet</a
+                >
+                <a
+                  class="hover:text-black duration-700"
+                  href="#buy"
+                  >Tap2Buy</a
+                >
+                <a
+                  class="hover:text-black duration-700"
+                  href="#guru"
+                  >GiftGuru</a
+                >
               </div>
             </div>
-            <div class="text-right">
+            <div class="lg:text-right">
               <div class="pb-5 font-semibold">
                 <a href="">Resources</a>
               </div>
-              <div class="flex flex-col text-right gap-3 text-gray-600">
-                <a href="">Announcements</a>
-                <a href="">Guides</a>
-                <a href="">Case studios</a>
-                <a href="">Blog</a>
+              <div class="flex flex-col lg:text-right gap-3 text-gray-500">
+                <a
+                  class="hover:text-black duration-700"
+                  href=""
+                  >Announcements</a
+                >
+                <a
+                  class="hover:text-black duration-700"
+                  href=""
+                  >Guides</a
+                >
+                <a
+                  class="hover:text-black duration-700"
+                  href=""
+                  >Case studios</a
+                >
+                <a
+                  class="hover:text-black duration-700"
+                  href=""
+                  >Blog</a
+                >
               </div>
             </div>
-            <div class="text-right">
+            <div class="lg:text-right">
               <div class="pb-5 font-semibold">
                 <a href="">Company</a>
               </div>
-              <div class="flex flex-col text-right gap-3 text-gray-600">
-                <a href="">About us</a>
-                <a href="">Use cases</a>
-                <a href="">Support</a>
+              <div class="flex flex-col lg:text-right gap-3 text-gray-500">
+                <a
+                  class="hover:text-black duration-700"
+                  href=""
+                  >About us</a
+                >
+                <a
+                  class="hover:text-black duration-700"
+                  href=""
+                  >Use cases</a
+                >
+                <a
+                  class="hover:text-black duration-700"
+                  href=""
+                  >Support</a
+                >
+              </div>
+            </div>
+            <div class="w-full flex justify-start lg:justify-end items-center h-52 lg:col-span-3">
+              <div>
+                <p class="text-sm text-gray-600">Proud supporter of</p>
+                <div class="flex lg:justify-end">
+                  <img
+                    class="opacity-50 hover:opacity-100 duration-700"
+                    src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cf7327bf4cb185c254f129_heartkids-logo.png"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="w-full flex justify-end items-center h-52 border-b-2">
-          <div>
-            <p class="text-gray-600">Proud supporter of</p>
-            <div class="flex justify-end">
-              <img
-                src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62cf7327bf4cb185c254f129_heartkids-logo.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="flex justify-between pb-5">
-          <p class="text-gray-600">©intouch 2022.</p>
-          <div class="flex gap-5 text-gray-600">
-            <a href="">Service level Agreement</a>
-            <a href="">Cookie Policy</a>
-            <a href="">Privacy Policy</a>
-            <a href="">Terms & Conditions</a>
+        <div class="flex justify-between pb-5 flex-col w-11/12 md:flex-row">
+          <p class="text-gray-500 pb-2 lg:pb-0">©intouch 2022.</p>
+          <div class="flex lg:gap-5 text-gray-500 flex-col gap-3 md:flex-row">
+            <a
+              class="hover:text-black duration-700"
+              href=""
+              >Service level Agreement</a
+            >
+            <a
+              class="hover:text-black duration-700"
+              href=""
+              >Cookie Policy</a
+            >
+            <a
+              class="hover:text-black duration-700"
+              href=""
+              >Privacy Policy</a
+            >
+            <a
+              class="hover:text-black duration-700"
+              href=""
+              >Terms & Conditions</a
+            >
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
