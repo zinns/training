@@ -26,9 +26,22 @@
       rel="stylesheet"
       href="/trainings/Tailwind/01/styles.css/styles.css"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <body>
+  <body id="nav">
     <section class="max-w-screen-2xl m-auto sticky top-0 bg-gray-50 rounded-lg z-10">
       <nav class="w-full flex justify-between items-center py-5 px-2 lg:p-5">
         <div>
@@ -132,14 +145,14 @@
     </section>
     <section class="max-w-screen-2xl m-auto p-2 xl:p-0">
       <div
-        class="bg-teal-900 w-full h-[50rem] md:h-[40rem] flex-col gap-10 flex lg:flex-row rounded-lg items-center justify-center"
+        class="bg-teal-900 w-full h-[50rem] md:h-[40rem] flex-col gap-10 flex md:flex-row rounded-lg items-center justify-center"
       >
         <div
           class="md:w-2/5 items-center justify-center flex flex-col gap-5 lg:justify-start lg:items-start lg:pl-5"
         >
           <p class="text-3xl text-white">Next generation</p>
           <p class="bg-yellow-200 rounded-full p-2 w-40 text-xl text-center">text marketing</p>
-          <p class="lg:w-3/4 text-white text-center lg:text-start">
+          <p class="lg:w-3/4 text-white text-center px-4 lg:text-start">
             welcom to the next generation of mobile engagement. Send personalized, interactive
             campaigns directly to your customers pockets, enable conversion in one tap.
           </p>
@@ -173,11 +186,9 @@
       <div class="w-full flex flex-col justify-center items-center mt-20">
         <div class="w-11/12 flex flex-col items-center justify-center gap-4">
           <p class="text-xl">Used by industry leaders</p>
-          <div
-            class="w-full flex overflow-x-hidden overflow-x-scroll h-20 items-center justify-around lg:overflow-x-hidden"
-          >
-            <div class="flex gap-2 px-5 justify-start md:w-full md:justify-around">
-              <div class="w-12 h-10 ml-5">
+          <div class="w-full flex overflow-x-scroll h-20 items-center lg:overflow-x-hidden">
+            <div class="flex gap-5 px-2 justify-end md:w-full md:justify-around">
+              <div class="w-12 h-10">
                 <a
                   class="grayscale opacity-25 hover:grayscale-0 hover:opacity-100 duration-500"
                   href=""
@@ -251,7 +262,7 @@
           </div>
         </div>
         <div
-          class="w-full bg-zinc-200 rounded-lg mt-14 h-[110rem] flex flex-col justify-center items-center lg:h-[50rem]"
+          class="w-full bg-zinc-200 rounded-lg mt-14 h-[90rem] flex flex-col justify-center items-center lg:h-[50rem]"
         >
           <p class="text-3xl lg:w-2/6 text-center mt-14">
             The leading platform for managing your mobile customer journeys
@@ -310,10 +321,10 @@
       class="max-w-screen-2xl m-auto p-2 xl:p-0"
       id="message"
     >
-      <div class="pt-10 flex gap-4 flex-col lg:flex-row">
+      <div class="pt-10 flex gap-10 flex-col lg:flex-row mb-10">
         <div class="flex flex-col gap-5 lg:w-1/2">
           <div class="flex gap-4 flex-col items-start lg:items-center lg:flex-row">
-            <p>Personalized Text Messaging</p>
+            <p class="bg-teal-100/50 rounded-full px-2 py-1">Personalized Text Messaging</p>
             <a
               class="bg-teal-900 text-white rounded-full p-2"
               href=""
@@ -368,7 +379,7 @@
       class="max-w-screen-2xl m-auto p-2 xl:p-0"
       id="wallet"
     >
-      <div class="pt-10 flex gap-4 flex-col-reverse lg:flex-row">
+      <div class="pt-10 flex gap-10 flex-col-reverse lg:flex-row mb-10">
         <div class="lg:w-1/2">
           <div>
             <img
@@ -379,7 +390,7 @@
         </div>
         <div class="lg:w-1/2 flex flex-col gap-5">
           <div class="flex items-center gap-4">
-            <p>add2Wallet</p>
+            <p class="bg-teal-100/50 rounded-full px-2 py-1">add2Wallet</p>
           </div>
           <p class="text-3xl font-semibold lg:text-5xl py-5">
             Unlock the power of the mobile wallet
@@ -423,10 +434,10 @@
       class="max-w-screen-2xl m-auto p-2 xl:p-0"
       id="buy"
     >
-      <div class="pt-10 flex flex-col gap-4 lg:flex-row">
+      <div class="pt-10 flex flex-col gap-10 lg:flex-row mb-10">
         <div class="lg:w-1/2 flex flex-col gap-5">
           <div class="flex items-center gap-4">
-            <p>Tap2Buy</p>
+            <p class="bg-teal-100/50 rounded-full px-2 py-1">Tap2Buy</p>
           </div>
           <p class="text-3xl font-semibold lg:text-5xl py-5">Enable One Tap Commerce</p>
           <div class="border-b-2 pb-5 w-11/12">
@@ -477,7 +488,7 @@
       class="max-w-screen-2xl m-auto p-2 xl:p-0"
       id="guru"
     >
-      <div class="pt-10 flex gap-4 flex-col-reverse lg:flex-row">
+      <div class="pt-10 flex gap-10 flex-col-reverse lg:flex-row">
         <div class="lg:w-1/2">
           <div>
             <img
@@ -488,7 +499,7 @@
         </div>
         <div class="lg:w-1/2 flex flex-col gap-5">
           <div class="flex items-center gap-4">
-            <p>GiftGuru</p>
+            <p class="bg-teal-100/50 rounded-full px-2 py-1">GiftGuru</p>
           </div>
           <p class="text-3xl font-semibold lg:text-5xl py-5">
             Customize and send digital gift cards
@@ -648,10 +659,13 @@
     >
       <div class="w-full h-[60rem] bg-zinc-100 rounded-lg flex items-center justify-center mt-10">
         <div
-          class="w-11/12 lg:w-7/12 flex flex-col items-center justify-center relative pb-10 lg:pb-32"
+          class="w-11/12 lg:w-7/12 flex flex-col items-center justify-center relative pb-52 sm:pb-32"
         >
           <div>
-            <p class="text-lx lg:text-3xl text-center w-full">
+            <p
+              style="font-family: 'Poppins', sans-serif"
+              class="text-lg sm:text-3xl text-center w-full font-black"
+            >
               "We have been so fortunate to have access to the expert team at MobileDigital and the
               amazing intouch SaaS platform. This channel was new to our marketing mix and with the
               guidance and generosity from the team, it has proved to be an effective way to not
@@ -663,11 +677,11 @@
             <div class="flex justify-center lg:text-xl pt-5 gap-2">
               <p class="font-semibold text-center">
                 Diana Crisp
-                <span class="text-gray-600">Digital Strategy & Marketing Manager, HeartKids</span>
+                <span class="text-gray-400">Digital Strategy & Marketing Manager, HeartKids</span>
               </p>
             </div>
           </div>
-          <div class="flex gap-2 pt-10">
+          <div class="flex gap-2 pt-5 md:pt-10">
             <button
               type="button"
               class="bg-zinc-400 rounded-full p-1 hover:bg-black duration-700"
@@ -696,6 +710,13 @@
               alt=""
             />
           </div>
+          <div class="absolute -top-40 -right-52 w-1/4 hidden xl:flex">
+            <img
+              class="w-full object-fit"
+              src="./assets/logo.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -709,7 +730,7 @@
         >
           <div class="lg:w-1/2 flex flex-col gap-3">
             <div class="flex text-3xl lg:text-6xl text-center">
-              <p class="text-white">
+              <p class="text-white px-2 sm:px-0">
                 See the power of <span class="text-yellow-200">intouch</span> in action. Book a demo
                 now!
               </p>
@@ -734,13 +755,15 @@
       id="footer"
     >
       <div class="h-[40rem] flex flex-col justify-center items-center gap-5 pt-96 lg:pt-[30rem]">
-        <div class="flex flex-col justify-between border-b-2 md:flex-row w-11/12">
+        <div class="flex flex-col justify-between border-b-2 pt-10 md:flex-row w-11/12">
           <div class="w-[10rem] h-[5rem]">
-            <img
-              class="w-full h-full"
-              src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/6305a3e7b58d08dc66ac8b9f_MD22-020-InTouch-eSignature1-400px.gif"
-              alt=""
-            />
+            <a href="#nav">
+              <img
+                class="w-full h-full"
+                src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/6305a3e7b58d08dc66ac8b9f_MD22-020-InTouch-eSignature1-400px.gif"
+                alt=""
+              />
+            </a>
           </div>
           <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:gap-20">
             <div class="lg:text-right">
