@@ -16,7 +16,7 @@ const getMissingStatuses = async () => {
       userAgent: 'zinns integration',
     });
 
-    const { data } = await octokit.rest.issues.listComments({
+    const { data: status } = await octokit.rest.issues.listComments({
       issue_number: '40' /* eslint-disable-line camelcase */,
       owner: 'zinns',
       repo: 'training',
@@ -24,7 +24,8 @@ const getMissingStatuses = async () => {
     });
 
     const today = new Date();
-    const lastComment = new Date(data[data.length - 1].created_at);
+    const lastComment =
+      status.length > 0 ? new Date(status[status.length - 1].created_at) : fullDate;
 
     const missingStatuses = differenceInBusinessDays(today, lastComment);
 
