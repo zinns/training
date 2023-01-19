@@ -145,13 +145,15 @@
     </section>
     <section class="max-w-screen-2xl m-auto p-2">
       <div
-        class="bg-teal-900 w-full h-[50rem] md:h-[40rem] flex-col gap-10 flex md:flex-row rounded-lg items-center justify-center"
+        class="bg-teal-900 w-full h-[50rem] md:h-[40rem] flex-col lg:gap-10 flex md:flex-row rounded-lg items-center justify-center"
       >
         <div
-          class="md:w-2/5 items-center justify-center flex flex-col gap-5 lg:justify-start lg:items-start lg:pl-5"
+          class="sm:w-2/5 items-center justify-center flex flex-col gap-5 pt-5 lg:pt-0 md:justify-start md:items-start sm:pl-5"
         >
           <p class="text-3xl text-white">Next generation</p>
-          <p class="bg-yellow-200 rounded-full p-2 w-40 text-xl text-center">text marketing</p>
+          <p class="bg-yellow-200 rounded-full p-2 w-40 text-xl text-center text-teal-900">
+            text marketing
+          </p>
           <p class="lg:w-3/4 text-white text-center px-4 md:text-start">
             welcom to the next generation of mobile engagement. Send personalized, interactive
             campaigns directly to your customers pockets, enable conversion in one tap.
@@ -164,9 +166,10 @@
             </button>
           </div>
         </div>
-        <div class="flex justify-center items-center">
-          <div class="relative w-9/12 md:w-6/12 lg:w-auto">
+        <div class="flex justify-center items-center h-full w-9/12">
+          <div class="relative lg:w-auto">
             <img
+              class="w-full h-full"
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62d5fd8a3158a97279a4620f_intouch-phone-base.png"
               alt=""
             />
@@ -327,8 +330,8 @@
       class="max-w-screen-2xl m-auto p-2"
       id="message"
     >
-      <div class="pt-10 flex gap-10 flex-col lg:flex-row mb-10">
-        <div class="flex flex-col gap-5 lg:w-1/2">
+      <div class="pt-10 flex gap-10 flex-col xl:flex-row mb-10">
+        <div class="flex flex-col gap-5 xl:w-1/2">
           <div class="flex gap-4 flex-col items-start lg:items-center lg:flex-row">
             <p class="bg-teal-100/50 rounded-full px-2 py-1">Personalized Text Messaging</p>
             <a
@@ -371,9 +374,9 @@
             Learn more
           </button>
         </div>
-        <div class="lg:w-1/2">
+        <div class="xl:w-1/2 flex justify-center items-center">
           <img
-            class="w-full h-full"
+            class="w-full h-full object-contain"
             src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62d60570c4c0535fa8bfd928_txt-messaging-feature.png"
             alt=""
           />
@@ -384,15 +387,15 @@
       class="max-w-screen-2xl m-auto p-2"
       id="wallet"
     >
-      <div class="pt-10 flex gap-10 flex-col-reverse lg:flex-row mb-10">
-        <div class="lg:w-1/2">
+      <div class="pt-10 flex gap-10 flex-col-reverse xl:flex-row mb-10">
+        <div class="xl:w-1/2 pr-4 xl:pr-0">
           <img
             class="w-full h-full"
             src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de1e0897f460058102849b_add2wallet-feature.png"
             alt=""
           />
         </div>
-        <div class="lg:w-1/2 flex flex-col gap-5">
+        <div class="xl:w-1/2 flex flex-col gap-5">
           <div class="flex items-center gap-4">
             <p class="bg-teal-100/50 rounded-full px-2 py-1">add2Wallet</p>
           </div>
@@ -438,8 +441,8 @@
       class="max-w-screen-2xl m-auto p-2"
       id="buy"
     >
-      <div class="pt-10 flex flex-col gap-10 lg:flex-row mb-10">
-        <div class="lg:w-1/2 flex flex-col gap-5">
+      <div class="pt-10 flex flex-col gap-10 xl:flex-row mb-10">
+        <div class="xl:w-1/2 flex flex-col gap-5">
           <div class="flex items-center gap-4">
             <p class="bg-teal-100/50 rounded-full px-2 py-1">Tap2Buy</p>
           </div>
@@ -478,7 +481,7 @@
             Learn more
           </button>
         </div>
-        <div class="lg:w-1/2">
+        <div class="xl:w-1/2 pr-4 xl:pr-0">
           <img
             class="w-full h-full"
             src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de1e259763997025463b58_tap2buy-feature.png"
@@ -491,15 +494,15 @@
       class="max-w-screen-2xl m-auto p-2"
       id="guru"
     >
-      <div class="pt-10 flex gap-10 flex-col-reverse lg:flex-row">
-        <div class="lg:w-1/2">
+      <div class="pt-10 flex gap-10 flex-col-reverse xl:flex-row">
+        <div class="xl:w-1/2 pr-4 xl:pr-0">
           <img
             class="w-full"
             src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62e724692cf397776a605282_giftcard-feature.png"
             alt=""
           />
         </div>
-        <div class="lg:w-1/2 flex flex-col gap-5">
+        <div class="xl:w-1/2 flex flex-col gap-5">
           <div class="flex items-center gap-4">
             <p class="bg-teal-100/50 rounded-full px-2 py-1">GiftGuru</p>
           </div>
@@ -659,14 +662,14 @@
       class="max-w-screen-2xl m-auto pt-20 p-2"
       id="banner"
     >
-      <div class="w-full h-[60rem] bg-zinc-100 rounded-lg flex items-center justify-center mt-10">
-        <div
-          class="w-11/12 lg:w-7/12 flex flex-col items-center justify-center relative pb-52 sm:pb-32"
-        >
+      <div
+        class="w-full h-[35rem] sm:h-[65rem] bg-zinc-100 rounded-lg flex items-center justify-center mt-10"
+      >
+        <div class="w-11/12 lg:w-7/12 flex flex-col items-center justify-center relative sm:pb-40">
           <div>
             <p
               style="font-family: 'Poppins', sans-serif"
-              class="text-lg sm:text-3xl text-center w-full font-black"
+              class="text-sm sm:text-3xl text-center w-full font-black"
             >
               "We have been so fortunate to have access to the expert team at MobileDigital and the
               amazing intouch SaaS platform. This channel was new to our marketing mix and with the
@@ -683,11 +686,8 @@
               </p>
             </div>
           </div>
-          <div class="flex gap-2 pt-5 md:pt-10">
-            <button
-              type="button"
-              class="bg-zinc-400 rounded-full p-1 hover:bg-black duration-700"
-            ></button>
+          <div class="flex gap-2 pt-5 md:pt-10 z-10">
+            <a class="bg-black rounded-full p-1 hover:bg-black duration-700 cursor-pointer"></a>
             <button
               type="button"
               class="bg-zinc-400 rounded-full p-1 hover:bg-black duration-700"
@@ -705,7 +705,7 @@
               class="bg-zinc-400 rounded-full p-1 hover:bg-black duration-700"
             ></button>
           </div>
-          <div class="absolute -bottom-2 -left-52 hidden xl:flex">
+          <div class="absolute -bottom-2 -left-52 hidden xl:flex z-0">
             <img
               class="object-contain"
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de2a2a3b3a736c612a850a_testimonial-quote-left.svg"
@@ -728,11 +728,11 @@
     >
       <div class="relative flex justify-center">
         <div
-          class="bg-teal-900 rounded-lg h-96 w-11/12 absolute -top-52 flex items-center justify-center flex-col"
+          class="bg-teal-900 rounded-lg h-96 w-11/12 absolute -top-10 sm:-top-52 flex items-center justify-center flex-col"
         >
           <div class="lg:w-1/2 flex flex-col gap-3">
-            <div class="flex text-3xl lg:text-6xl justify-center">
-              <p class="text-white px-2 sm:px-0 text-center">
+            <div class="flex text-3xl sm:text-4xl lg:text-6xl justify-center">
+              <p class="text-white px-2 sm:px-6 text-center">
                 See the power of <span class="text-yellow-200">intouch</span> in action. Book a demo
                 now!
               </p>
@@ -745,7 +745,7 @@
             </div>
           </div>
           <button
-            class="bg-yellow-200 p-2 rounded-full mt-10 text-teal-900 hover:bg-yellow-100 duration-700"
+            class="bg-yellow-200 p-2 px-4 rounded-full mt-10 text-teal-900 hover:bg-yellow-100 duration-700"
           >
             Request a demo
           </button>
@@ -756,7 +756,9 @@
       class="max-w-screen-2xl m-auto p-2 xl:p-0"
       id="footer"
     >
-      <div class="h-[40rem] flex flex-col justify-center items-center gap-5 pt-96 lg:pt-[30rem]">
+      <div
+        class="h-[40rem] flex flex-col justify-center items-center gap-5 pt-96 pt-[44rem] sm:pt-[30rem]"
+      >
         <div class="flex flex-col justify-between border-b-2 pt-10 md:flex-row w-11/12">
           <div class="w-[10rem] h-[5rem]">
             <a href="#nav">
