@@ -5,15 +5,14 @@
   "author": "Edgar Zea <cesszea@icloud.com>",
   "license": "MIT",
   "private": true,
-  "main": "server.js",
   "scripts": {
-    "dev-server": "nodemon server.mjs --trace-warnings",
+    "dev-server": "nodemon ./server/server.mjs --trace-warnings",
     "format": "prettier --write .",
     "lint": "eslint .",
     "postinstall": "husky install",
     "prepare": "husky install",
     "react": "sh react.sh",
-    "start-server": "node server.mjs --trace-warnings",
+    "start-server": "node ./server/server.mjs --trace-warnings",
     "validate": "prettier --check . && eslint ."
   },
   "devDependencies": {
