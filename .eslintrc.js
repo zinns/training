@@ -37,7 +37,7 @@ module.exports = {
       {
         arrays: 'only-multiline',
         objects: 'only-multiline',
-        imports: 'never',
+        imports: 'only-multiline',
         exports: 'never',
         functions: 'ignore',
       },
