@@ -25,8 +25,6 @@ app.post('/github-updates', async (req, res) => {
     const description = createDescription(payload, update);
     const message = formatMessage(actor, description, location, update);
 
-    console.log(update, message);
-
     if (isValid) {
       await sendMessage(message);
     }

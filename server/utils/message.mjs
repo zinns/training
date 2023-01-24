@@ -38,7 +38,9 @@ export const extractData = body => {
 };
 
 export const validatePayload = (payload, update) => {
-  return update.length === 1 ? payload[update[0]]?.status !== 'in_progress' : true;
+  const unusedStatuses = ['in_progress', 'queued'];
+
+  return update.length === 1 ? !unusedStatuses.includes(payload[update[0]]?.status) : true;
 };
 
 export const createDescription = (payload, update) => {
