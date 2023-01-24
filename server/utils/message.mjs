@@ -64,7 +64,9 @@ export const createDescription = (payload, update) => {
 };
 
 export const formatMessage = (actor, description, location, update) => {
-  const updateFormatted = (update.length > 1 ? update.join('/') : update[0]).replaceAll('_', ' ');
+  const updateFormatted = [...(update.length > 1 ? update.join('/') : update[0])]
+    .map(char => (char === '_' ? ' ' : char))
+    .join('');
   const message = `*GitHub Changes*
 User: *${actor}*
 Update: *${updateFormatted}${description ?? ''}*
