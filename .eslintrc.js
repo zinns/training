@@ -48,7 +48,6 @@ module.exports = {
     'func-call-spacing': ['error', 'never'],
     'computed-property-spacing': ['error', 'never'],
     'dot-location': ['error', 'property'],
-    'implicit-arrow-linebreak': ['error', 'beside'],
     'jsx-quotes': ['error', 'prefer-single'],
     'key-spacing': [
       'error',
