@@ -15,16 +15,12 @@
     />
     <link
       rel="stylesheet"
-      href="styles.css"
+      href="./syles/styles.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="preconectar"
       href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="stylesheet"
-      href="/trainings/Tailwind/01/styles.css/styles.css"
     />
     <link
       rel="preconnect"
@@ -658,20 +654,18 @@
         </div>
       </div>
     </section>
-    <section
-      class="max-w-screen-2xl m-auto pt-20 p-2"
-      id="banner"
-    >
+    <section class="max-w-screen-2xl m-auto pt-20 p-2">
       <div
-        class="w-full sm:h-[60rem] bg-zinc-100 rounded-lg flex items-center justify-center mt-10"
+        id="bannercontainer"
+        class="w-ful sm:h-[60rem] bg-zinc-100 rounded-lg flex items-center justify-center mt-10"
       >
         <div
           class="w-11/12 py-14 md:pb-32 lg:w-7/12 flex flex-col items-center justify-center relative sm:pb-40"
         >
           <div class="sm:py-8">
             <p
-              style="font-family: 'Poppins', sans-serif"
-              class="text-md sm:text-2xl text-center w-full font-black"
+              id="bannertext"
+              class="sm:text-2xl text-center w-full font-black"
             >
               "We have been so fortunate to have access to the expert team at MobileDigital and the
               amazing intouch SaaS platform. This channel was new to our marketing mix and with the
@@ -708,19 +702,21 @@
             ></button>
           </div>
           <div
-            class="absolute lg:bottom-10 lg:-left-52 xl:-bottom-2 xl:-left-52 hidden sm:flex sm:-left-10 sm:bottom-10 md:-left-14 md:bottom-6 z-0"
+            class="absolute lg:bottom-10 lg:-left-52 xl:-bottom-2 xl:-left-52 -bottom-14 -left-18 sm:flex sm:-left-10 sm:bottom-10 md:-left-14 md:bottom-6 z-0"
+            id="bocina"
           >
             <img
-              class="object-contain"
+              class="w-full h-full"
               src="https://uploads-ssl.webflow.com/62c6172b78254b25d7632cf7/62de2a2a3b3a736c612a850a_testimonial-quote-left.svg"
               alt=""
             />
           </div>
           <div
-            class="absolute xl:-top-40 lg:-top-20 lg:-right-44 w-1/4 hidden sm:flex sm:-right-12 sm:-top-20 md:-right-8 md:-top-18"
+            id="comilla"
+            class="absolute xl:-top-40 lg:-top-20 lg:-right-44 w-1/4 -right-2 -top-14 sm:flex sm:-right-4 sm:-top-20 md:-right-8 md:-top-18"
           >
             <img
-              class="w-full object-fit"
+              class="w-full h-full"
               src="./assets/logo.png"
               alt=""
             />
