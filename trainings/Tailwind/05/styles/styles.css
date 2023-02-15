@@ -5,4 +5,33 @@
 
 .es19 {
   background-image: linear-gradient(#aeaabd, #c8c8d3);
+  position: absolute;
+  top: 0rem;
+}
+
+#navbar {
+  position: sticky;
+  top: 0px;
+}
+
+#model {
+  position: sticky;
+  top: 7rem;
+}
+
+@media (max-width: 641px) {
+  #logo-white {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  #logo-black {
+    display: flex;
+    opacity: 1;
+  }
+
+  #menu {
+    color: black;
+  }
 }
