@@ -39,6 +39,7 @@ This repo has CI and CD configured. The steps to make a good implementation are:
 There is a Board (Project) in GitHub where are cards related with specific tasks.
 
 At the beginning of the course there would be some cards for the first lessons that have a particular [structure](#card-structure) based on subtasks from a generic task.
+<<<<<<< HEAD
 
 As you move through the levels of the course there would be a part where you'll have to create the cards.
 
@@ -50,6 +51,19 @@ As you are completing the subtasks you'll have to check the task that was comple
 
 Once a commit was submitted the reviewer can check the changes done an add the  date of the review to the QA check and must add a comment describing the bugs found with screenshots or video or if bugs were not found write some recommendations or congratulations.
 
+=======
+
+As you move through the levels of the course there would be a part where you'll have to create the cards.
+
+The base structure is try to split the website that you have to develop into components and add its 4 common screen sizes: (UW / Desktop / Tablet / Mobile) when it needs it.
+
+At the end of each card there should be a check for QA and this have to be only for reviewers.
+
+As you are completing the subtasks you'll have to check the task that was completed, make the specific commit and add it to the card as a comment including the commit ID (hash) and screenshots or video assets as probes of the changes.
+
+Once a commit was submitted the reviewer can check the changes done an add the  date of the review to the QA check and must add a comment describing the bugs found with screenshots or video or if bugs were not found write some recommendations or congratulations.
+
+>>>>>>> 0ff006cf270b550e5df6d5415d3364867e9800c6
 ### Card Structure
 
     [ ] Navbar
@@ -118,7 +132,9 @@ If you have some problems with this Linter and you don't find how to solve it, p
 
 ## React
 
-When you were doing React exercises you have to run one of these scripts
+<<<<<<< HEAD
+
+When you were doing React exercises you have to run one of these scripts inside the specific exercise folder
 
 **NPM**
 

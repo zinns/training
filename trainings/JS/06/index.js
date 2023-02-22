@@ -5,15 +5,15 @@
 // Create an object that stores the next type of values: String, Number, Boolean, Array, Object
 // Print in console the object's number value
 
-// const object = {
-//   age: 26,
-//   arr1: [],
-//   isMale: true,
-//   name: 'Andres',
-//   object: {},
-// };
+const object = {
+  age: 26,
+  // arr1: [],
+  isMale: true,
+  name: 'Andres',
+  object: {},
+};
 
-// console.log(object.age);
+console.log(object.age);
 
 // Create an object called dog
 const dog = {};
@@ -60,52 +60,51 @@ console.log(`This is ${dog.name} and she is ${dog.age} years old`);
 // estáCasado: verdadero
 // tieneHijos: si
 // hijos: ['Shamid', 'Dante']
-
-// const obj = {
-//   age: 26,
-//   children: ['Shamid', 'Dante'],
-//   hasChildren: 'yes',
-//   isMarried: true,
-//   name: 'Andres',
-// };
+const obj = {
+  age: 26,
+  // children: ['Shamid', 'Dante'],
+  hasChildren: 'yes',
+  isMarried: true,
+  name: 'Andres',
+};
 
 // Validate -> if the object is empty print 'There is no user' if not, print 'I'm Andres and I'm 26 years old' using the object values
 
-// if (Object.keys(obj).length === 0) {
-//   console.log('No hay usuario');
-// } else {
-//   console.log(`I'm ${obj.name} and I'm ${obj.age} yars old`);
-// }
+if (Object.keys(obj).length === 0) {
+  console.log('No hay usuario');
+} else {
+  console.log(`I'm ${obj.name} and I'm ${obj.age} yars old`);
+}
 
 // Validate if the children value has Shamid inside
 
-// if (obj.children.includes('Shamid')) {
-//   console.log(true);
-// } else {
-//   console.log(false);
-// }
+if (obj.children.includes('Shamid')) {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 // Validate -> if isMarried print 'Andres is already taken' if not, print 'Andres is available'
 
-// if (obj.isMarried) {
-//   console.log('Andres is already taken');
-// } else {
-//   console.log('Andres is available');
-// }
+if (obj.isMarried) {
+  console.log('Andres is already taken');
+} else {
+  console.log('Andres is available');
+}
 
 // Add the key pets with a value of an empty array
 
-// obj.pets = []
+// obj.pets = [];
 
 // Add to pets key the value of 'Dog' and 'Bunny'
 
-// obj.pets.push('Dog', 'Bunny');
+obj.pets.push('Dog', 'Bunny');
 
 // Print in console the amount of pets
 
-// console.log(obj.pets.length);
+console.log(obj.pets.length);
 
-// console.log(obj.children.length);
+console.log(obj.children.length);
 
 // // Create a copy of the last object
 
@@ -188,7 +187,7 @@ console.log(`This is ${dog.name} and she is ${dog.age} years old`);
 
 // obj3.favoriteMovie = 'Lord of the Rings';
 
-// // Reverse the string of favoriteMovie
+// Reverse the string of favoriteMovie
 
 // obj3.favoriteMovie = obj3.favoriteMovie.split('').reverse().join('');
 
