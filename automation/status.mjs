@@ -6,6 +6,9 @@ import { differenceInBusinessDays } from 'date-fns';
 import axios from 'axios';
 
 const getMissingStatuses = async () => {
+  console.log(process.env.GH_TOKEN);
+  console.log(process.env.TELEGRAM_TOKEN);
+  console.log(process.env.ZINNS_TELEGRAM_CHAT_ID);
   try {
     const octokit = new Octokit({
       auth: `${process.env.GH_TOKEN}`,

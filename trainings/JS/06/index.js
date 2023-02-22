@@ -15,6 +15,16 @@ const object = {
 
 console.log(object.age);
 
+// const object = {
+//   age: 26,
+//   arr1: [],
+//   isMale: true,
+//   name: 'Andres',
+//   object: {},
+// };
+
+// console.log(object.age);
+
 // Create an object called dog
 const dog = {};
 // Add the key name with its value
@@ -60,6 +70,7 @@ console.log(`This is ${dog.name} and she is ${dog.age} years old`);
 // estáCasado: verdadero
 // tieneHijos: si
 // hijos: ['Shamid', 'Dante']
+
 const obj = {
   age: 26,
   children: ['Shamid', 'Dante'],
@@ -105,6 +116,53 @@ obj.pets.push('Dog', 'Bunny');
 console.log(obj.pets.length);
 
 console.log(obj.children.length);
+=======
+
+// const obj = {
+//   age: 26,
+//   children: ['Shamid', 'Dante'],
+//   hasChildren: 'yes',
+//   isMarried: true,
+//   name: 'Andres',
+// };
+
+// Validate -> if the object is empty print 'There is no user' if not, print 'I'm Andres and I'm 26 years old' using the object values
+
+// if (Object.keys(obj).length === 0) {
+//   console.log('No hay usuario');
+// } else {
+//   console.log(`I'm ${obj.name} and I'm ${obj.age} yars old`);
+// }
+
+// Validate if the children value has Shamid inside
+
+// if (obj.children.includes('Shamid')) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// Validate -> if isMarried print 'Andres is already taken' if not, print 'Andres is available'
+
+// if (obj.isMarried) {
+//   console.log('Andres is already taken');
+// } else {
+//   console.log('Andres is available');
+// }
+
+// Add the key pets with a value of an empty array
+
+// obj.pets = []
+
+// Add to pets key the value of 'Dog' and 'Bunny'
+
+// obj.pets.push('Dog', 'Bunny');
+
+// Print in console the amount of pets
+
+// console.log(obj.pets.length);
+
+// console.log(obj.children.length);
 
 // // Create a copy of the last object
 
@@ -130,6 +188,7 @@ console.log(obj.children.length);
 
 // Extract the values of children in new variables using destructuring
 // (There would be two variables called Shamid and Dante )
+
 
 const obj0 = {
   age: 26,
@@ -223,3 +282,96 @@ if (obj5.luckyNumber % 8 === 0) {
 } else {
   console.log('Sorry but your lucky number is awful');
 }
+=======
+// const obj0 = {
+//   age: 26,
+//   children: ['Shamid', 'Dante'],
+//   hasChildren: 'yes',
+//   isMarried: true,
+//   name: 'Andres',
+// };
+
+// eslint-disable-next-line semi, object-curly-newline
+// const {
+//   children: [Shamid, Dante],
+//   // eslint-disable-next-line object-curly-newline
+// } = obj0;
+
+// console.log(Shamid, Dante);
+
+// Modify the name value and change it to upper case
+
+// const obj1 = {
+//   age: 26,
+//   children: ['Shamid', 'Dante'],
+//   hasChildren: 'yes',
+//   isMarried: true,
+//   name: 'Andres',
+// };
+
+// obj1.name = obj1.name.toUpperCase();
+
+// console.log(obj1);
+
+// Add a key called luckyNumber and assign a random value between 0 and 100 that should be rounded
+
+// const obj2 = {
+//   age: 26,
+//   children: ['Shamid', 'Dante'],
+//   hasChildren: 'yes',
+//   isMarried: true,
+//   name: 'Andres',
+// };
+
+// obj2.luckyNumber = Math.floor(Math.random() * 100);
+
+// console.log(obj2.luckyNumber);
+
+// Add a key called favoriteMovie with its value
+
+// const obj3 = {
+//   age: 26,
+//   children: ['Shamid', 'Dante'],
+//   hasChildren: 'yes',
+//   isMarried: true,
+//   name: 'Andres',
+// };
+
+// obj3.favoriteMovie = 'Lord of the Rings';
+
+// // Reverse the string of favoriteMovie
+
+// obj3.favoriteMovie = obj3.favoriteMovie.split('').reverse().join('');
+
+// console.log(obj3);
+
+// Sort the values of children key
+// const obj4 = {
+//   age: 26,
+//   children: ['Shamid', 'Dante'],
+//   hasChildren: 'yes',
+//   isMarried: true,
+//   name: 'Andres',
+// };
+
+// obj4.children = obj4.children.sort();
+
+// console.log(obj4);
+
+// Validate -> if luckyNumber is multiple of 8 print 'Your lucky number is awesome', if it is not print 'Sorry but your lucky number is awful'
+
+// const obj5 = {
+//   age: 26,
+//   children: ['Shamid', 'Dante'],
+//   hasChildren: 'yes',
+//   isMarried: true,
+//   name: 'Andres',
+// };
+
+// obj5.luckyNumber = Math.floor(Math.random() * 100);
+
+// if (obj5.luckyNumber % 8 === 0) {
+//   console.log('Your lucky number is awesome');
+// } else {
+//   console.log('Sorry but your lucky number is awful');
+// }

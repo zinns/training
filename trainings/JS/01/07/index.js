@@ -64,6 +64,7 @@ for (let i = 0; i <= 100; i++) {
 }
 
 // Create an object with the next structure
+
 const user = {
   age: 28,
   children: 0,
@@ -140,11 +141,90 @@ for (let i = 0; i < user.friends.length; i++) {
   user.friends[i].pets.push('dog');
 }
 
+// const user = {
+//   age: 28,
+//   children: 0,
+//   favoriteFood: [
+//     {
+//       ingredients: ['Masa', 'slasa de tomate', 'jamon', 'queso'],
+//       isExensive: false,
+//       name: 'Pizza',
+//     },
+//     {
+//       ingredients: ['Piezas de pollo', 'papas a la francesa', 'verdura'],
+//       isExpensive: false,
+//       name: 'Alitas',
+//     },
+//   ],
+//   favoriteMovies: [
+//     'Lord of the Rings',
+//     'Black Hawk Down',
+//     '13 hours: The Secrets Soldiers of Benghazi',
+//   ],
+//   friends: [
+//     {
+//       age: 29,
+//       children: 0,
+//       favoriteFood: [
+//         {
+//           ingredients: ['Tortilla', 'carne', 'verdura'],
+//           isExensive: false,
+//           name: 'Tacos',
+//         },
+//         {
+//           ingredients: ['Piezas de pollo', 'papas a la francesa', 'verdura'],
+//           isExpensive: false,
+//           name: 'Alitas',
+//         },
+//       ],
+//       favoriteMovies: ['Star wars', 'Pokémon', 'Spiderman'],
+//       hasChildren: false,
+//       isMarried: true,
+//       name: 'Edgar',
+//     },
+//   ],
+
+//   hasChildren: false,
+//   isMarried: true,
+//   name: 'Edgar',
+// };
+
+// Validate -> if the object is empty print 'There is no user' if not, print 'I'm Andres and I'm 26 years old' using the object values
+
+// if (Object.keys(user).length === 0) {
+//   console.log('There is not user');
+// } else {
+//   console.log(`I'm ${user.name} and I'm ${user.age} years old`);
+// }
+
+// Validate -> if isMarried print 'Andres is already taken' if not, print 'Andres is available'
+
+// if (user.isMarried) {
+//   console.log('Andres is already taken');
+// } else {
+//   console.log('Andres is available');
+// }
+
+// Add the key pets to all the user objects with a value of an empty array
+
+// for (let i = 0; i < user.friends.length; i++) {
+//   user.friends[i].pets = [];
+// }
+
+// Add to pets some string values
+
+// for (let i = 0; i < user.friends.length; i++) {
+//   user.friends[i].pets.push('dog');
+// }
+
 // Print in console the amount of pets
 // Create a copy of the global object
 // Create a copy of the first object of friends key
 
+
 console.log(user.pets.length);
+
+// console.log(user.pets.length);
 
 // let user3 = Object.assign({}, user);
 
@@ -169,7 +249,11 @@ console.log(user.pets.length);
 // const [{favoriteFood: [friend1food1, friend1food2]}] = user.friends
 // Modify the name value and change it to upper case
 
+
 user.name = user.name.toUpperCase();
+
+// user.name = user.name.toUpperCase();
+
 
 // Add a key called luckyNumber and assign a random value between 0 and 100 that should be rounded
 
@@ -178,6 +262,9 @@ user.name = user.name.toUpperCase();
 // Sort the values of children key
 
 user.children.sort();
+
+// user.children.sort();
+
 
 // Validate -> if luckyNumber is multiple of 3 print 'Your lucky number is awesome', if it is not print 'Sorry but your lucky number is awful'
 

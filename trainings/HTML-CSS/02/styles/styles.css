@@ -19,6 +19,12 @@ p {
 
 .navbar {
   padding: 1rem;
+  }
+.section1 {
+  background-color: #f1eade;
+  height: 40rem;
+}
+.navbar {
   display: flex;
   align-items: center;
   max-width: 1536px;
@@ -91,7 +97,7 @@ p {
 }
 
 .ring-story {
-  width: 30%;
+  width: 40%;
 }
 
 .elenco-story {
@@ -321,8 +327,48 @@ p {
     flex-direction: column;
     gap: 1rem;
   }
+
   .ring-story {
     width: 80%;
+    }
+  .navbar {
+    display: flex;
+    min-width: 30rem;
+  }
+  .link {
+    text-decoration: none;
+    height: 2rem;
+  }
+  .section2 {
+    display: none;
+  }
+  .section3 {
+    height: 20rem;
+  }
+  .linkshover {
+    display: none;
+  }
+  .P {
+    font-size: 28px;
+  }
+  .personages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textelenco {
+    margin-bottom: 1rem;
+    width: 29.5rem;
+  }
+  .imgperson {
+    width: 29.5rem;
+  }
+  .trilogyp {
+    font-size: 18px;
+  }
+  .section4 {
+    overflow-y: scroll;
+    overflow: hidden;
   }
 }
 
@@ -385,6 +431,11 @@ p {
 
   .started {
     display: none;
+    gap: 1rem;
+  }
+
+  .started {
+    gap: 1rem;
   }
 
   .icon-menu svg {
