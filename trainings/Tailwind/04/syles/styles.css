@@ -1,0 +1,23 @@
+#bannertext {
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 640px) {
+  #bannercontainer {
+    height: 45rem;
+  }
+}
+
+@media (max-width: 420px) {
+  #bannercontainer {
+    height: 64rem;
+  }
+
+  #bocina {
+    width: 100%;
+  }
+
+  #bannertext {
+    font-size: 18px;
+  }
+}
