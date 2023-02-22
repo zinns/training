@@ -1,0 +1,890 @@
+body {
+  margin: 0;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+li {
+  font-family: 'Montserrat', sans-serif;
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero .left {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.hero .left h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+  padding-right: 4rem;
+  line-height: 2.5rem;
+  width: 50%;
+  margin: 1rem 0;
+}
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: '\2713';
+  padding-right: 0.5rem;
+}
+
+.hero .left ul {
+  font-weight: 400;
+  font-size: 0.7rem;
+  list-style: none;
+  margin-left: 1rem;
+  width: 60%;
+  padding-left: 0.5rem;
+}
+
+.hero .left ul li {
+  margin-bottom: 1rem;
+}
+
+.book-cta {
+  width: 25vh;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+
+.hero .right {
+  width: 40%;
+  height: 30rem;
+  background: linear-gradient(-45deg, #8b7fc9, #bab2e0);
+  flex-shrink: 0;
+  border-radius: 0 0 0 1rem;
+  display: flex;
+  padding-top: 4rem;
+  align-items: center;
+}
+
+.hero .right img {
+  width: 85%;
+  height: 60%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-left: -5rem;
+  box-shadow: -0.5rem 0.25rem 2rem #00000071;
+}
+
+.intro {
+  padding: 10rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro .text {
+  padding: 0 1rem;
+  width: 85%;
+}
+
+.intro .text p {
+  margin: 1rem auto;
+  text-align: center;
+  width: 60%;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 0 5rem;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+  padding: 2rem 3rem;
+}
+
+.benefits {
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.benefits .benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2.5rem;
+}
+
+.benefits .benefit svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.benefits .benefit p:first-of-all {
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.benefits .benefit p:last-of-type {
+  width: 100%;
+  font-weight: 300;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.banner {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f8f6f9;
+  border-radius: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.banner .products {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.banner .products div,
+.points .products div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.banner .products div svg,
+.points .products div svg {
+  width: 2rem;
+  aspect-ratio: 1;
+}
+
+.banner .products div p,
+.points .products div p:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.showcase {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.gallery {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.gallery:nth-child(3) {
+  flex-direction: row-reverse;
+}
+
+.gallery > * {
+  flex-grow: 0;
+}
+
+.gallery .show-img {
+  width: 40%;
+  height: 25rem;
+  background: linear-gradient(-45deg, #c1bbe7, #beb6e8);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.showcase .gallery .show-img img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.gallery .description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery .description > * {
+  width: 75%;
+}
+
+.gallery .description > p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-align: left;
+}
+
+.gallery .description > p:nth-child(2) {
+  color: #6e6e6e;
+  font-weight: 100;
+  font-size: 1rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.gallery .description > p:nth-child(3) {
+  color: #707070;
+  font-weight: 100;
+}
+
+.gallery .descrin div {
+  border-left: 1px solid #d5d5d5;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.gallery .description div p {
+  color: #a0a0a0;
+  font-size: 0.7rem;
+}
+
+.gallery .description div p:nth-child(1) {
+  color: #929292;
+  font-weight: 600;
+}
+
+.points {
+  width: 85%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f6f9;
+  border-radius: 1rem;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+}
+
+.points .products {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.points .products div p:nth-child(3) {
+  max-width: 15rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10rem auto;
+  gap: 2rem;
+}
+
+.contact > div {
+  width: 30%;
+}
+
+.contact > div:last-child {
+  width: 15%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 2rem;
+}
+
+.contact > div .subtitle {
+  padding: 0;
+  width: 99%;
+  margin: 0;
+  text-align: left;
+}
+.contact > div ul {
+  padding: 0;
+}
+
+.contact > div ul li {
+  margin: 1rem 0;
+  width: 90%;
+}
+
+.contact > div .book-cta {
+  background-color: #aaaaac;
+}
+.footer {
+  max-width: 1920px;
+}
+.footer-container {
+  margin: 0 auto;
+  background-color: #030303;
+  padding: 10rem 15rem 1rem;
+}
+
+.footer-container h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.footer-container > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding-right: 2rem;
+}
+
+.footer-container > div:nth-child(2) > div:nth-child(1) {
+  max-width: 40%;
+}
+
+.footer-container > div:nth-child(2) div h2 {
+  color: #d6d0f3;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.footer-container > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.footer-container > div:nth-child(2) > div:nth-child(2) div p {
+  color: #c4c4c6;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.footer-container > div:nth-child(3) {
+  padding: 3rem 0;
+  border-top: 1px solid #c2c2c4;
+  border-bottom: 1px solid #c2c2c4;
+}
+
+.footer-container > div:nth-child(3) p {
+  color: #c2c2c4;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+footer .rights {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+footer .rights p {
+  color: #c2c2c4;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    width: 100%;
+  }
+  .hero .left {
+    width: 70%;
+  }
+  .hero .left h1 {
+    width: 50%;
+    line-height: 2.75rem;
+  }
+  .hero .right {
+    width: 30%;
+  }
+  .hero .right img {
+    width: 85%;
+    height: 45%;
+    object-fit: cover;
+    margin-left: -5rem;
+  }
+  .banner .products {
+    gap: 2rem;
+    width: 100%;
+  }
+  .banner .products div p {
+    font-size: 1rem;
+  }
+  .banner .book-cta {
+    width: 20%;
+  }
+  .points .products div p:nth-child(2) {
+    text-align: center;
+  }
+  .contact > div:last-child {
+    width: 25%;
+  }
+  .contact > div .book-cta {
+    width: 75%;
+  }
+  .footer-container {
+    padding: 10rem 5rem 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero .left {
+    width: 70%;
+  }
+  .hero .left h1 {
+    width: 72%;
+  }
+  .hero .right {
+    width: 30%;
+  }
+  .hero .right img {
+    width: 100%;
+    height: 40%;
+    object-fit: fill;
+    margin-left: -2rem;
+  }
+  .banner .products {
+    overflow-x: scroll;
+    gap: 1rem;
+    width: 90%;
+    justify-content: flex-start;
+  }
+  .banner .book-cta {
+    width: 22%;
+  }
+  .contact {
+    gap: 0.5rem;
+  }
+  .contact > div {
+    padding: 0 1rem;
+    width: 45%;
+  }
+  .contact > div .subtitle {
+    width: 85%;
+  }
+  .contact > div:last-child {
+    width: 40%;
+    padding: 0 1rem;
+  }
+  .contact > div .book-cta {
+    width: 85%;
+  }
+  .footer-container {
+    padding: 10rem 5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  main {
+    max-width: 768px;
+  }
+  .hero {
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero .left {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .hero .left h1,
+  .hero .left p {
+    padding-left: 1rem;
+  }
+  .hero .left ul {
+    padding-left: 1rem;
+  }
+  .hero .left .book-cta {
+    margin: 0 1rem;
+    width: 9rem;
+  }
+  .hero .right {
+    width: 100%;
+    height: 15rem;
+  }
+  .hero .right img {
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+    margin-left: 14rem;
+    margin-bottom: 10rem;
+  }
+  .intro {
+    padding: 2rem 0;
+  }
+  .intro .text .subtitle {
+    width: 100%;
+    padding: 0;
+  }
+  .intro .text p {
+    padding: 0;
+    width: 100%;
+  }
+  .intro .benefits {
+    flex-direction: column;
+  }
+  .intro .benefits .benefit p {
+    margin: 0.5rem;
+  }
+  .banner {
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner .subtitle {
+    width: 80%;
+  }
+  .banner h3 {
+    padding: 0;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .banner .products {
+    justify-content: flex-start;
+    width: 90%;
+    overflow-x: scroll;
+  }
+  .banner .book-cta {
+    width: 35%;
+  }
+  .showcase .subtitle {
+    width: 70%;
+    padding: 0;
+  }
+  .showcase .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .showcase .gallery .show-img {
+    padding: 1rem;
+    width: 80%;
+    height: 15rem;
+  }
+  .showcase .gallery .show-img img {
+    height: 15rem;
+    object-fit: cover;
+  }
+  .showcase .gallery .description {
+    width: 100%;
+  }
+  .points .products {
+    flex-direction: column;
+  }
+  .points .subtitle {
+    width: 70%;
+  }
+  .points .products > div p {
+    margin: 0.5rem;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact .subtitle {
+    width: 50%;
+    padding: 1rem;
+  }
+  .contact > div {
+    width: 55%;
+  }
+  .contact > div .subtitle,
+  ul {
+    width: 100%;
+    padding: 1rem;
+  }
+  .contact .book-cta {
+    margin-right: 1rem;
+    width: 35%;
+  }
+  .contact > div:last-child {
+    width: 40%;
+  }
+  .footer-container {
+    padding: 1rem;
+  }
+
+  .footer-container > div:nth-child(2) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-container > div:nth-child(2) h2 {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero .left {
+    padding: 0;
+  }
+  .hero .left h1 {
+    font-size: 3rem;
+    margin: 1rem;
+    width: 80%;
+    padding-right: 1rem;
+  }
+  .hero .left p {
+    margin-left: 1rem;
+    font-size: 1rem;
+    width: 80%;
+  }
+  .hero .right {
+    width: 100%;
+    padding: 0;
+    height: 15rem;
+  }
+  .hero .right img {
+    width: 50%;
+    margin: -5rem 5rem 0 auto;
+    height: 10rem;
+  }
+
+  .intro {
+    width: 100%;
+  }
+  .intro .benefit {
+    width: 22rem;
+  }
+  .intro .benefits .benefit p {
+    margin: 1rem;
+  }
+  .intro .text .subtitle {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: lighter;
+  }
+  .intro .text :nth-child(2) {
+    width: 13rem;
+    color: #646464;
+  }
+  .intro .benefit :nth-child(4) {
+    display: none;
+  }
+  .intro .text,
+  .benefits {
+    padding: 0;
+  }
+  .intro .benefits {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .banner {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    padding: 2rem 0;
+  }
+  .banner h3 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .banner .book-cta {
+    width: 37%;
+  }
+  .banner .products {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding: 2rem 0;
+    width: 90%;
+    margin: 2rem 0;
+  }
+  .showcase h3 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .gallery {
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery,
+  .gallery:nth-child(3) {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .showcase .gallery .show-img {
+    width: 90%;
+    padding: 1rem;
+  }
+  .showcase .gallery .show-img img {
+    height: 15rem;
+  }
+  .showcase .gallery .description {
+    width: 100%;
+  }
+
+  .gallery .description div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 6rem;
+    border-left: solid 0.1rem #d2d2d2;
+    padding-left: 0.5rem;
+  }
+  .gallery .description div p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .points {
+    margin-left: 1rem;
+    width: 90%;
+    padding: 0.5rem;
+  }
+  .points .subtitle {
+    width: 70%;
+  }
+  .points .products :nth-child(1),
+  .points .products :nth-child(2),
+  .points .products :nth-child(3) {
+    gap: 0;
+  }
+  .points .products :nth-child(1) :nth-child(2),
+  .points .products :nth-child(1) :nth-child(3) {
+    text-align: center;
+    width: 13rem;
+    margin: 0.5rem;
+  }
+  .points .products :nth-child(2) :nth-child(2) {
+    text-align: center;
+    width: 13rem;
+    margin: 0.5rem;
+  }
+  .points .products :nth-child(2) :nth-child(3) {
+    text-align: center;
+    width: 15rem;
+    margin: 0.5rem;
+  }
+  .points .products :nth-child(3) :nth-child(2) {
+    text-align: center;
+    width: 19rem;
+    margin: 0.5rem;
+  }
+  .points .products :nth-child(3) :nth-child(3) {
+    text-align: center;
+    width: 13rem;
+    margin: 0.5rem;
+  }
+  .points .products,
+  .contact {
+    flex-direction: column;
+    margin: 5rem 0;
+  }
+  .contact > div .subtitle {
+    justify-content: flex-start;
+    width: 80%;
+  }
+  .contact > div {
+    padding: 1rem;
+    width: 90%;
+  }
+  .contact div ul {
+    width: 70%;
+    margin-left: 0.5rem;
+  }
+  .contact > div:last-child,
+  .book-cta {
+    padding: 0.5rem;
+    width: 11rem;
+    height: 2rem;
+    margin-left: 1rem;
+  }
+  .container > div:nth-child(2) {
+    flex-direction: column;
+  }
+  footer {
+    padding-top: 5rem;
+  }
+  .footer-container {
+    padding: 3rem 0;
+  }
+  .footer-container h3 {
+    padding-left: 1rem;
+  }
+  .footer-container > div:nth-child(2) {
+    padding-left: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-container > div:nth-child(2) :nth-child(1) h2 {
+    width: 16rem;
+  }
+  .footer-container > div:nth-child(2) + div:nth-child(1),
+  .footer-container > div:nth-child(2) + div:nth-child(2) {
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer-container > div:nth-child(3) {
+    width: 95%;
+    margin-left: 0.6rem;
+  }
+
+  .footer-container > div:nth-child(3) p {
+    font-size: 0.75rem;
+    margin: auto;
+    width: 100%;
+    line-height: 1.5;
+    font-weight: 100;
+  }
+  .footer-container > div:nth-child(2) > div:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .footer-container > div:nth-child(2) > div:nth-child(2) div p {
+    margin-bottom: 0.5rem 0;
+  }
+  .footer-container .rights > p {
+    margin: 0 1rem;
+  }
+}
