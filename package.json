@@ -6,10 +6,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "prepare": "husky install",
+    "dev-server": "nodemon ./server/server.mjs --trace-warnings",
     "format": "prettier --write .",
     "lint": "eslint .",
-    "validate": "prettier --check . && eslint .",
     "postinstall": "husky install",
     "prepare": "husky install",
     "react": "sh react.sh",
