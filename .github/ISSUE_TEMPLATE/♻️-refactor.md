@@ -1,15 +1,15 @@
 ---
-name: '⚙️ Feature'
-about: New thing to do
-title: Feature - [Name]
-labels: "\U0001F50B Type: Feature"
+name: '♻️ Refactor'
+about: 'Something needs to be improved'
+title: '♻️ Refactor - [Name]'
+labels: '♻️ Type: Refactor'
 assignees: ''
 reviewers: 'eamzea'
 ---
 
-## Describe the Feature
+## Describe the Refactor
 
-A clear and concise description of the new feature
+A clear and concise description of the thin to be improved
 
 ### Acceptance Criteria
 
