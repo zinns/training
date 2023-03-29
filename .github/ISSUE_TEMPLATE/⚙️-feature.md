@@ -1,7 +1,7 @@
 ---
 name: '⚙️ Feature'
-about: New thing to do
-title: Feature - [Name]
+about: 'New thing to do'
+title: '⚙️ Feature - [Name]'
 labels: "\U0001F50B Type: Feature"
 assignees: ''
 reviewers: 'eamzea'
