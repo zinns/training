@@ -30,4 +30,4 @@ jobs:
       - name: Status Reminder
         run: |
           npm i
-          npm run status_reminder
+          npm run status-reminder
