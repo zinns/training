@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import * as dotenv from 'dotenv';
 dotenv.config();
 
@@ -13,11 +14,10 @@ const getMissingStatuses = async () => {
   try {
     const octokit = new Octokit({
       auth: `${process.env.GH_TOKEN}`,
-      userAgent: 'zinns integration',
     });
 
     const { data: status } = await octokit.rest.issues.listComments({
-      issue_number: '40' /* eslint-disable-line camelcase */,
+      issue_number: '40',
       owner: 'zinns',
       repo: 'training',
       since: new Date(`${year}-${month}-1`),

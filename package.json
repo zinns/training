@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "assessments-reminder": "node ./automation/assessments_reminder.mjs",
     "dev-server": "nodemon ./server/server.mjs --trace-warnings",
     "format": "prettier --write .",
     "lint": "eslint .",
@@ -13,27 +14,29 @@
     "prepare": "husky install",
     "react": "sh react.sh",
     "start-server": "node ./server/server.mjs --trace-warnings",
+    "status-counter": "node ./automation/status_counter.mjs",
+    "status-reminder": "node ./automation/status_reminder.mjs",
     "validate": "prettier --check . && eslint ."
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
-    "eslint": "^8.23.1",
-    "eslint-config-prettier": "^8.5.0",
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-hooks": "^0.4.3",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.8",
-    "husky": "^8.0.1",
-    "nodemon": "^2.0.20",
-    "prettier": "^2.7.1"
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.7"
   },
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.3.5",
     "date-fns": "^2.29.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "octokit": "^2.0.7"
+    "octokit": "^2.0.14"
   },
   "babel": {
     "presets": [
