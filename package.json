@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "assessments_reminder": "node ./automation/assessments_reminder.mjs",
+    "assessments-reminder": "node ./automation/assessments_reminder.mjs",
     "dev-server": "nodemon ./server/server.mjs --trace-warnings",
     "format": "prettier --write .",
     "lint": "eslint .",
@@ -14,8 +14,8 @@
     "prepare": "husky install",
     "react": "sh react.sh",
     "start-server": "node ./server/server.mjs --trace-warnings",
-    "status-counter": "node ./automation/status-counter.mjs",
-    "status-reminder": "node ./automation/status-reminder.mjs",
+    "status-counter": "node ./automation/status_counter.mjs",
+    "status-reminder": "node ./automation/status_reminder.mjs",
     "validate": "prettier --check . && eslint ."
   },
   "devDependencies": {

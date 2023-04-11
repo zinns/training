@@ -30,4 +30,4 @@ jobs:
       - name: Status Counter
         run: |
           npm i
-          npm run status_counter
+          npm run status-counter
