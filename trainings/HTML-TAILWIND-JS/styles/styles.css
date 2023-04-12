@@ -1,1 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto:wght@100;500;900&display=swap');
+
+footer {
+  background: linear-gradient(90deg, white -5%, #365ca0, #365ca0, #365ca0, white 105%);
+}
