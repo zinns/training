@@ -1,0 +1,28 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          red: '#EF5350',
+          blue: '#365CA0',
+          yellow: '#FECA1C',
+        },
+        fontFamily: {
+          nunito: ['Nunito', 'sans-serif'],
+          roboto: ['Roboto', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<div class="max-w-screen-2xl m-auto h-36 flex items-center">
+  <div class="w-full flex justify-center">
+    <div class="flex justify-around border-2 border-blue rounded-full p-2 sm:w-2/5 lg:w-1/4">
+      <a class="bg-red text-white py-2 px-4 rounded-full">Pokedex</a>
+      <a class="py-2 px-4 rounded-full hover:bg-red hover:text-white duration-500">Caught</a>
+      <a class="py-2 px-4 rounded-full hover:bg-red hover:text-white duration-500">Favorites</a>
+    </div>
+  </div>
+</div>
