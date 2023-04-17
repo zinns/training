@@ -3,3 +3,4 @@ node_modules
 .prettierignore
 .prettierrc.js
 commitlint.config.js
+build/
