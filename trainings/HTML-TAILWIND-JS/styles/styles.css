@@ -3,3 +3,30 @@
 footer {
   background: linear-gradient(90deg, white -5%, #365ca0, #365ca0, #365ca0, white 105%);
 }
+
+label {
+  transition: all 0.1s;
+}
+
+button {
+  transition: color 0.6s ease;
+}
+
+#tab {
+  height: 90%;
+  width: 32%;
+  left: 3.5px;
+  transform: translateY(-3%);
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input {
+  display: none;
+}
+
+#wrapper div #caught:checked ~ #tab {
+  left: 33.5%;
+}
+#wrapper div #favorites:checked ~ #tab {
+  left: 66%;
+}

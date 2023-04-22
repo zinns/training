@@ -1,4 +1,4 @@
-const tabs = document.querySelectorAll('#tab');
+const tabs = document.querySelectorAll('#capsule');
 
 let position;
 
