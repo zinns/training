@@ -1,8 +1,6 @@
 const tabs = document.querySelectorAll('#capsule');
 
 const btnActive = () => {
-  const btn = true;
-
   tabs.forEach(ele => {
     ele.addEventListener('click', () => {
       if (ele === 'click') {
