@@ -4,6 +4,10 @@ footer {
   background: linear-gradient(90deg, white -5%, #365ca0, #365ca0, #365ca0, white 105%);
 }
 
+#tabs .disable {
+  background-color: transparent;
+}
+
 #tab {
   position: absolute;
   height: 90%;
