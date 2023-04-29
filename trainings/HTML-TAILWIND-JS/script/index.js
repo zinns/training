@@ -18,7 +18,13 @@ const listPokemon = pokemon => {
   const container = document.createElement('div');
 
   container.style.display = 'flex';
+  container.style.justifyContent = 'center';
+  container.style.alignItems = 'center';
   container.style.gap = '10px';
+  container.style.borderRadius = '50px';
+  container.style.border = 'black';
+  container.style.width = '16rem';
+  container.style.height = '20rem';
 
   const number = document.createElement('p');
 
