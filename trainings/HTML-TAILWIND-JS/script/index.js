@@ -17,22 +17,23 @@ const allPokemons = num => {
 const listPokemon = pokemon => {
   const container = document.createElement('div');
 
-  container.style.display = 'flex';
-  container.style.justifyContent = 'center';
-  container.style.alignItems = 'center';
-  container.style.gap = '10px';
-  container.style.borderRadius = '50px';
-  container.style.border = 'black';
-  container.style.width = '16rem';
-  container.style.height = '20rem';
+  container.classList.add(
+    'w-80',
+    'h-96',
+    'border-2',
+    'border-black',
+    'rounded-lg',
+    'flex',
+    'justify-center',
+    'items-center',
+    'gap-2',
+  );
 
   const number = document.createElement('p');
 
   number.textContent = `#${pokemon.id.toString()}`;
 
   const name = document.createElement('p');
-
-  name.classList.add('list:none');
 
   name.classList.add('name');
   name.textContent = pokemon.name;
