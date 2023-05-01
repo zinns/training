@@ -18,8 +18,8 @@ const listPokemon = pokemon => {
   const container = document.createElement('div');
 
   container.classList.add(
-    'w-80',
-    'h-96',
+    'w-72',
+    'h-80',
     'border-2',
     'border-black',
     'rounded-lg',
@@ -29,11 +29,11 @@ const listPokemon = pokemon => {
     'gap-2',
   );
 
-  const number = document.createElement('p');
+  const number = document.createElement('span');
 
   number.textContent = `#${pokemon.id.toString()}`;
 
-  const name = document.createElement('p');
+  const name = document.createElement('span');
 
   name.classList.add('name');
   name.textContent = pokemon.name;
@@ -44,4 +44,4 @@ const listPokemon = pokemon => {
   pokemonContainer.appendChild(container);
 };
 
-allPokemons(250);
+allPokemons.sort(allPokemons(250));
