@@ -10,7 +10,10 @@ const pokedex = id => {
 
 const allPokemons = num => {
   for (let i = 1; i <= num; i++) {
-    pokedex(i);
+    const arr = [];
+
+    arr.push(pokedex(i));
+    arr.sort((a, b) => a - b);
   }
 };
 
@@ -44,4 +47,4 @@ const listPokemon = pokemon => {
   pokemonContainer.appendChild(container);
 };
 
-allPokemons.sort(allPokemons(250));
+allPokemons(250);
