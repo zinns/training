@@ -21,8 +21,8 @@ const listPokemon = pokemon => {
   const container = document.createElement('div');
 
   container.classList.add(
-    'w-72',
-    'h-80',
+    'w-56',
+    'h-64',
     'border-2',
     'border-black',
     'rounded-lg',
@@ -38,7 +38,6 @@ const listPokemon = pokemon => {
 
   const name = document.createElement('span');
 
-  name.classList.add('name');
   name.textContent = pokemon.name;
 
   container.appendChild(number);
