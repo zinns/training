@@ -3,3 +3,22 @@
 footer {
   background: linear-gradient(90deg, white -5%, #365ca0, #365ca0, #365ca0, white 105%);
 }
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+@media (min-width: 772px) {
+  body {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 768px) {
+  @media (min-height: 1000px) {
+    body {
+      height: 86vh;
+    }
+  }
+}
