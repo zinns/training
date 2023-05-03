@@ -8,14 +8,21 @@ const pokedex = id => {
     });
 };
 
-const allPokemons = num => {
-  for (let i = 1; i <= num; i++) {
-    const arr = [];
+const allPokemons = async num => {
+  const promises = [];
 
-    arr.push(pokedex(i));
-    arr.sort((a, b) => a - b);
+  for (let i = 1; i <= num; i++) {
+    promises.push(fetch(`https://pokeapi.co/api/v2/pokemon/${i}`).then(res => res.json()));
+    pokedex(i);
   }
+  const results = await Promise.all(promises);
+
+  results.forEach(pokemon => {
+    listPokemon(pokemon);
+  });
 };
+
+let loadedPokemons = 0;
 
 const listPokemon = pokemon => {
   const container = document.createElement('div');
@@ -34,16 +41,19 @@ const listPokemon = pokemon => {
 
   const number = document.createElement('span');
 
-  number.textContent = `#${pokemon.id.toString()}`;
+  number.textContent = `#${pokemon.id}`;
 
   const name = document.createElement('span');
 
-  name.textContent = pokemon.name;
+  name.textContent = `${pokemon.name}`;
 
   container.appendChild(number);
   container.appendChild(name);
 
-  pokemonContainer.appendChild(container);
+  if (pokemon.id === loadedPokemons + 1) {
+    loadedPokemons++;
+    pokemonContainer.appendChild(container);
+  }
 };
 
 allPokemons(250);
