@@ -139,9 +139,11 @@
     </nav>
     <div
       id="wrapper"
-      class="max-w-screen-2xl m-auto h-36 flex items-center justify-center"
+      class="max-w-screen-2xl m-auto h-36 flex items-center justify-center p-2"
     >
-      <div class="flex gap-2 border-2 border-blue rounded-full px-1 py-1 relative">
+      <div
+        class="inline-flex gap-2 border-2 border-blue overflow-hidden rounded-full px-1 py-1 relative"
+      >
         <input
           type="radio"
           name="tab"
@@ -159,25 +161,31 @@
           id="favorites"
         />
         <label
+          data-active="true"
+          data-hovered="false"
           id="capsule"
           for="pokedex"
-          class="pokedex w-full p-2 relative z-10 cursor-pointer w-full rounded-full hover:bg-red-100 hover:text-blue duration-300"
+          class="pokedex w-32 p-2 relative z-10 cursor-pointer rounded-full duration-300"
         >
-          <button class="relative -z-10">Pokedex</button>
+          <button class="relative w-full -z-10">Pokedex</button>
         </label>
         <label
+          data-active="false"
+          data-hovered="false"
           id="capsule"
           for="caught"
-          class="caught w-full p-2 relative z-10 cursor-pointer w-full rounded-full hover:bg-red-100 hover:text-blue duration-300"
+          class="caught w-32 p-2 relative z-10 cursor-pointer rounded-full duration-300"
         >
-          <button class="relative -z-10">Caught</button>
+          <button class="relative w-full -z-10">Caught</button>
         </label>
         <label
+          data-active="false"
+          data-hovered="false"
           id="capsule"
           for="favorites"
-          class="favorites w-full p-2 relative z-10 cursor-pointer w-full rounded-full hover:bg-red-100 hover:text-blue duration-300"
+          class="favorites w-32 p-2 relative z-10 cursor-pointer rounded-full duration-300"
         >
-          <button class="relative -z-10">Favorites</button>
+          <button class="relative w-full -z-10">Favorites</button>
         </label>
         <div
           id="tab"

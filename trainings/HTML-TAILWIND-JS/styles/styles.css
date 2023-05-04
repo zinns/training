@@ -28,11 +28,11 @@ footer {
 }
 
 #wrapper div #caught:checked ~ #tab {
-  left: 33.4%;
+  left: 34%;
 }
 
 #wrapper div #favorites:checked ~ #tab {
-  left: 66.5%;
+  left: 67%;
 }
 
 input[type='radio'] {
