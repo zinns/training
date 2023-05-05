@@ -29,6 +29,7 @@
               blue: '#365CA0',
               yellow: '#FECA1C',
               'red-100': '#F4D1CE',
+              'red-100': '#F4D1CE',
             },
             fontFamily: {
               nunito: ['Nunito', 'sans-serif'],
@@ -138,83 +139,31 @@
       </div>
     </nav>
     <div
-      id="wrapper"
-      class="max-w-screen-2xl m-auto h-36 flex items-center justify-center p-2"
+      class="flex items-center flex-col max-w-screen-2xl m-auto"
+      id="hero"
     >
-      <div
-        class="inline-flex gap-2 border-2 border-blue overflow-hidden rounded-full px-1 py-1 relative"
-      >
-        <input
-          type="radio"
-          name="tab"
-          id="pokedex"
-          checked
-        />
-        <input
-          type="radio"
-          name="tab"
-          id="caught"
-        />
-        <input
-          type="radio"
-          name="tab"
-          id="favorites"
-        />
-        <label
-          data-active="true"
-          data-hovered="false"
-          id="capsule"
-          for="pokedex"
-          class="pokedex w-32 p-2 relative z-10 cursor-pointer rounded-full duration-300"
-        >
-          <button class="relative w-full -z-10">Pokedex</button>
-        </label>
-        <label
-          data-active="false"
-          data-hovered="false"
-          id="capsule"
-          for="caught"
-          class="caught w-32 p-2 relative z-10 cursor-pointer rounded-full duration-300"
-        >
-          <button class="relative w-full -z-10">Caught</button>
-        </label>
-        <label
-          data-active="false"
-          data-hovered="false"
-          id="capsule"
-          for="favorites"
-          class="favorites w-32 p-2 relative z-10 cursor-pointer rounded-full duration-300"
-        >
-          <button class="relative w-full -z-10">Favorites</button>
-        </label>
-        <div
-          id="tab"
-          class="bg-red rounded-full"
-        ></div>
+      <div class="w-full flex justify-center my-5">
+        <div class="flex justify-around gap-2 border-2 border-blue rounded-full px-1 py-1">
+          <button class="bg-red text-white py-2 px-3 rounded-full">Pokedex</button>
+          <button class="py-2 px-3 rounded-full hover:bg-red-100 hover:text-blue duration-500">
+            Caught
+          </button>
+          <button class="py-2 px-3 rounded-full hover:bg-red-100 hover:text-blue duration-500">
+            Favorites
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="flex justify-center max-w-screen-2xl m-auto">
-      <div
-        class="flex flex-col w-3/5 sm:flex-wrap sm:flex-row items-center gap-5 sm:justify-around sm:w-4/5 my-10"
-      >
-        <div class="border-2 border-black rounded-lg w-80 h-96 sm:w-64 sm:h-80"></div>
-        <div class="w-80 h-96 sm:w-64 sm:h-80"></div>
-        <div class="w-80 h-96 sm:w-64 sm:h-80"></div>
-        <div class="w-80 h-96 sm:w-64 sm:h-80"></div>
-        <div class="w-80 h-96 sm:w-64 sm:h-80"></div>
-        <div class="w-80 h-96 sm:w-64 sm:h-80"></div>
-        <div class="w-80 h-96 sm:w-64 sm:h-80"></div>
-        <div class="w-80 h-96 sm:w-64 sm:h-80"></div>
-        <div class="w-80 h-96 sm:w-64 sm:h-80"></div>
-        <div class="w-80 h-96 sm:w-64 sm:h-80"></div>
-        <div class="w-80 h-96 sm:w-64 sm:h-80"></div>
-        <div class="w-80 h-96 sm:w-64 sm:h-80"></div>
+      <div class="flex justify-center w-11/12">
+        <div
+          id="pokemon-container"
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 p-4"
+        ></div>
       </div>
     </div>
     <footer class="mx-auto w-full flex justify-center">
       <div class="flex max-w-screen-2xl w-full justify-center items-center">
         <div class="flex justify-between items-center w-11/12 2xl:w-full">
-          <span class="w-12">
+          <span>
             <svg
               width="82"
               height="80"
