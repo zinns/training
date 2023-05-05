@@ -3,3 +3,38 @@
 footer {
   background: linear-gradient(90deg, white -5%, #365ca0, #365ca0, #365ca0, white 105%);
 }
+
+#tabs .disable {
+  background-color: transparent;
+}
+
+#tab {
+  position: absolute;
+  height: 90%;
+  width: 32%;
+  left: 3.5px;
+  transform: translateY(-3%);
+  transition: 0.5s ease;
+}
+
+#wrapper div #pokedex:checked ~ label.pokedex button,
+#wrapper div #caught:checked ~ label.caught button,
+#wrapper div #favorites:checked ~ label.favorites button {
+  color: #fff;
+}
+
+#pokedex:active {
+  background-color: none;
+}
+
+#wrapper div #caught:checked ~ #tab {
+  left: 34%;
+}
+
+#wrapper div #favorites:checked ~ #tab {
+  left: 67%;
+}
+
+input[type='radio'] {
+  display: none;
+}
