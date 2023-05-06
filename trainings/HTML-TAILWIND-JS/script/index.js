@@ -5,6 +5,7 @@ const pokedex = id => {
     .then(res => res.json())
     .then(data => {
       listPokemon(data);
+      console.log(data);
     });
 };
 
@@ -27,17 +28,11 @@ let loadedPokemons = 0;
 const listPokemon = pokemon => {
   const container = document.createElement('div');
 
-  container.classList.add(
-    'w-56',
-    'h-64',
-    'border-2',
-    'border-black',
-    'rounded-lg',
-    'flex',
-    'justify-center',
-    'items-center',
-    'gap-2',
-  );
+  container.classList.add('w-72', 'h-96', 'rounded-lg', 'flex', 'flex-col', 'gap-2', 'p-4');
+
+  const nameId = document.createElement('div');
+
+  nameId.classList.add('w-full', 'flex', 'justify-between');
 
   const number = document.createElement('span');
 
@@ -47,8 +42,19 @@ const listPokemon = pokemon => {
 
   name.textContent = `${pokemon.name}`;
 
-  container.appendChild(number);
-  container.appendChild(name);
+  const containerImage = document.createElement('div');
+
+  containerImage.classList.add('w-32', 'h-32');
+
+  const pokeImg = document.createElement('img');
+
+  pokeImg.src = pokemon.sprites.front_default;
+
+  container.appendChild(nameId);
+  nameId.appendChild(name);
+  nameId.appendChild(number);
+  container.appendChild(containerImage);
+  containerImage.appendChild(pokeImg);
 
   if (pokemon.id === loadedPokemons + 1) {
     loadedPokemons++;

@@ -3,3 +3,34 @@
 footer {
   background: linear-gradient(90deg, white -5%, #365ca0, #365ca0, #365ca0, white 105%);
 }
+
+#card {
+  background: linear-gradient(225deg, #feca1c, #365ca0, #365ca0, #365ca0, #ef5350);
+  filter: brightness(50%);
+  transition: all 0.5s;
+}
+
+#card:hover {
+  filter: none;
+}
+
+#like :hover {
+  stroke: #ef5350;
+  fill: #ef5350;
+  transition: all 0.5s;
+}
+
+#caught :hover #line {
+  stroke: #000;
+  transition: all 0.5s;
+}
+
+#caught :hover #white-ball {
+  fill: white;
+  transition: 0.5s;
+}
+
+#caught :hover #red-ball {
+  fill: #ef5350;
+  transition: 0.5s;
+}
