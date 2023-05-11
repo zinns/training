@@ -5,9 +5,15 @@ footer {
 }
 
 #card {
-  background: linear-gradient(225deg, #feca1c, #365ca0, #365ca0, #365ca0, #ef5350);
+  background: linear-gradient(
+    215deg,
+    rgba(254, 202, 28, 0.8015581232492998) 0%,
+    rgba(54, 92, 160, 1) 35%,
+    rgba(73, 91, 152, 1) 75%,
+    rgba(239, 83, 80, 0.7987570028011204) 100%
+  );
   filter: brightness(50%);
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 #card:hover {
@@ -17,23 +23,22 @@ footer {
 #like :hover {
   stroke: #ef5350;
   fill: #ef5350;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 #caught :hover #line {
   stroke: #000;
-  transition: all 0.5s;
+  transition: all 0.8s ease;
 }
 
 #caught :hover #white-ball {
   fill: white;
-  transition: 0.5s;
+  transition: all 0.8s ease;
 }
 
 #caught :hover #red-ball {
   fill: #ef5350;
-  transition: 0.5s;
-  background-color: transparent;
+  transition: all 0.8s ease;
 }
 
 #tabs .disable {
@@ -67,4 +72,17 @@ footer {
 
 input[type='radio'] {
   display: none;
+}
+
+#type {
+  text-shadow: #000 5px 0 5px, 0px 0 3px #000;
+}
+
+#data-base {
+  text-shadow: #000 5px 0 5px, 0px 0 3px #000;
+}
+
+#image {
+  filter: drop-shadow(#000 0 0 15px);
+  object-fit: cover;
 }

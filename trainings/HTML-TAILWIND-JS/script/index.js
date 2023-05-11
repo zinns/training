@@ -52,33 +52,42 @@ let loadedPokemons = 0;
 const listPokemon = pokemon => {
   const container = document.createElement('div');
 
-  container.classList.add('w-72', 'h-96', 'rounded-lg', 'flex', 'flex-col', 'gap-2', 'p-4');
+  const pokemonName = pokemon.name;
+
+  const transformName = () => {
+    const splitName = pokemonName.split('');
+
+    splitName[0] = splitName[0].toUpperCase();
+
+    return splitName.join('');
+  };
+
+  container.classList.add('rounded-lg', 'flex', 'flex-col', 'gap-2');
 
   container.innerHTML = `
   <div
   id="card"
-  class="rounded-lg w-72 flex flex-col h-96 p-2 gap-2"
+  class="rounded-lg w-full flex flex-col h-full p-2 gap-2"
 >
   <div class="w-full flex justify-between text-white font-roboto text-2xl relative">
-    <span class="absolute left-0 top-3 z-20">${pokemon.name}</span>
+    <span class="absolute left-0 top-3 z-20">${transformName(pokemonName)}</span>
     <span class="absolute right-0 z-20"># ${pokemon.id}</span>
   </div>
-  <div class="w-full h-40 relative">
-    <img
-      class="w-full h-full -scale-x-100 absolute top-3"
+  <div class="w-full h-80 relative">
+    <img id="image"
+      class="w-full h-full -scale-x-100"
       src="${pokemon.sprites.versions['generation-iv']['heartgold-soulsilver'].front_default}"
       alt=""
     />
   </div>
   <div class="w-full flex justify-between">
     <div class="flex flex-col text-white text-2xl">
-      <span class="font-roboto">Type</span>
-      <span class="pl-3 font-nunito">Electric</span>
+      <span class="font-roboto font-thin">Type</span>
+      <span id="type" class="pl-7 font-nunito font-thin">Electric</span>
     </div>
     <div class="flex flex-col text-white items-center">
-      <span class="cursor-pointer relative z-20">
+      <span  id="like" class="cursor-pointer relative z-20">
         <svg
-          id="like"
           width="23"
           height="20"
           viewBox="0 0 23 20"
@@ -197,17 +206,17 @@ const listPokemon = pokemon => {
   <div class="w-full flex gap-6 text-white">
     <div class="flex flex-col">
       <span class="font-roboto">Stats</span>
-      <span class="pl-3 font-nunito">Hp</span>
-      <span class="pl-3 font-nunito">Defense</span>
-      <span class="pl-3 font-nunito">Special-attack</span>
-      <span class="pl-3 font-nunito">Speed</span>
+      <span class="pl-3 font-nunito font-thin">Hp</span>
+      <span class="pl-3 font-nunito font-thin">Defense</span>
+      <span class="pl-3 font-nunito font-thin">Special-attack</span>
+      <span class="pl-3 font-nunito font-thin">Speed</span>
     </div>
     <div class="flex flex-col items-center">
       <span class="font-roboto">Base</span>
-      <span class="font-nunito">35</span>
-      <span class="font-nunito">40</span>
-      <span class="font-nunito">50</span>
-      <span class="font-nunito">90</span>
+      <span id="data-base" class="font-nunito font-thin">35</span>
+      <span id="data-base" class="font-nunito font-thin">40</span>
+      <span id="data-base" class="font-nunito font-thin">50</span>
+      <span id="data-base" class="font-nunito font-thin">90</span>
     </div>
   </div>
 </div>
