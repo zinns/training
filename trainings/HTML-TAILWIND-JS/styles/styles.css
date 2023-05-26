@@ -4,7 +4,7 @@ footer {
   background: linear-gradient(90deg, white -5%, #365ca0, #365ca0, #365ca0, white 105%);
 }
 
-#card {
+.card {
   background: linear-gradient(
     215deg,
     rgba(254, 202, 28, 0.8015581232492998) 0%,
@@ -12,28 +12,38 @@ footer {
     rgba(73, 91, 152, 1) 75%,
     rgba(239, 83, 80, 0.7987570028011204) 100%
   );
-  filter: brightness(50%);
   transition: all 0.8s;
-  position: relative;
-  z-index: 1;
 }
 
 #blur-card {
-  background-color: transparent;
-  filter: blur(10px);
+  filter: blur(5px);
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: 0;
-  left: 0;
+  left: 0px;
   width: 100%;
-  height: 100%;
+  height: 432px;
 }
 
-#card-container {
-  position: relative;
+.card-container {
+  background-color: transparent;
+  z-index: 2;
 }
 
-#card:hover {
+.card:hover .dark-layer {
+  background-color: transparent;
+  filter: none;
+  display: none;
+  transition: all 0.8s;
+}
+
+.dark-layer {
+  background-color: #1e1e1e97;
+  filter: brightness(10%);
+  z-index: 2;
+}
+
+.card:hover {
   filter: none;
 }
 
@@ -105,13 +115,16 @@ input[type='radio'] {
   text-shadow: #1e1e1e 0px 0 10px, 0px 0 10px #000;
 }
 
-#image {
+.image img {
   filter: drop-shadow(#000 0 0 15px);
-  object-fit: content;
   transform: scale(-1, 1);
 }
 
-#card :hover #image {
-  transform: scale3d(-1.1, 1.2, 1.3);
-  transition: all 0.8s;
+.card:hover .image img {
+  -webkit-transform: scale(-1.2, 1.2);
+  transition: all 1s;
+}
+
+#dark-layer {
+  filter: brightness(50%);
 }
