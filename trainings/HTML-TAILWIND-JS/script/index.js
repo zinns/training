@@ -43,22 +43,18 @@ let loadedPokemons = 0;
 const listPokemon = pokemon => {
   const container = document.createElement('div');
 
-  const pokemonName = pokemon.name;
-
-  const transformName = poke => {
-    return poke[0].toUpperCase() + poke.slice(1);
-  };
-
-  container.classList.add('w-80', 'rounded-lg', 'flex', 'flex-col', 'relative');
+  container.classList.add('w-80', 'rounded-lg', 'flex', 'relative');
 
   container.innerHTML = `
-  <div class="card rounded-lg flex flex-col h-[27rem] gap-2 relative">
-  <div id="blur-card" class=""></div>
+  <div class="card rounded-lg w-full flex flex-col h-[27rem] relative">
+  <div id="blur-card"></div>
   <div class="card-container w-full h-full p-2 relative top-0 left-0">
     <div
       class="w-full flex justify-between text-white font-roboto text-2xl relative"
     >
-      <span class="absolute left-0 top-3 z-20">${transformName(pokemonName)}</span>
+      <span class="absolute left-0 top-3 z-20">${
+        pokemon.name[0].toUpperCase() + pokemon.name.slice(1)
+      }</span>
       <span class="absolute right-0 z-20"># ${pokemon.id}</span>
     </div>
     <div class="image w-64 h-56 relative z-10">
@@ -68,10 +64,10 @@ const listPokemon = pokemon => {
         alt=""
       />
     </div>
-    <div class="w-full flex justify-between">
+    <div class="w-full flex justify-between relative -top-3">
       <div class="flex flex-col text-white text-2xl">
-        <span class="font-roboto font-thin relative z-30">Type</span>
-        <span id="type" class="pl-7 font-nunito font-thin relative z-30"
+        <span class="font-roboto font-light relative z-30">Type</span>
+        <span id="type" class="pl-7 font-nunito relative z-30"
           >Electric</span
         >
       </div>
@@ -184,8 +180,8 @@ const listPokemon = pokemon => {
     <div class="w-full flex gap-6 text-white">
       <div class="flex flex-col">
         <span class="font-roboto">Stats</span>
-        <span id="data-base" class="pl-3 font-nunito font-thin">Hp</span>
-        <span id="data-base" class="pl-3 font-nunito font-thin"
+        <span class="data-base pl-3 font-nunito font-thin">Hp</span>
+        <span class="pl-3 font-nunito font-thin"
           >Defense</span
         >
         <span id="data-base" class="pl-3 font-nunito font-thin"
@@ -195,10 +191,10 @@ const listPokemon = pokemon => {
       </div>
       <div class="flex flex-col items-center">
         <span class="font-roboto">Base</span>
-        <span id="data-base" class="font-nunito font-thin">35</span>
-        <span id="data-base" class="font-nunito font-thin">40</span>
-        <span id="data-base" class="font-nunito font-thin">50</span>
-        <span id="data-base" class="font-nunito font-thin">90</span>
+        <span class="data-base font-nunito font-thin">35</span>
+        <span class="data-base font-nunito font-thin">40</span>
+        <span class="data-base font-nunito font-thin">50</span>
+        <span class="data-base font-nunito font-thin">90</span>
       </div>
     </div>
   </div>
