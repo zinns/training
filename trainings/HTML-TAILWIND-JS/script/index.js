@@ -43,10 +43,10 @@ let loadedPokemons = 0;
 const listPokemon = pokemon => {
   const container = document.createElement('div');
 
-  container.classList.add('w-80', 'rounded-lg', 'flex', 'relative');
+  container.classList.add('card', 'w-80', 'rounded-lg', 'flex', 'relative');
 
   container.innerHTML = `
-  <div class="card rounded-lg w-full flex flex-col h-[27rem] relative">
+
   <div id="blur-card"></div>
   <div class="card-container w-full h-full p-2 relative top-0 left-0">
     <div
@@ -199,7 +199,6 @@ const listPokemon = pokemon => {
     </div>
   </div>
   <div class="dark-layer rounded-lg absolute top-0 left-0 w-full h-full"></div>
-</div>
   `;
 
   if (pokemon.id === loadedPokemons + 1) {
@@ -208,4 +207,4 @@ const listPokemon = pokemon => {
   }
 };
 
-allPokemons(250);
+allPokemons(1);
